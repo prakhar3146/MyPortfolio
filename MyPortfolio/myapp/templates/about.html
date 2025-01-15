@@ -1,0 +1,26 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-image: url("{%static 'images/tech_1.jpg'%}");
+            object-fit: cover;
+            min-height: 100%;
+            min-width: 100%;
+            background-size: cover; /* This will make sure the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Ensures the background image stays fixed during scroll */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Home Page</h1>
+    </div>
+</body>
+</html>
