@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- For adding icons to the menu -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+  <link href="static/css/style.css" rel="stylesheet">
+  <title>Prakhar's Portfolio</title>
+  <style>
+    #about-me {
+  display: flex;
+  flex-wrap: wrap; /* Ensures it adjusts well on smaller screens */
+  align-items: center; /* Vertically centers the content */
+  border: 4px solid black;
+    border-style: dotted;
+}
+
+#about-me .col-lg-4 {
+  flex: 0 0 30%; /* Allocate 30% width to the image container */
+  max-width: 30%;
+  margin-right: 2%; /* Add spacing between the image and content */
+}
+
+#about-me .col-lg-4 img {
+  width: 100%; /* Make the image responsive */
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+#about-me .col-lg-8 {
+  flex: 0 0 68%; /* Allocate remaining width to the content container */
+  max-width: 68%;
+}
+
+#about-me ul.personal-info {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0;
+}
+
+#about-me ul.personal-info li {
+  margin-bottom: 10px; /* Add spacing between each list item */
+}
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  #about-me .col-lg-4,
+  #about-me .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #about-me .col-lg-4 {
+    margin-bottom: 20px; /* Add spacing between the image and content */
+  }
+}
+/* Styling the #about-me section */
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about-me .col-lg-4 {
+  flex: 1 1 40%; /* Image column takes up 40% of the width */
+  padding-right: 15px;
+}
+
+#about-me .col-lg-8.content {
+  flex: 1 1 60%; /* Content column takes up 60% of the width */
+  padding-left: 15px;
+}
+
+/* Reset styles specifically for #about-me ul and li */
+#about-me ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove default bullet points */
+}
+
+#about-me li {
+  margin: 0;
+  padding: 5px 0; /* Add some spacing between items */
+}
+
+/* Ensure personal-info items are displayed as two equal-width columns */
+#about-me .personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  gap: 10px; /* Space between items */
+}
+
+#about-me .personal-info .info {
+  display: flex;
+  align-items: center; /* Vertically align icons and text */
+  padding: 5px 0; /* Add vertical spacing between rows */
+  display: flex;
+    
+    padding: 5px 0;
+    justify-content: space-around;
+    white-space: break-spaces;
+    font-size: x-small;
+    background-color: #239eff59;
+    font-weight: 900;
+}
+
+#about-me .personal-info .info i {
+  margin-right: 8px; /* Space between the icon and text */
+  color: #007bff; /* Icon color */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 991px) {
+  #about-me {
+    flex-direction: column;
+  }
+  
+  #about-me .col-lg-4, #about-me .col-lg-8.content {
+    flex: 1 1 100%; /* On smaller screens, stack vertically */
+    padding: 0;
+  }
+
+  #about-me .personal-info {
+    grid-template-columns: 1fr; /* Switch to a single column on small screens */
+  }
+}
+h3{
+  font-weight: 900;
+  font-family: system-ui;
+  text-shadow: 5px 5px 15px #000000;
+}
+iframe { width: 100%;
+   height: 100vh;
+   border: none; /* Remove border for clean embedding */ }
+   /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) 
+    { 
+  iframe { width: 100%; height: 60vh; 
+  } } /* Media query for screens larger than 1200px */ 
+   @media (min-width: 1200px) 
+   { 
+    iframe { width: 100%; height: 90vh; 
+    } }
+   #resume { display: none; /* Initially hide the resume */ }
+
+   #contact-me{
+    display: flex;
+    align-self: center;
+    border: 5px solid #341616;
+    flex-direction: column;
+    border-style: dotted;
+    border-color: #00000061;
+    width: 100%;
+    color: black;
+    font-family: auto;
+    font-weight: 600;
+   }
+   #name,#email,#phone-no,#subject,#message{
+    display: flex;
+    align-self: center;
+    border: 5px solid #000000;
+    flex-direction: column;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    width: 30%;
+   }
+   [class^="form-group"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+
+  </style>
+</head>
+<body>
+  <!-- <img id="background-image" src="static/images/landing.jpeg" alt="Description of the image"> -->
+  <script defer src="assets/vendor/typed.js/typed.min.js"></script>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+  
+        <div class="profile">
+          <img src="static/images/linkedin dp.jpg" alt="" class="img-fluid rounded-circle">
+          <h1 class="text-light"><a href="index.html">Prakhar Prakash</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a href="#" class="github"><i class="material-icons"></i></a>
+            <a href="#" class="facebook"><i class="material-icons"></i></a>
+            <a href="#" class="instagram"><i class="material-icons"></i></a>
+            <!-- <a href="#" class="google-plus"><i class="material-icons"></i></a> -->
+            <a href="#" class="linkedin"><i class="material-icons"></i></a>
+          </div>
+        </div>
+        <br>
+        <nav id="navbar" class="nav-menu navbar">
+          <ul id="ul1">
+            <li class="nav-btns" ><a href="#hero" class="nav-link scrollto active"><i class="material-icons"></i> <span class="nav-items" >Home</span></a></li><br>
+            <li class="nav-btns"><a href="#about" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >About</span></a></li><br>
+            <li class="nav-btns"><a href="#show-resume" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Resume</span></a></li><br>
+            <li class="nav-btns"><a href="#portfolio" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Portfolio</span></a></li><br>
+            <li class="nav-btns"><a href="#services" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br>
+            <li class="nav-btns"><a href="#contact" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Contact</span></a></li><br>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container" data-aos="fade-in">
+        <h1>What I do</h1>
+        <p class="initial-text">I am a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Marathoner"></span></p>
+      </div>
+    </section><!-- End Hero -->
+    <main>
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-in">
+        <div class="section-title">
+          <h2>About</h2>
+          <p class="quote">"As you start to walk on the way, the way appears" -  Rumi</p><br>
+         <p> I am a dedicated and proficient software developer with 2 years and 8 months of experience specializing in backend and full-stack development. 
+          <p>My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL. </p>
+          <p>With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.</p>
+
+         <p>In my previous role, I thrived in collaborative team environments and took on various responsibilities, from designing and implementing backend components to developing end-to-end full-stack applications.</p>
+         <p>My adaptability and eagerness for continuous learning have constantly driven me to seek innovative approaches and stay updated with the latest industry trends.</p> 
+          
+          <p>I recently decided to take the leap and resign from my current position to seek better opportunities that align with my personal and professional goals. </p>
+          <p>I am currently exploring opportunities in Germany or remote positions that allow me to be closer to my girlfriend, who is based in Germany.</p>
+          <p>This decision stems from my commitment to nurturing both my career and personal relationships, balancing professional growth with personal happiness.</p> 
+          
+          <p>If you're seeking a passionate developer who brings expertise, enthusiasm, and a love for coding to the table, feel free to connect with me. I'm excited about the possibilities that lie ahead and am looking forward to contributing my skills to dynamic new projects.</p>
+        </div>
+        <div class="row" id="about-me">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="static/images/landing2.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Developer &amp; Automation Engineer</h3>
+            <p class="fst-italic">
+              Software developer with two years and eight months of experience in automating use cases using
+              Python, SQL and Flask. Well versed in Data Structure Algorithms. Experienced in leading, managing,
+              planning, developing and deploying product and solution-based projects..
+            </p>
+            <div class="row" id="personal-information">
+              <div class="col-lg-6">
+                <ul class="personal-info" >
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Birthday :</strong> <br><span>27 March 1994</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>linkedin :</strong><br> <span>https://www.linkedin.com/in/prakhar-p-499757144</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Phone :</strong> <br><span>+4915560129022</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Current City :</strong> <br><span>Duisburg, Germany</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="personal-info" >
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Age :</strong> <span>30</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Degree :</strong> <span>B.A(General)</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <span>mr.prakhar@gmail.com</span></li>
+                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Freelance :</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            </p>
+          </div>
+        </div>
+        </div>
+        </section>
+    <!-- </section>End About -->
+     <!-- Start Resume -->
+      <section class="resume" id="myresume">
+      <button id="show-resume" class="show-more">View Resume</button>
+      <div class="resume" id="resume">
+        <iframe src="static/pdf/Prakhar Prakash's Resume.pdf" frameborder="0" id="my-resume"></iframe>
+
+      </div>
+    </section>
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="contact-info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Duisburg, Germany</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mr.prakhar@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call : </h4>
+                <p>+4915560129022, +919625708656</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+        
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form id="contact-me" action="{% url 'homepage' %}"  method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <h6>Schedule an appointment</h6>
+              
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Enter your name here" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email"  placeholder="Enter your email here"  id="email" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Phone</label>
+                  <input type="text" name="phone" class="form-control" placeholder="Enter your mobile no(Optional)" id="phone-no" >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" placeholder="Enter the subject matter here"  id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" id="message"  placeholder="Type your message to Prakhar" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <!-- <div class="loading">Loading</div> -->
+                <!-- <div class="error-message"></div> -->
+                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" id="send-message" >Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main>
+
+
+    <script src="static/js/typed.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script>
+    document.getElementById("show-resume").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("show-resume"); 
+      const resumeAttr= document.getElementById("resume")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumebtn.innerText = "Hide Resume"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Resume";// Hide again (toggle) 
+         } });
+         document.getElementById("contact-me").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+    let form = document.getElementById("contact-me");
+    let formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value,
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        form.classList.add('hidden');
+        let sentNotification = document.querySelector(".sent-message");
+        sentNotification.style.display = "flex";
+        form.reset();
+        alert("Thanks for reaching out! Your message has been sent.");
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("There was an error submitting the form. Please try again.");
+    });
+});
+
+    </script>
+
+</body>
+</html>
