@@ -180,8 +180,9 @@ a:hover {
 
 
 h1{
-    color: #00116d;
-    text-shadow: 9px 9px 15px #000b46;
+    color: #ffffff;
+    text-shadow: 9px 9px 15px #000000;
+    font-family: emoji;
 }
 /* .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a {
         text-decoration: none;
@@ -326,7 +327,7 @@ h2{
     
 }
 p{
-    color: white;
+    color: rgb(14, 14, 14);
     font-family: initial;
     font-size: large;
 }
@@ -439,7 +440,7 @@ li {
     }
 }
 .typed,.initial-text{
-    color: #000b4a;
+    color: #ffffff;
     font-size: -webkit-xxx-large;
     /* font-family: cursive; */
     letter-spacing: 5px;
@@ -567,8 +568,9 @@ font-style: oblique;
 h6{
     display: flex;
     align-self: center;
-    font-size: x-large;
+    font-size: xx-large;
     letter-spacing: 2px;
+    margin-top: 20px;
     word-spacing: 8px;
     text-shadow: 5px 5px 15px #010101;
 }
