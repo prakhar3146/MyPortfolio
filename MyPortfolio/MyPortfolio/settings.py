@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
+from decouple import config
 # from django.contrib.messages import constants as messages
 
 # MESSAGE_TAGS = {
@@ -30,12 +32,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@wrjp-*93du@#9+-(tfo7fpc9#^ma2jh_*wn+6$+xx%@*71n)*'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config("DEBUG",cast= bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(",")
 
 
 # Application definition
@@ -100,6 +102,7 @@ DATABASES = {
         'PORT': '3306',                       # The MySQL port (default is 3306)
     }
 }
+DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
 
 
 
