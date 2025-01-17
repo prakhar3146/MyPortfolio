@@ -7,13 +7,50 @@ import re
 import MySQLdb
 import datetime as dt
 from myapp.utils import prepare_email_template_and_send as send_mail
+import os
+import psycopg2  # Example for PostgreSQL, adapt according to your database
+
+# Get the environment variables
+DATABASE_URL = os.getenv('DATABASE_URL')
+DB_USER = os.getenv('DB_USER')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+
+# Connect to the database
+db = psycopg2.connect(
+    dbname=DATABASE_URL,
+    user=DB_USER,
+    password=DB_PASSWORD,
+    host=os.getenv('DB_HOST'),  # Add other parameters as needed
+    port=os.getenv('DB_PORT')
+)
+
+
+
+
+
+# # Example function to interact with the database
+# def get_data():
+#     cursor = connection.cursor()
+#     cursor.execute("SELECT * FROM your_table_name")
+#     data = cursor.fetchall()
+#     cursor.close()
+#     return data
+
+
+
 
 # Create your views here.
 # MySQL DB Configuration
 
 # Establish a database connection 
-db = MySQLdb.connect( host="localhost",user='root', 
-                      passwd='root', db=  'flask_users' )
+# db = MySQLdb.connect( host="localhost",user='root', 
+#                       passwd='root', db=  'flask_users' )
+
+#For postgres
+
+
+
+
 cursor =db.cursor()
 
 # def home(request):
