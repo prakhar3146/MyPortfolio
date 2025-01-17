@@ -11,21 +11,21 @@ import os
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
 # Get the environment variables
-DATABASE_URL = os.getenv('DATABASE_URL')
-DB_USER = os.getenv('DB_USER')
-DB_PASSWORD = os.getenv('DB_PASSWORD')
-DB_NAME = os.getenv('DB_NAME')
+DATABASE_URL ="postgresql://root:lZOweodenIjngiGSXHQlHnppQoof2BIx@dpg-cu571eij1k6c73alsjmg-a.frankfurt-postgres.render.com/flask_users_5t8p" #os.getenv('DATABASE_URL')
+DB_USER = "root"#os.getenv('DB_USER')
+DB_PASSWORD = "lZOweodenIjngiGSXHQlHnppQoof2BIx"#os.getenv('DB_PASSWORD')
+DB_NAME = "flask_users_5t8p"#os.getenv('DB_NAME')
+DB_HOST= "prakhar3146"#os.getenv('DB_HOST')
 
-
-# Connect to the database
-db = psycopg2.connect(
-    dbname=DB_NAME,
-    user=DB_USER,
-    password=DB_PASSWORD,
-    host=os.getenv('DB_HOST'),  # Add other parameters as needed
-    # port=os.getenv('DB_PORT')
-)
-
+# # Connect to the database
+# db = psycopg2.connect(
+#     dbname=DATABASE_URL,
+#     user=DB_USER,
+#     password=DB_PASSWORD,
+#     host= DB_HOST,  # Add other parameters as needed
+#     # port=os.getenv('DB_PORT')
+# )
+db= psycopg2.connect(DATABASE_URL)
 
 
 
