@@ -14,14 +14,16 @@ import psycopg2  # Example for PostgreSQL, adapt according to your database
 DATABASE_URL = os.getenv('DATABASE_URL')
 DB_USER = os.getenv('DB_USER')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_NAME = os.getenv('DB_NAME')
+
 
 # Connect to the database
 db = psycopg2.connect(
-    dbname=DATABASE_URL,
+    dbname=DB_NAME,
     user=DB_USER,
     password=DB_PASSWORD,
     host=os.getenv('DB_HOST'),  # Add other parameters as needed
-    port=os.getenv('DB_PORT')
+    # port=os.getenv('DB_PORT')
 )
 
 
