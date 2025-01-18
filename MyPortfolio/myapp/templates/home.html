@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
   <!-- Vendor CSS Files -->
     <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -193,6 +194,42 @@ iframe { width: 100%;
 .github{
     background-color: beige;
 }
+/* #project-description>h6{ */
+#project-header{
+    color: #d1d1d1;
+    font-size: xx-large;
+    background-color: cadetblue;
+    margin-left: 24%;
+    margin-right: 0%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
+    text-align: center;
+    justify-content: center;
+}
+#project-description{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkseagreen;
+    margin-left: 24%;
+    margin-right: 1%;
+    font-size: x-large;
+    color: black;
+    font-family: cursive;
+    font-weight: 600;
+}
+h2{
+  color: #d1d1d1;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+    margin-top: 2%;
+    padding: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  
+}
   </style>
 </head>
 <body>
@@ -219,7 +256,7 @@ iframe { width: 100%;
             <li class="nav-btns" ><a href="#hero" class="nav-link scrollto active"><i class="material-icons"></i> <span class="nav-items" >Home</span></a></li><br>
             <li class="nav-btns"><a href="#about" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >About</span></a></li><br>
             <li class="nav-btns"><a href="#show-resume" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Resume</span></a></li><br>
-            <li class="nav-btns"><a href="#portfolio" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Portfolio</span></a></li><br>
+            <li class="nav-btns"><a href="#heading-portfolio" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Portfolio</span></a></li><br>
             <li class="nav-btns"><a href="#services" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br>
             <li class="nav-btns"><a href="#contact" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Contact</span></a></li><br>
           </ul>
@@ -239,6 +276,9 @@ iframe { width: 100%;
         <div class="section-title">
           <h2>About</h2>
           <p class="quote">"As you start to walk on the way, the way appears" -  Rumi</p><br>
+          <p>With the above motto in mind, I quit my previous job as an automation engineer without having a standing offer letter from any organization.</p>
+          <p>It was a tough call to make but was also the absolute necessity of the situation as my job role was not going to get me anywhere near my long term goals the way it was going.</p>
+          <p>Therefore after careful consideration and discussion about the organisation's future plan for me in terms of responsiblities and exposure, I decided that was time for me to venture out, upskill and find something that resonates with my expections. </p>
          <p> I am a dedicated and proficient software developer with 2 years and 8 months of experience specializing in backend and full-stack development. 
           <p>My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL. </p>
           <p>With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.</p>
@@ -282,8 +322,7 @@ iframe { width: 100%;
               </div>
             </div>
             <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            Available to take up freelance projects ranging from software development applications to deep learning/data science projects. 
             </p>
           </div>
         </div>
@@ -318,9 +357,24 @@ iframe { width: 100%;
       </span>
        <span class="dot">
        </span>
-       </div> 
+       </div> <br>
+       <h6 id="project-header">My web applications and projects </h6>
+       <div class="description" id="project-description">
+       
+       <div class="projects" id="project1">
+        <h4>MyChatAPP</h4>
+        <p>This is a web based chat application that i developed using JavaScript, HTML, CSS in the front-end and Python in the back-end leveraging Flask framework</p>
+       </div><br>
+       <div class="projects" id="project2"><h4>MyPortfolio</h4>
+      <p>The website that you are currently viewing has been created by me using JavaScript, HTML, CSS in the front-end and Python3 in the back-end leveraginbg Django Framework.</p>
+    </div><br>
+       <div class="projects" id="project3"><h4>A Gen AI Project</h4>
+      <p>This will be an app that i will create but i am just filling up dummy text to help me with the styling</p></div><br>
+
+      </div>
+
       </section> 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -402,7 +456,10 @@ iframe { width: 100%;
 
   </main>
 
-
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <!-- PureCounter JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script src="static/js/typed.min.js"></script>
     <!-- GLightbox Script --> 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>

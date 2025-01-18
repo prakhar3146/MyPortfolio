@@ -64,7 +64,7 @@ body {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #06122475;
+    background: #240606ad;
     overflow-y: auto;
 }
 
@@ -363,6 +363,8 @@ p {
     color: rgb(14, 14, 14);
     font-family: initial;
     font-size: large;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .social-links {
@@ -388,7 +390,7 @@ li {
     font-weight: 600;
 }
 
-#about {
+#about,#portfolio {
     padding: 60px 0;
     overflow: hidden;
     display: flex;
@@ -607,6 +609,8 @@ strong {
     border-radius: 2px;
     border-top-color: currentcolor;
     height: 40px;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 #send-message:hover {
@@ -667,6 +671,13 @@ body {
     opacity: 0;
     animation: fadeIn 4s forwards;
 }
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Prevents 'fixed' background from being janky on mobile */
+        background-size: cover;
+    }
+}
+
 
 .social-links a {
 
@@ -684,6 +695,7 @@ body {
 }
 
 #portfolio {
+    display: contents;
     text-align: center;
     padding: 50px 0;
 }
@@ -692,6 +704,10 @@ body {
     position: relative;
     max-width: 1000px;
     margin: auto;
+    /* border: 5px solid beige; */
+    margin-left: 25%;
+    margin-right: 3%;
+    /* background-color: black; */
 }
 
 .mySlides {
@@ -728,5 +744,26 @@ img {
 }
 
 .active {
-    background-color: #717171;
+    background-color: #000000;
+}
+#slide1,#slide2,#slide3{
+
+    width: 600px;
+    height: 400px;
+    margin-left: 0%;
+    border: 5px solid #757575;
+}
+#heading-portfolio{
+    
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000; */
+   
+    margin-left: 23%;
+    letter-spacing: 3px;
+    background-color: darkseagreen;
+    color: #d1d1d1;
+    font-size: xx-large;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+  margin-top: 3%;
+  font-weight: 600;
+  letter-spacing: 3px;
 }

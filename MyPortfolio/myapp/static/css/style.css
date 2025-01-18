@@ -754,10 +754,16 @@ img {
     border: 5px solid #757575;
 }
 #heading-portfolio{
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
-    font-size: xx-large;
+    
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000; */
+   
     margin-left: 23%;
     letter-spacing: 3px;
     background-color: darkseagreen;
+    color: #d1d1d1;
+    font-size: xx-large;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+  margin-top: 3%;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
