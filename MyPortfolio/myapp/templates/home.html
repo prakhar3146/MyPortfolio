@@ -7,7 +7,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- For adding icons to the menu -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <!-- Vendor CSS Files -->
     <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -53,6 +55,7 @@
 }
 @media (max-width: 768px) {
   #about-me {
+    padding: 25%;
     flex-direction: column; /* Stack elements vertically */
   }
 
@@ -60,6 +63,13 @@
   #about-me .col-lg-8 {
     flex: 0 0 100%;
     max-width: 100%;
+  .info{
+    padding-right: 30%;
+  }
+  p{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   }
 
   #about-me .col-lg-4 {
@@ -180,12 +190,14 @@ iframe { width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
    }
-
+.github{
+    background-color: beige;
+}
   </style>
 </head>
 <body>
   <!-- <img id="background-image" src="static/images/landing.jpeg" alt="Description of the image"> -->
-  <script defer src="assets/vendor/typed.js/typed.min.js"></script>
+  <script defer src="static/js/typed.min.js"></script>
     <!-- ======= Header ======= -->
     <header id="header">
       <div class="d-flex flex-column">
@@ -194,11 +206,11 @@ iframe { width: 100%;
           <img src="static/images/linkedin dp.jpg" alt="" class="img-fluid rounded-circle">
           <h1 class="text-light"><a href="index.html">Prakhar Prakash</a></h1>
           <div class="social-links mt-3 text-center">
-            <a href="#" class="github"><i class="material-icons"></i></a>
-            <a href="#" class="facebook"><i class="material-icons"></i></a>
-            <a href="#" class="instagram"><i class="material-icons"></i></a>
+            <a href="https://github.com/prakhar3146" class="github" style="background-color: beige;"><i class="fab fa-github"></i></a>
+            <a href="www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/prakhar3146/" class="instagram" style="background-color:#361d1a;" ><i class="fab fa-instagram"></i></a>
             <!-- <a href="#" class="google-plus"><i class="material-icons"></i></a> -->
-            <a href="#" class="linkedin"><i class="material-icons"></i></a>
+            <a href="www.linkedin.com/in/prakhar-p-499757144" class="linkedin" style="background-color: navy; border-radius: 30%;"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         <br>
@@ -286,14 +298,37 @@ iframe { width: 100%;
 
       </div>
     </section>
-    
+    <section id="portfolio"> 
+      <h2 id="heading-portfolio">Portfolio</h2><br>
+       <div class="slideshow-container">
+       <div class="mySlides fade"> 
+        <img src="static/images/landing2.jpeg" id="slide1"> 
+      </div> 
+      <div class="mySlides fade"> 
+        <img src="static/images/image2.jpeg" id="slide2"> 
+      </div> <div class="mySlides fade"> 
+        <img src="static/images/image3.jpg" id="slide3"> 
+      </div>
+     </div> 
+     <br> 
+     <div style="text-align:center"> 
+      <span class="dot">
+      </span> 
+      <span class="dot">
+      </span>
+       <span class="dot">
+       </span>
+       </div> 
+      </section> 
+    <script src="script.js"></script>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p style="font-size: x-large;font-weight: 600;">For the fact that i travel and move around a lot, my real time location details can be found on my website.   
+          </p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -302,19 +337,19 @@ iframe { width: 100%;
             <div class="contact-info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
+                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Location:</h4>
                 <p>Duisburg, Germany</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;" >Email:</h4>
                 <p>mr.prakhar@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call : </h4>
+                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Call : </h4>
                 <p>+4915560129022, +919625708656</p>
               </div>
 
@@ -369,6 +404,8 @@ iframe { width: 100%;
 
 
     <script src="static/js/typed.min.js"></script>
+    <!-- GLightbox Script --> 
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="static/js/script.js"></script>
     <script>
     document.getElementById("show-resume").addEventListener("click", function() { 
@@ -406,6 +443,26 @@ iframe { width: 100%;
         alert("There was an error submitting the form. Please try again.");
     });
 });
+// The slideshow code
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 3 seconds
+}
 
     </script>
 
