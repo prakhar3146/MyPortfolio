@@ -64,7 +64,9 @@ def prepare_email_template_and_send(credentials_dict={}, automation_type="chat_a
             
         # Parse the HTML
         soup = BeautifulSoup(content, 'lxml')
-        
+        #Change title
+        title=soup.find('title')
+        title.string = "Email BOT by Prakhar"
         # Modify text in a specific tag
         header = soup.find('h3')
         header.string = f"This to notify you that your user id: {username} associated with {reciever}\n has been created!\n"

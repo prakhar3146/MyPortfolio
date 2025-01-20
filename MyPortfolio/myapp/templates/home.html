@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
   <!-- Vendor CSS Files -->
     <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,10 +25,14 @@
   <style>
     #about-me {
   display: flex;
-  flex-wrap: wrap; /* Ensures it adjusts well on smaller screens */
+  flex-wrap: nowrap; /* Ensures it adjusts well on smaller screens */
   align-items: center; /* Vertically centers the content */
   border: 4px solid black;
-    border-style: dotted;
+    border-style: none;
+    margin-top: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+
 }
 
 #about-me .col-lg-4 {
@@ -56,6 +62,7 @@
 }
 @media (max-width: 768px) {
   #about-me {
+    width:100%;
     padding: 25%;
     flex-direction: column; /* Stack elements vertically */
   }
@@ -150,6 +157,15 @@ h3{
   font-weight: 900;
   font-family: system-ui;
   text-shadow: 5px 5px 15px #000000;
+  border: 10px solid #ecf0f2;
+    border-style: double;
+    color: #d1d1d1;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    padding: 9px;
 }
 iframe { width: 100%;
    height: 100vh;
@@ -158,7 +174,21 @@ iframe { width: 100%;
   @media (max-width: 600px) 
     { 
   iframe { width: 100%; height: 60vh; 
-  } } /* Media query for screens larger than 1200px */ 
+  } 
+#project-description{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkseagreen;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: x-large;
+    color: black;
+    font-family: cursive;
+    font-weight: 600;
+    flex-wrap: nowrap;
+}
+} /* Media query for screens larger than 1200px */ 
    @media (min-width: 1200px) 
    { 
     iframe { width: 100%; height: 90vh; 
@@ -196,9 +226,9 @@ iframe { width: 100%;
 }
 /* #project-description>h6{ */
 #project-header{
-    color: #d1d1d1;
+  color: #d1d1d1;
     font-size: xx-large;
-    background-color: cadetblue;
+    background-color: darkseagreen;
     margin-left: 24%;
     margin-right: 0%;
     font-weight: 600;
@@ -206,6 +236,8 @@ iframe { width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
     text-align: center;
     justify-content: center;
+    margin-bottom: 2%;
+    padding: 5px;
 }
 #project-description{
   display: flex;
@@ -219,6 +251,105 @@ iframe { width: 100%;
     font-family: cursive;
     font-weight: 600;
 }
+
+@media (min-width: 300px) and (max-width:667px){
+  /* p{
+    margin-left: 0%;
+    margin-right: 0%;
+  } */
+  h3{
+    margin-left: 0%;
+    border: 10px solid #ecf0f2;
+    border-style: double;
+    
+    font-size: xx-large;
+    background-color: darkseagreen;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #d1d1d1;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    padding: 5px;
+  }
+  footer {
+    background-color: #36363685;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ecf0f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+  margin: 0;
+    color: azure;
+    letter-spacing: 3px;
+    font-family: emoji;
+    font-style: oblique;
+}
+
+  h6{
+    display: flex;
+    align-self: center;
+    font-size: xx-large;
+    
+    margin-top: 20px;
+    word-spacing: 8px;
+    text-shadow: 5px 5px 15px #010101;
+    border: 10px solid #ecf0f2;
+    border-style: double;
+    color: #d1d1d1;
+    font-size: xx-large;
+    background-color: darkseagreen;
+    margin-left: 0%;
+    margin-right: 0%;
+    /* margin-bottom: 5px; */
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    padding: 5px;
+  }
+  #project-header{
+    margin-left: 0%;
+    border: 10px solid #ecf0f2;
+    border-style: double;
+}
+#project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: darkseagreen;
+    margin-left: 0%;
+    margin-right: 1%;
+    font-size: x-large;
+    color: black;
+    font-family: cursive;
+    font-weight: 600;
+}
+#contact{
+  margin-left: 0%;
+}
+#about-me,.col-lg-8,.content{
+  margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+}
+
+
 h2{
   color: #d1d1d1;
     font-size: xx-large;
@@ -276,21 +407,19 @@ h2{
         <div class="section-title">
           <h2>About</h2>
           <p class="quote">"As you start to walk on the way, the way appears" -  Rumi</p><br>
-          <p>With the above motto in mind, I quit my previous job as an automation engineer without having a standing offer letter from any organization.</p>
-          <p>It was a tough call to make but was also the absolute necessity of the situation as my job role was not going to get me anywhere near my long term goals the way it was going.</p>
-          <p>Therefore after careful consideration and discussion about the organisation's future plan for me in terms of responsiblities and exposure, I decided that was time for me to venture out, upskill and find something that resonates with my expections. </p>
-         <p> I am a dedicated and proficient software developer with 2 years and 8 months of experience specializing in backend and full-stack development. 
-          <p>My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL. </p>
+           <p> I am a dedicated and proficient software developer with 2 years and 8 months of experience specializing in backend and full-stack development. 
+          <!-- <p>My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL. </p> -->
           <p>With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.</p>
 
          <p>In my previous role, I thrived in collaborative team environments and took on various responsibilities, from designing and implementing backend components to developing end-to-end full-stack applications.</p>
          <p>My adaptability and eagerness for continuous learning have constantly driven me to seek innovative approaches and stay updated with the latest industry trends.</p> 
-          
+          <p>I am a thorough teamplayer and value my relationships with every indivisual that i interact with, while maintaing professionalism and with an empathetic and friendly approach.</p>
           <p>I recently decided to take the leap and resign from my current position to seek better opportunities that align with my personal and professional goals. </p>
-          <p>I am currently exploring opportunities in Germany or remote positions that allow me to be closer to my girlfriend, who is based in Germany.</p>
+          <p>I am currently exploring opportunities in Europe or remote positions that allow me to be closer to my partner, who is based in Germany.</p>
           <p>This decision stems from my commitment to nurturing both my career and personal relationships, balancing professional growth with personal happiness.</p> 
           
           <p>If you're seeking a passionate developer who brings expertise, enthusiasm, and a love for coding to the table, feel free to connect with me. I'm excited about the possibilities that lie ahead and am looking forward to contributing my skills to dynamic new projects.</p>
+            
         </div>
         <div class="row" id="about-me">
           <div class="col-lg-4" data-aos="fade-right">
@@ -300,7 +429,7 @@ h2{
             <h3>Software Developer &amp; Automation Engineer</h3>
             <p class="fst-italic">
               Software developer with two years and eight months of experience in automating use cases using
-              Python, SQL and Flask. Well versed in Data Structure Algorithms. Experienced in leading, managing,
+              Python, SQL, Django and Flask. Well versed in Data Structure Algorithms. Experienced in leading, managing,
               planning, developing and deploying product and solution-based projects..
             </p>
             <div class="row" id="personal-information">
@@ -340,15 +469,31 @@ h2{
     <section id="portfolio"> 
       <h2 id="heading-portfolio">Portfolio</h2><br>
        <div class="slideshow-container">
+        <p id="personal-portfolio-sub-heading"></p>
        <div class="mySlides fade"> 
+        
         <img src="static/images/landing2.jpeg" id="slide1"> 
       </div> 
       <div class="mySlides fade"> 
-        <img src="static/images/image2.jpeg" id="slide2"> 
-      </div> <div class="mySlides fade"> 
-        <img src="static/images/image3.jpg" id="slide3"> 
+        <img src="static/images/image4.jpg" id="slide2"> 
       </div>
+      <div class="mySlides fade"> 
+        <img src="static/images/image3.jpg" id="slide3"> 
+      
      </div> 
+    <div class="mySlides fade"> 
+      <img src="static/images/image5.jpg" id="slide4"> 
+    </div>
+  <div class="mySlides fade"> 
+    <img src="static/images/image6.jpg" id="slide5"> 
+  </div>
+  <div class="mySlides fade"> 
+    <img src="static/images/image7.jpg" id="slide6"> 
+  </div>
+  <div class="mySlides fade"> 
+    <img src="static/images/image8.jpg" id="slide7"> 
+  </div>
+  </div>
      <br> 
      <div style="text-align:center"> 
       <span class="dot">
@@ -357,21 +502,67 @@ h2{
       </span>
        <span class="dot">
        </span>
+       <span class="dot">
+      </span>
+      <span class="dot">
+      </span>
+      <span class="dot">
+      </span>
+      <span class="dot">
+      </span>
        </div> <br>
-       <h6 id="project-header">My web applications and projects </h6>
+       <h6 id="project-header">Web applications and projects </h6>
        <div class="description" id="project-description">
        
        <div class="projects" id="project1">
         <h4>MyChatAPP</h4>
-        <p>This is a web based chat application that i developed using JavaScript, HTML, CSS in the front-end and Python in the back-end leveraging Flask framework</p>
-       </div><br>
+        <p  class="subheader"></p>>Overview</p>
+        <p>This is a web based group chat application which maintains user anonymity.</p>
+        <p>It has been developed using JavaScript, HTML, CSS in the front-end and Python, MySQL in the back-end leveraging Flask framework</p>
+      <p   class="subheader"></p>>Tech Stack</p>
+        <p>JavaScript, HTML, CSS, Python, MySQL, Websockets, Flask </p> 
+      <p  class="subheader"></p>>Tools</p>
+        <p>Socket.io, Co-pilot, Google Chrome, VS Code, Putty, Amazon Web Services</p>
+      
+        <p  class="subheader"></p>>Github Link: Private</p>
+      <p  class="subheader"></p>>AWS Url </p>
+      <div class="app-link">
+        <a href="http://ec2-13-61-213-208.eu-north-1.compute.amazonaws.com/" class="fab fa-amazon" style="background-color: beige;" id="project1-link">ec2-13-61-213-208.eu-north-1.compute.amazonaws.com</a>
+      </div>
+      <p>1. The Chat application can be used in the EU 1 zone due to the limitation of visiblity in the free aws cloud access.</p>
+      <p>2. Creted the homepage,registration and login page using HTML and JavaScript and added custom automations.</p>
+      <p>3. Maintained user data security by using bycrypt to store sensitive information in an encrypted format in the MySQL database.</p>
+      <p>4. Maintained positioning and styling using CSS. </p>
+      <p>5. Added custom automations for important notifications like registration success, using Python and smtp library.</p>
+      <p>6. Maintained active sessions management using MySQL and Python.</p>
+      <p>7. Maintained version control using github.</p>
+      <p>8. Deployed the application on AWS cloud post testing.</p>
+      </div><br>
        <div class="projects" id="project2"><h4>MyPortfolio</h4>
-      <p>The website that you are currently viewing has been created by me using JavaScript, HTML, CSS in the front-end and Python3 in the back-end leveraginbg Django Framework.</p>
+        <p class="subheader"></p>>Overview </p>
+        <p>This is a portfolio website developed and owned by Prakhar with a pupose of providing a quick peek into his professional as well as personal life</p>
+        <p class="subheader"></p>>Tech Stack</p>
+        <p> JavaScript, HTML, CSS, Python3, PostGreSQL, Django </p>
+        <p class="subheader"></p>>Tools</p>
+        <p>Co-pilot, Google Chrome, VS Code </p>
+        <p class="subheader"></p>>GitHub repository</p>
+        <div class="app-link">
+        <a href="https://github.com/prakhar3146/MyPortfolio.git" class="fab fa-github" style="background-color: beige;" id="project1-link">https://github.com/prakhar3146/MyPortfolio.git</a>
+      </div>
+        <p>1. The website currently in view is the one being referred to.</p>
+        <p>2. Designed a responsive layout using JavaScript(vanilla) and CSS styling.</p>
+        <p>3. Maintained version control through github.</p>
+        <p>4. Added custom automations to send email notifications confirmaing the request generation, everytime the contact form is submitted.</p>
+        <p>5. Protected sensitive information like database credentials, allowed host urls etc. using environment variables.</p>
+        <p>6. Deployed the website after building it on www.render.com</p>
+        <p>7. Hosted the website on my custom domain.</p>
+        
+
     </div><br>
-       <div class="projects" id="project3"><h4>A Gen AI Project</h4>
+       <!-- <div class="projects" id="project3"><h4>A Gen AI Project</h4>
       <p>This will be an app that i will create but i am just filling up dummy text to help me with the styling</p></div><br>
 
-      </div>
+      </div> -->
 
       </section> 
     <!-- <script src="script.js"></script> -->
@@ -381,7 +572,8 @@ h2{
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p style="font-size: x-large;font-weight: 600;">For the fact that i travel and move around a lot, my real time location details can be found on my website.   
+          <p style="font-size: x-large;font-weight: 600;">Due to the fact that i travel and relocate often, I have added the location section to my website in order to make it easier for any interested
+            parties/people to be able to locate me if it concerns them in anyway.   
           </p>
         </div>
 
@@ -407,7 +599,8 @@ h2{
                 <p>+4915560129022, +919625708656</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.6705920570125!2d6.66490117598786!3d51.427477471795214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8bc14c4b92693%3A0x224e7703406356d7!2sHeimbergstra%C3%9Fe%207%2C%2047228%20Duisburg!5e0!3m2!1sen!2sde!4v1737382435829!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
@@ -455,6 +648,12 @@ h2{
     </section><!-- End Contact Section -->
 
   </main>
+ 
+      <footer>
+        <p>&copy; 2025 Prakhar Prakash. All rights reserved.</p>
+    </footer>
+    
+
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
@@ -502,7 +701,7 @@ h2{
 });
 // The slideshow code
 let slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
     let i;
@@ -521,6 +720,8 @@ function showSlides() {
     setTimeout(showSlides, 6000); // Change image every 3 seconds
 }
 
+
+showSlides();
     </script>
 
 </body>
