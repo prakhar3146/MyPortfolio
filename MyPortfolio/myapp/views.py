@@ -25,7 +25,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 #     host= DB_HOST,  # Add other parameters as needed
 #     # port=os.getenv('DB_PORT')
 # )
-# db= psycopg2.connect(DATABASE_URL)
+db= psycopg2.connect(DATABASE_URL)
 
 
 
@@ -45,8 +45,8 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 # MySQL DB Configuration
 
 # Establish a database connection 
-db = MySQLdb.connect( host="localhost",user='root', 
-                      passwd='root', db=  'flask_users' )
+# db = MySQLdb.connect( host="localhost",user='root', 
+#                       passwd='root', db=  'flask_users' )
 
 #For postgres
 
