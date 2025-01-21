@@ -172,7 +172,7 @@ def contact(request):
         column_names = [description[0] for description in cursor.description]
         cred_dict = dict(zip(column_names, row))
         cred_dict['reciever']= "mr.prakhar@gmail.com"
-        cred_dict['inviting_person']= name
+        # cred_dict['inviting_person']= name
         cred_dict['notification_type']= "daily_visit_log"
         cred_dict['attachment_filepath']= filepath
         
