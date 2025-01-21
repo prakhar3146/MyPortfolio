@@ -48,12 +48,12 @@ main{
   margin-right: 2%; /* Add spacing between the image and content */
 }
 
-#about-me .col-lg-4 img {
+#about-me ,.col-lg-4 img {
   width: 100%; /* Make the image responsive */
   border-radius: 8px; /* Optional: Adds rounded corners to the image */
 }
 
-#about-me .col-lg-8 {
+#about-me,.col-lg-8 {
   flex: 0 0 68%; /* Allocate remaining width to the content container */
   max-width: 68%;
 }
@@ -95,7 +95,9 @@ main{
 /* Styling the #about-me section */
 #about-me {
   display: flex;
-  flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 50%;
 }
 
 #about-me .col-lg-4 {
@@ -207,6 +209,11 @@ iframe { width: 100%;
 
     } }
    #resume { display: none; /* Initially hide the resume */ }
+.certificate{
+  display: none;
+}
+
+
 
    #contact-me{
     display: flex;
@@ -382,7 +389,12 @@ h2{
     justify-content: center;
   
 }
-
+#django-messages .error {
+    color: #f4f4f4;
+    border-radius: revert;
+    background-color: #ff3030;
+    border-style: dotted;
+}
 
   </style>
 </head>
@@ -421,7 +433,7 @@ h2{
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
       <div class="hero-container" data-aos="fade-in">
         <h1>What I do</h1>
-        <p class="initial-text">I am a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Marathoner"></span></p>
+        <p class="initial-text">I am a <span class="typed" data-typed-items="UI Designer, Web-Developer, Freelancer, Marathoner, Digital Nomad"></span></p>
       </div>
     </section><!-- End Hero -->
     <main>
@@ -446,7 +458,38 @@ h2{
         </div>
         <div class="row" id="about-me">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="static/images/landing2.jpeg" class="img-fluid" alt="">
+            <img src="static/images/image1.jpeg" class="img-fluid" alt="image failed to load">
+            <p id="license">Licenses  &amp; Certifications</p>
+            <p class="cert_description">IBM - ML with Python</p>
+        <button class="show-more" id="view-cert1">View Certificate</button>
+        <div class="certificate" id="certificate1">
+          <iframe src="static/pdf/IBM-certificate.pdf" frameborder="0" id="item-1"></iframe>
+       </div>
+       <p class="cert_description">PG program in Data Science, ML and Neural</p>
+       <button class="show-more" id="view-cert2">View Certificate</button>
+       <div class="certificate" id="certificate2">
+        <iframe src="static/pdf/data trained_certification1.pdf" frameborder="0" id="item-2"></iframe>
+        </div>
+        <p class="cert_description">Deep Learning</p>
+        <button class="show-more" id="view-cert3">View Certificate</button>
+        <div class="certificate" id="certificate3">
+          <iframe src="static/pdf/deep_learning_cretificate.pdf" frameborder="0" id="item-3"></iframe>
+        </div>
+        <p class="cert_description">Deep NLP</p>
+        <button class="show-more" id="view-cert4">View Certificate</button>
+        <div class="certificate" id="certificate4">
+          <iframe src="static/pdf/deep_NLP_certificate.pdf" frameborder="0" id="item-4"></iframe>
+        </div>
+        <p class="cert_description">Tableau</p>
+        <button class="show-more" id="view-cert5">View Certificate</button>
+        <div class="certificate" id="certificate5">
+          <iframe src="static/pdf/tableau_certificate.pdf" frameborder="0" id="item-5"></iframe>
+        </div>
+        <p class="cert_description">ML Projects</p>
+        <button class="show-more" id="view-cert6">View Certificate</button>
+        <div class="certificate" id="certificate6">
+          <iframe src="static/pdf/ML_projects_certificate.pdf" frameborder="0" id="item-6"></iframe>
+        </div>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Skillset &amp; Tools</h3>
@@ -544,6 +587,7 @@ h2{
         </section>
     <!-- </section>End About -->
      <!-- Start Resume -->
+      
       <section class="resume" id="myresume">
       <button id="show-resume" class="show-more">View Resume</button>
       <div class="resume" id="resume">
@@ -557,26 +601,29 @@ h2{
         <p id="personal-portfolio-sub-heading"></p>
        <div class="mySlides fade"> 
         
-        <img src="static/images/landing2.jpeg" id="slide1"> 
+        <img src="static/images/landing2.jpeg"   alt="Failed to load image"  id="slide1"> 
       </div> 
       <div class="mySlides fade"> 
-        <img src="static/images/image4.jpg" id="slide2"> 
+        <img src="static/images/image4.jpeg"    alt="Failed to load image"  id="slide2"> 
       </div>
       <div class="mySlides fade"> 
-        <img src="static/images/image3.jpg" id="slide3"> 
+        <img src="static/images/image3.jpeg"    alt="Failed to load image"  id="slide3"> 
       
      </div> 
     <div class="mySlides fade"> 
-      <img src="static/images/image5.jpg" id="slide4"> 
+      <img src="static/images/image5.jpg"    alt="Failed to load image"  id="slide4"> 
     </div>
   <div class="mySlides fade"> 
-    <img src="static/images/image6.jpg" id="slide5"> 
+    <img src="static/images/image6.jpeg"  alt="Failed to load image"   id="slide5"> 
   </div>
   <div class="mySlides fade"> 
-    <img src="static/images/image7.jpg" id="slide6"> 
+    <img src="static/images/image7.jpg"   alt="Failed to load image"  id="slide6"> 
   </div>
   <div class="mySlides fade"> 
-    <img src="static/images/image8.jpg" id="slide7"> 
+    <img src="static/images/image8.jpg"    alt="Failed to load image"  id="slide7"> 
+  </div>
+  <div class="mySlides fade"> 
+    <img src="static/images/image9.jpeg"    alt="Failed to load image"  id="slide7"> 
   </div>
   </div>
      <br> 
@@ -588,6 +635,8 @@ h2{
        <span class="dot">
        </span>
        <span class="dot">
+      </span>
+      <span class="dot">
       </span>
       <span class="dot">
       </span>
@@ -724,30 +773,33 @@ h2{
                 <!-- <div class="loading">Loading</div> -->
                 <!-- <div class="error-message"></div> -->
                 <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                  <!-- Include Django messages here --> 
+                  {% if messages %} 
+    <ul id="django-messages"> 
+      {% for message in messages %} 
+      <li class="{{ message.tags }}" >{{ message }}</li> 
+      {% endfor %} 
+    </ul> 
+     {% endif %}
               </div>
            
-              <div class="text-center"><button type="submit" id="send-message" >Send Message</button></div>
+    <div class="text-center"><button type="submit" id="send-message" >Send Message</button></div>
+
+                
+                
             </form>
-               <!-- Include Django messages here --> 
-               
-               {% if messages %} 
-               <ul id="django-messages"> 
-                 {% for message in messages %} 
-                 <li class="{{ message.tags }}">{{ message }}</li> 
-                 {% endfor %} 
-               </ul> 
-                {% endif %}
+          
           </div>
 
         </div>
 
       </div>
     </section><!-- End Contact Section -->
-
+ 
   </main>
  
       <footer>
-        <p>&copy; 2025 Prakhar Prakash. All rights reserved.</p>
+        <p>&copy; Copywright 2025 Prakhar Prakash. All rights reserved.</p>
     </footer>
     
 
@@ -767,6 +819,7 @@ h2{
       if (resumeAttr.style.display === "none") {
          resumeAttr.style.display = "flex"; // Display the resume when clicked 
          resumeAttr.style.width = "100%" ;
+         resumeAttr.style.height = "100%" ;
          resumebtn.innerText = "Hide Resume"; 
          } else { resumeAttr.style.display = "none"; 
          resumebtn.innerText= "View Resume";// Hide again (toggle) 
@@ -783,20 +836,35 @@ h2{
             'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value,
         },
     })
-    .then(response => response.json())
-    .then(data => {
-        form.classList.add('hidden');
-        let sentNotification = document.querySelector(".sent-message");
-        sentNotification.style.display = "flex";
-        form.reset();
-        alert("Thanks for reaching out to Prakhar! Your message has been sent.");
+    .then(response => {
+        const contentType = response.headers.get("content-type");
+
+        if (contentType && contentType.includes("application/json")) {
+            return response.json().then(data => {
+                // Handle JSON response
+                form.classList.add('hidden');
+                let sentNotification = document.querySelector(".sent-message");
+                sentNotification.style.display = "flex";
+                form.reset();
+                alert(`Thanks for reaching out to Prakhar! Your message has been sent: ${data.message}`);
+            });
+        } else if (contentType && contentType.includes("text/html")) {
+            return response.text().then(html => {
+                // Handle HTML response
+                document.open();
+                document.write(html);
+                document.close();
+            });
+        } else {
+            throw new Error("Unsupported content type");
+        }
     })
     .catch(error => {
         console.error('Error:', error);
         alert("There was an error submitting the form. Please try again.");
     });
 });
-// The slideshow code
+
 let slideIndex = 0;
 
 
@@ -820,20 +888,56 @@ function showSlides() {
 
 showSlides();
 // For displaying messages in the front end
-document.getElementById("contact-me").addEventListener("submit", function (event){
+var form = document.getElementById("contact-me")
+form.addEventListener("submit", function (event){
 // Get the messages container 
+event.preventDefault(); // Prevent default form submission
 var messagesContainer = document.getElementById("django-messages"); 
 if (messagesContainer) { // Convert messages into an array 
 var messages = Array.from(messagesContainer.getElementsByTagName("li"));
  messages.forEach(function(message) { // Handle the message based on its class (e.g., error, success, etc.) 
  if (message.classList.contains("error")) { // Display the error message (e.g., alert, modal, etc.) 
- alert("Error: " + message.textContent); } 
- else if (message.classList.contains("success")) { // Display the success message (e.g., alert, modal, etc.) 
- alert("Success: " + message.textContent); } // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
+ alert("Error: " + message.textContent); 
+form.reset()
  message.remove(); 
+// message.style.display= "None";
+} 
+
+ else if (message.classList.contains("success")) { // Display the success message (e.g., alert, modal, etc.) 
+//  alert("Success: " + message.textContent); } // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
+ message.remove(); 
+ form.reset()
+ }
 }); 
 } 
 });
+// Clearing all the messages everytime a website is loaded
+// Function to clear messages 
+//  function clearMessages() { 
+// const messagesContainer = document.getElementById('django-messages'); 
+// if (messagesContainer) { messagesContainer.innerHTML = ''; } 
+// } // Clear messages when the page loads 
+// window.onload = clearMessages;
+    </script>
+    <script>
+//For the certificate buttons
+function toggleResume(resumebtn,resumeAttr) { 
+  // const resumebtn = document.getElementById(id); 
+  // const resumeAttr = document.getElementById("resume"); 
+  if (resumeAttr.style.display === "none" || resumeAttr.style.display === "") { 
+    resumeAttr.style.display = "flex"; // Display the resume when clicked 
+    resumeAttr.style.width = "100%"; 
+    resumeAttr.style.height = "100%"; 
+    resumebtn.innerText = "Hide Resume"; }
+     else { resumeAttr.style.display = "none";
+      resumebtn.innerText = "View Resume"; // Hide again (toggle) 
+     } }
+     const certbtn = document.getElementById("view-cert1"); 
+     const certAttr= document.getElementById("certificate1");
+     certbtn.addEventListener("click", function() { 
+      toggleResume(certbtn,certAttr)
+     }
+     );
     </script>
 
 </body>

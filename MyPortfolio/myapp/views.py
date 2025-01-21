@@ -8,6 +8,7 @@ import MySQLdb
 import datetime as dt
 from myapp.utils import prepare_email_template_and_send as send_mail
 import os
+from myapp.utils import format_headers
 #To fetch and store the IP and location of the user
 import pandas as pd
 import geoip2.database
@@ -29,7 +30,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 #     host= DB_HOST,  # Add other parameters as needed
 #     # port=os.getenv('DB_PORT')
 # )
-db= psycopg2.connect(DATABASE_URL)
+# db= psycopg2.connect(DATABASE_URL)
 
 
 
@@ -37,8 +38,8 @@ db= psycopg2.connect(DATABASE_URL)
 # MySQL DB Configuration
 
 # Establish a database connection 
-# db = MySQLdb.connect( host="localhost",user='root', 
-#                       passwd='root', db=  'flask_users' )
+db = MySQLdb.connect( host="localhost",user='root', 
+                      passwd='root', db=  'flask_users' )
 
 #For postgres
 
@@ -105,8 +106,8 @@ def contact(request):
         subject = request.POST.get("subject")
         message = request.POST.get("message")
         print("Message Inputs : ",name,email,phone,subject,message)
-        
-        if len(name)>1 and len(name)<=50:
+        subject= format_headers(subject,remove_punc=True)
+        if len(name)>1 and len(name)<=50 :
             pass
         else:
             messages.error(request,"Length of the name should be greater than 2 and less than 30 characters ")
@@ -116,11 +117,11 @@ def contact(request):
             return render(request,'home.html') 
         if len(phone)!=13 or "+" not in phone:
             messages.error(request,"Invalid Phone number.\n Please provide your mobile number followed by the country code. E.g. +49,+91")
-            # return render(request,'home.html') 
+          
             return render(request,'home.html')
         if len(subject.strip())<5:
             messages.error(request, "Invalid subject matter.Please provide a short descriptive reason to request an appointment!")
-
+            return render(request,'home.html')
 
         ins = Contact(name=name, mobile = phone, email=email,subject= subject, content = message)
         ins.save()
@@ -149,17 +150,20 @@ def contact(request):
         cred_dict['reciever']= """mr.prakhar@gmail.com"""
         
         send_notification= send_mail(cred_dict,automation_type="portfolio")
-        print("Notification 3 result : ", send_notification)
+        print("Notification 2 result : ", send_notification)
         
         # return render(request,'home.html') 
-        return JsonResponse({'success': True, 'message': 'Form submitted successfully!'})
-
+        response = JsonResponse({'success': True, 'message': 'Form submitted successfully!'})
+        response['Access-Control-Allow-Origin'] = '*'
+        response["content-type"]= "application/json"
+        print("The response being sent",response)
+        return response
         
     print("INSIDE GET METHOD OF VIEWS", request)
     get_ip_address, filepath = store_user_connection(request)
    # Get the current time 
     now = dt.datetime.now().time() # Define the start and end times 
-    start_time = dt.time(21, 0) # 21:00 
+    start_time = dt.time(8, 0) # 21:00 
     end_time = dt.time(23, 58) # 23:58 # Check if the current time is within the range 
     if start_time <= now <= end_time and get_ip_address:
         query= """SELECT * FROM email_notification_creds ORDER BY id DESC LIMIT 1;"""

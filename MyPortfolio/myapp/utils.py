@@ -63,6 +63,8 @@ def prepare_email_template_and_send(credentials_dict={}, automation_type="chat_a
     username = credentials_dict['username']
     subject = credentials_dict['subject']
     attachment= False
+    if "attachment_filepath" not in credentials_dict.keys():
+        attachment_filepath= ""
     if automation_type=="chatapp":
     
         if credentials_dict['notification_type'] == "appointment_booking":

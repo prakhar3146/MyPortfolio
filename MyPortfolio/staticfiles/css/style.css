@@ -623,12 +623,13 @@ strong {
     color: black;
 }
 
-#send-message {
+#send-message{
 
     background: #000000bd;
     color: #fff;
     width: 20%;
     border-radius: 2px;
+    min-width: fit-content;
     border-top-color: currentcolor;
     height: 40px;
     margin-bottom: 10px;
@@ -1394,4 +1395,32 @@ footer p {
     font-style: oblique;
 }
 
+}
+#license{
+    font-family: ui-monospace;
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 50%;
+    border: 15px solid #626969;
+    min-width: fit-content;
+    border-style: ridge;
+    padding: 5%;
+    color: aliceblue;
+    background-color: #447d65;
+    margin-left: 0%;
+}
+.show-more{
+
+    background: #000000bd;
+    color: #fff;
+    width: 20%;
+    border-radius: 2px;
+    min-width: fit-content;
+    border-top-color: currentcolor;
+    height: 40px;
+    margin-bottom: 3%;
+    
+}
+.cert_description{
+    font-family: 'Font Awesome 6 Brands';
 }
