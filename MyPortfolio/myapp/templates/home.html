@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakhar's Portfolio</title>
+  <link rel="icon" href="static/images/logo.png" type="image/x-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- For adding icons to the menu -->
@@ -21,8 +23,13 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <link href="static/css/style.css" rel="stylesheet">
-  <title>Prakhar's Portfolio</title>
+
   <style>
+
+main{
+  background-color: #000000ab;
+  margin-left: 24%;
+}
     #about-me {
   display: flex;
   flex-wrap: nowrap; /* Ensures it adjusts well on smaller screens */
@@ -61,6 +68,7 @@
   margin-bottom: 10px; /* Add spacing between each list item */
 }
 @media (max-width: 768px) {
+
   #about-me {
     width:100%;
     padding: 25%;
@@ -196,6 +204,7 @@ iframe { width: 100%;
    @media (min-width: 1200px) 
    { 
     iframe { width: 100%; height: 90vh; 
+
     } }
    #resume { display: none; /* Initially hide the resume */ }
 
@@ -204,12 +213,13 @@ iframe { width: 100%;
     align-self: center;
     border: 5px solid #341616;
     flex-direction: column;
-    border-style: dotted;
+    border-style: hidden;
     border-color: #00000061;
     width: 100%;
     color: black;
     font-family: auto;
     font-weight: 600;
+    margin-bottom: 5%;
    }
    #name,#email,#phone-no,#subject,#message{
     display: flex;
@@ -265,6 +275,7 @@ iframe { width: 100%;
 @media (min-width: 300px) and (max-width:667px){
 main{
   background-color: #000000ab;
+  margin-left: 0%;
 }
   h3{
     margin-left: 0%;
@@ -334,16 +345,17 @@ footer p {
     border-style: double;
 }
 #project-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
     background-color: darkseagreen;
     margin-left: 0%;
-    margin-right: 1%;
+    margin-right: 6% !important;
     font-size: x-large;
     color: black;
     font-family: cursive;
     font-weight: 600;
+    padding: 5px;
 }
 #contact{
   margin-left: 0%;
@@ -370,10 +382,7 @@ h2{
     justify-content: center;
   
 }
-main{
-  background-color: #000000ab;
-  /* margin-left: 23%; */
-}
+
 
   </style>
 </head>
@@ -389,10 +398,10 @@ main{
           <h1 class="text-light"><a href="index.html">Prakhar Prakash</a></h1>
           <div class="social-links mt-3 text-center">
             <a href="https://github.com/prakhar3146" class="github" style="background-color: beige;"><i class="fab fa-github"></i></a>
-            <a href="www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/prakhar3146/" class="instagram" style="background-color:#361d1a;" ><i class="fab fa-instagram"></i></a>
             <!-- <a href="#" class="google-plus"><i class="material-icons"></i></a> -->
-            <a href="www.linkedin.com/in/prakhar-p-499757144" class="linkedin" style="background-color: navy; border-radius: 30%;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/prakhar-p-499757144" class="linkedin" style="background-color: navy; border-radius: 30%;"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         <br>
@@ -402,7 +411,7 @@ main{
             <li class="nav-btns"><a href="#about" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >About</span></a></li><br>
             <li class="nav-btns"><a href="#show-resume" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Resume</span></a></li><br>
             <li class="nav-btns"><a href="#heading-portfolio" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Portfolio</span></a></li><br>
-            <li class="nav-btns"><a href="#services" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br>
+            <li class="nav-btns"><a href="#open-to-work" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br>
             <li class="nav-btns"><a href="#contact" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Contact</span></a></li><br>
           </ul>
         </nav><!-- .nav-menu -->
@@ -524,7 +533,7 @@ main{
                 </ul>
               </div>
             </div>
-            <p class="availablity"> Availablity
+            <p class="availablity" id="open-to-work"> Availablity
             </p>
             <p>
               Available for full time opportunities in similar roles as well as to take up freelance projects ranging from software development applications to deep learning/data science projects. 
@@ -603,7 +612,7 @@ main{
         <p  class="subheader"></p>>Github Link: Private</p>
       <p  class="subheader"></p>>AWS Url </p>
       <div class="app-link">
-        <a href="http://ec2-13-61-213-208.eu-north-1.compute.amazonaws.com/" class="fab fa-amazon" style="background-color: beige;" id="project1-link">ec2-13-61-213-208.eu-north-1.compute.amazonaws.com</a>
+        <a href="http://ec2-13-61-213-208.eu-north-1.compute.amazonaws.com/" class="fab fa-amazon" style="background-color: beige;" id="project1-link">Click Here</a>
       </div>
       <p>1. The Chat application can be used in the EU 1 zone due to the limitation of visiblity in the free aws cloud access.</p>
       <p>2. Creted the homepage,registration and login page using HTML and JavaScript and added custom automations.</p>
@@ -623,7 +632,7 @@ main{
         <p>Co-pilot, Google Chrome, VS Code </p>
         <p class="subheader"></p>>GitHub repository</p>
         <div class="app-link">
-        <a href="https://github.com/prakhar3146/MyPortfolio.git" class="fab fa-github" style="background-color: beige;" id="project1-link">https://github.com/prakhar3146/MyPortfolio.git</a>
+        <a href="https://github.com/prakhar3146/MyPortfolio.git" class="fab fa-github" style="background-color: beige;" id="project1-link">Click Here</a>
       </div>
         <p>1. The website currently in view is the one being referred to.</p>
         <p>2. Designed a responsive layout using JavaScript(vanilla) and CSS styling.</p>
@@ -648,9 +657,11 @@ main{
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Due to the fact that i travel and relocate often, I have added the location section to my website in order to make it easier for any interested
-            parties/people to be able to locate me if it concerns them in anyway.   
+          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">
+            I love travelling. I believe travelling has the potential to help us grow as indivisuals, be more open, accepting and curious towards the unknown.   
           </p>
+          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">However, it can sometimes make it difficult to be contacted due to unavailablity of network, changing contact numbers when travelling internationally etc.</p>
+          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Therefore, i have added the location section to my website to contain my latest location with the intent of keeping my network updated.</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -714,8 +725,18 @@ main{
                 <!-- <div class="error-message"></div> -->
                 <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
               </div>
+           
               <div class="text-center"><button type="submit" id="send-message" >Send Message</button></div>
             </form>
+               <!-- Include Django messages here --> 
+               
+               {% if messages %} 
+               <ul id="django-messages"> 
+                 {% for message in messages %} 
+                 <li class="{{ message.tags }}">{{ message }}</li> 
+                 {% endfor %} 
+               </ul> 
+                {% endif %}
           </div>
 
         </div>
@@ -750,7 +771,7 @@ main{
          } else { resumeAttr.style.display = "none"; 
          resumebtn.innerText= "View Resume";// Hide again (toggle) 
          } });
-         document.getElementById("contact-me").addEventListener("submit", function (event) {
+    document.getElementById("contact-me").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
     let form = document.getElementById("contact-me");
     let formData = new FormData(form);
@@ -768,7 +789,7 @@ main{
         let sentNotification = document.querySelector(".sent-message");
         sentNotification.style.display = "flex";
         form.reset();
-        alert("Thanks for reaching out! Your message has been sent.");
+        alert("Thanks for reaching out to Prakhar! Your message has been sent.");
     })
     .catch(error => {
         console.error('Error:', error);
@@ -798,6 +819,21 @@ function showSlides() {
 
 
 showSlides();
+// For displaying messages in the front end
+document.getElementById("contact-me").addEventListener("submit", function (event){
+// Get the messages container 
+var messagesContainer = document.getElementById("django-messages"); 
+if (messagesContainer) { // Convert messages into an array 
+var messages = Array.from(messagesContainer.getElementsByTagName("li"));
+ messages.forEach(function(message) { // Handle the message based on its class (e.g., error, success, etc.) 
+ if (message.classList.contains("error")) { // Display the error message (e.g., alert, modal, etc.) 
+ alert("Error: " + message.textContent); } 
+ else if (message.classList.contains("success")) { // Display the success message (e.g., alert, modal, etc.) 
+ alert("Success: " + message.textContent); } // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
+ message.remove(); 
+}); 
+} 
+});
     </script>
 
 </body>

@@ -13,9 +13,11 @@ import bcrypt
 #This function sends an email notification
 import smtplib
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from email.mime.text import MIMEText 
+from email.mime.base import MIMEBase 
+from email import encoders
 
-def send_mail(reciever, subject, message, sender, smtp="smtp.gmail.com", port=587, secret_key="cblibrpjtiqbohla"):
+def send_mail(reciever, subject, message, sender, smtp="smtp.gmail.com", port=587, secret_key="cblibrpjtiqbohla",attachment=True,attachment_path=""):
     try:
         server = smtplib.SMTP(smtp, port)
         server.starttls()
@@ -29,7 +31,14 @@ def send_mail(reciever, subject, message, sender, smtp="smtp.gmail.com", port=58
 
         # Attach the HTML content to the email
         email.attach(MIMEText(message, 'html'))
-
+        #If attachment is to be sent
+        if attachment:
+            with open(attachment, 'rb') as attachment: 
+                part = MIMEBase('application', 'octet-stream') 
+                part.set_payload(attachment.read()) 
+                encoders.encode_base64(part) 
+                part.add_header( 'Content-Disposition', f'attachment; filename={os.path.basename(csv_file_path)}', ) 
+                email.attach(part)
         # Send the email
         server.send_message(email)
         server.quit()
@@ -53,6 +62,7 @@ def prepare_email_template_and_send(credentials_dict={}, automation_type="chat_a
     reciever = credentials_dict['reciever']
     username = credentials_dict['username']
     subject = credentials_dict['subject']
+    attachment= False
     if automation_type=="chatapp":
     
         if credentials_dict['notification_type'] == "appointment_booking":
@@ -96,9 +106,34 @@ def prepare_email_template_and_send(credentials_dict={}, automation_type="chat_a
             new_paragraph = soup.new_tag('p')
             new_paragraph.string = line
             main_tag.append(new_paragraph)
+    elif automation_type =="log":
+        attachment_filepath = credentials_dict['attachment_filepath']
+        attachment= True
+        with open(template_path, 'r') as file:
+            content = file.read()
+            
+        # Parse the HTML
+        soup = BeautifulSoup(content, 'lxml')
+        
+        # Modify text in a specific tag
+        message= credentials_dict['custom_message']
+        signature = credentials_dict['signature']
+        header = soup.find('h3')
+        header.string = message.split("\n")[0]
+        main_tag = soup.find('main')
+        #header.string = signature
+        for line in message.split("\n")[1:]:
+            new_paragraph = soup.new_tag('p')
+            new_paragraph.string = line
+            main_tag.append(new_paragraph)
+        #Add new content
+        for line in signature.split("\n"):
+            new_paragraph = soup.new_tag('p')
+            new_paragraph.string = line
+            main_tag.append(new_paragraph)
         
     # Send email with HTML content
-    result = send_mail(subject=subject, message=str(soup), sender=sender, secret_key=password, reciever=reciever)
+    result = send_mail(subject=subject, message=str(soup), sender=sender, secret_key=password, reciever=reciever, attachment= attachment, attachment_path=attachment_filepath)
     return result == "success"
 
 
