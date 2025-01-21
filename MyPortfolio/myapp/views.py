@@ -11,7 +11,7 @@ import os
 from myapp.utils import format_headers
 #To fetch and store the IP and location of the user
 import pandas as pd
-import geoip2.database
+# import geoip2.database
 from django.http import JsonResponse
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
@@ -52,48 +52,50 @@ cursor =db.cursor()
 #     return render(request, "home.html")
 
 
-def get_client_ip(request):
-    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-    if x_forwarded_for:
-        ip = x_forwarded_for.split(',')[0]
-    else:
-        ip = request.META.get('REMOTE_ADDR')
-    return ip
+# def get_client_ip(request):
+#     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+#     if x_forwarded_for:
+#         ip = x_forwarded_for.split(',')[0]
+#     else:
+#         ip = request.META.get('REMOTE_ADDR')
+#     return ip
 
-def store_user_connection(request):
-    try:
-        filename = f"user_log_{dt.datetime.now().strftime('%Y-%m-%d')}.csv"
-        ip_address = get_client_ip(request)
-        # Get the absolute path of the file 
-        geo_file_path = os.path.abspath('myapp/GeoLite2-City.mmdb')
-        reader = geoip2.database.Reader(geo_file_path)
-        response = reader.city(ip_address)
+# def store_user_connection(request):
+    # try:
+    #     filename = f"user_log_{dt.datetime.now().strftime('%Y-%m-%d')}.csv"
+    #     ip_address = get_client_ip(request)
+    #     # Get the absolute path of the file 
+    #     geo_file_path = os.path.abspath('myapp/GeoLite2-City.mmdb')
+    #     reader = geoip2.database.Reader(geo_file_path)
+    #     response = reader.city(ip_address)
 
-        # Create a dictionary with the user data
-        user_data = {
-            'ip_address': [ip_address],
-            'city': [response.city.name],
-            'country': [response.country.name],
-            'latitude': [response.location.latitude],
-            'longitude': [response.location.longitude],
-            'timestamp': [pd.Timestamp.now()],
+    #     # Create a dictionary with the user data
+    #     user_data = {
+    #         'ip_address': [ip_address],
+    #         'city': [response.city.name],
+    #         'country': [response.country.name],
+    #         'latitude': [response.location.latitude],
+    #         'longitude': [response.location.longitude],
+    #         'timestamp': [pd.Timestamp.now()],
         
-        }
+    #     }
 
-        # Convert the dictionary to a DataFrame
-        df = pd.DataFrame(user_data)
+    #     # Convert the dictionary to a DataFrame
+    #     df = pd.DataFrame(user_data)
 
-        # Append the DataFrame to the CSV file
-        csv_file_path = filename#'path/to/user_connections.csv'
-        try:
-            df.to_csv(csv_file_path, mode='a', header=False, index=False)
-        except FileNotFoundError:
-            df.to_csv(csv_file_path, mode='w', index=False)
+    #     # Append the DataFrame to the CSV file
+    #     csv_file_path = filename#'path/to/user_connections.csv'
+    #     try:
+    #         df.to_csv(csv_file_path, mode='a', header=False, index=False)
+    #     except FileNotFoundError:
+    #         df.to_csv(csv_file_path, mode='w', index=False)
 
-        return True,csv_file_path    #JsonResponse({'status': 'success'})
-    except Exception as e:
-        print("Exception while fetching the geolocation data",e)
-        return False,""
+    #     return True,csv_file_path    #JsonResponse({'status': 'success'})
+    # except Exception as e:
+    #     print("Exception while fetching the geolocation data",e)
+    #     return False,""
+
+
 def about(request):
     return render(request,'about.html')
 
@@ -160,27 +162,27 @@ def contact(request):
         return response
         
     print("INSIDE GET METHOD OF VIEWS", request)
-    get_ip_address, filepath = store_user_connection(request)
-   # Get the current time 
-    now = dt.datetime.now().time() # Define the start and end times 
-    start_time = dt.time(8, 0) # 21:00 
-    end_time = dt.time(23, 58) # 23:58 # Check if the current time is within the range 
-    if start_time <= now <= end_time and get_ip_address:
-        query= """SELECT * FROM email_notification_creds ORDER BY id DESC LIMIT 1;"""
-        cursor.execute(query)
-        row= cursor.fetchone()
-        column_names = [description[0] for description in cursor.description]
-        cred_dict = dict(zip(column_names, row))
-        cred_dict['reciever']= "mr.prakhar@gmail.com"
-        # cred_dict['inviting_person']= name
-        cred_dict['notification_type']= "daily_visit_log"
-        cred_dict['attachment_filepath']= filepath
+#     get_ip_address, filepath = store_user_connection(request)
+#    # Get the current time 
+#     now = dt.datetime.now().time() # Define the start and end times 
+#     start_time = dt.time(8, 0) # 21:00 
+#     end_time = dt.time(23, 58) # 23:58 # Check if the current time is within the range 
+#     if start_time <= now <= end_time and get_ip_address:
+#         query= """SELECT * FROM email_notification_creds ORDER BY id DESC LIMIT 1;"""
+#         cursor.execute(query)
+#         row= cursor.fetchone()
+#         column_names = [description[0] for description in cursor.description]
+#         cred_dict = dict(zip(column_names, row))
+#         cred_dict['reciever']= "mr.prakhar@gmail.com"
+#         # cred_dict['inviting_person']= name
+#         cred_dict['notification_type']= "daily_visit_log"
+#         cred_dict['attachment_filepath']= filepath
         
-        cred_dict['custom_message']= """Please find the daily visit log attached to this email."""
-        cred_dict['signature'] = """\nRegards,\n Prakhar's Email BOT"""
-        cred_dict['subject'] = f"Daily log emailed and deleted at  : {dt.datetime.now()}"
-        cred_dict['signature'] = """\nRegards,\n Prakhar's Email BOT"""
-        send_notification= send_mail(cred_dict,automation_type="log")
-        print("Daily log sent")
+#         cred_dict['custom_message']= """Please find the daily visit log attached to this email."""
+#         cred_dict['signature'] = """\nRegards,\n Prakhar's Email BOT"""
+#         cred_dict['subject'] = f"Daily log emailed and deleted at  : {dt.datetime.now()}"
+#         cred_dict['signature'] = """\nRegards,\n Prakhar's Email BOT"""
+#         send_notification= send_mail(cred_dict,automation_type="log")
+        # print("Daily log sent")
 
     return render(request,'home.html') 
