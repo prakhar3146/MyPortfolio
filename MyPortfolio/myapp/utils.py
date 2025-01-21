@@ -60,7 +60,9 @@ def prepare_email_template_and_send(credentials_dict={}, automation_type="chat_a
     port = credentials_dict['port']
     host_domain = credentials_dict['host_domain_link']
     reciever = credentials_dict['reciever']
-    username = credentials_dict['username']
+    if automation_type!="log":
+
+        username = credentials_dict['username']
     subject = credentials_dict['subject']
     attachment= False
     if "attachment_filepath" not in credentials_dict.keys():
