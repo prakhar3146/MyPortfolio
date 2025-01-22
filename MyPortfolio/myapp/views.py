@@ -118,7 +118,7 @@ def contact(request):
             messages.error(request,"Invalid email address!")
             return render(request,'home.html') 
         if len(phone)!=13 or "+" not in phone:
-            messages.error(request,"Invalid Phone number.\n Please provide your mobile number followed by the country code. E.g. +49,+91")
+            messages.error(request,"Invalid Phone number.\n Please provide your country code followed by the mobile number. E.g. +49,+91")
           
             return render(request,'home.html')
         if len(subject.strip())<5:
