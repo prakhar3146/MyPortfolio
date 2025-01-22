@@ -159,7 +159,10 @@ def contact(request):
         response['Access-Control-Allow-Origin'] = '*'
         response["content-type"]= "application/json"
         print("The response being sent",response)
-        return response
+        # return response
+        # messages.success(request, "Your appointment has been successfully requested!")
+        # return render(request,'home.html')
+
         
     print("INSIDE GET METHOD OF VIEWS", request)
 #     get_ip_address, filepath = store_user_connection(request)

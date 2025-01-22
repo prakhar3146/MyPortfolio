@@ -91,13 +91,22 @@ main{
   #about-me .col-lg-4 {
     margin-bottom: 20px; /* Add spacing between the image and content */
   }
+#skillset{
+  display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 0%;
+    flex-wrap: nowrap;
+}
 }
 /* Styling the #about-me section */
 #about-me {
   display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 50%;
+    gap: 30%;
 }
 
 #about-me .col-lg-4 {
@@ -275,8 +284,8 @@ iframe { width: 100%;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 24%;
-    border: 15px solid azure;
-    border-style: double;
+    border: 15px solid #444444;
+    border-style: ridge;
 }
 
 @media (min-width: 300px) and (max-width:667px){
@@ -389,13 +398,30 @@ h2{
     justify-content: center;
   
 }
-#django-messages .error {
+.error {
     color: #f4f4f4;
     border-radius: revert;
     background-color: #ff3030;
     border-style: dotted;
 }
-
+.success {
+    color: #000000 !important;
+    border-radius: revert !important;
+    background-color: revert;
+    border-style: dotted !important;
+}
+.personal-info .info{
+  background-color: revert;
+    width: max-content;
+    font-weight: 600;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+}
   </style>
 </head>
 <body>
@@ -406,7 +432,7 @@ h2{
       <div class="d-flex flex-column">
   
         <div class="profile">
-          <img src="static/images/linkedin dp.jpg" alt="" class="img-fluid rounded-circle">
+          <img src="static/images/linkedin dp.jpg" alt="Profile picture unavailable" class="img-fluid rounded-circle">
           <h1 class="text-light"><a href="index.html">Prakhar Prakash</a></h1>
           <div class="social-links mt-3 text-center">
             <a href="https://github.com/prakhar3146" class="github" style="background-color: beige;"><i class="fab fa-github"></i></a>
@@ -433,7 +459,7 @@ h2{
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
       <div class="hero-container" data-aos="fade-in">
         <h1>What I do</h1>
-        <p class="initial-text">I am a <span class="typed" data-typed-items="UI Designer, Web-Developer, Freelancer, Marathoner, Digital Nomad"></span></p>
+        <p class="initial-text">I am a <span class="typed" data-typed-items="Designer, Developer, Writer, Freelancer, Marathoner, Digital Nomad"></span></p>
       </div>
     </section><!-- End Hero -->
     <main>
@@ -449,8 +475,8 @@ h2{
          <p>In my previous role, I thrived in collaborative team environments and took on various responsibilities, from designing and implementing backend components to developing end-to-end full-stack applications.</p>
          <p>My adaptability and eagerness for continuous learning have constantly driven me to seek innovative approaches and stay updated with the latest industry trends.</p> 
           <p>I am a thorough teamplayer and value my relationships with every indivisual that i interact with, while maintaing professionalism and with an empathetic and friendly approach.</p>
-          <p>I recently decided to take a leap of faith and resign from my existing position at my previous organiztion to seek better opportunities that align with my personal and professional goals and have a better learning curve and pay. </p>
-          <p>I am currently exploring opportunities in Europe or remote positions worldwide, that allow me to be closer to my partner, who is based in Germany.</p>
+          <p>I recently decided to take a leap of faith and resign from my existing position at my previous organiztion to seek opportunities that align with my long term personal and professional goals and have a better learning curve and incentives. </p>
+          <p>I am currently exploring opportunities in Europe or remote positions worldwide.</p>
           <p>This decision stems from my commitment to nurturing both my career and personal relationships, balancing professional growth with personal happiness.</p> 
           
           <p>If you're seeking a passionate developer who brings expertise, enthusiasm, and a love for coding to the table, feel free to connect with me. I'm excited about the possibilities that lie ahead and am looking forward to contributing my skills to dynamic new projects.</p>
@@ -461,38 +487,38 @@ h2{
             <img src="static/images/image1.jpeg" class="img-fluid" alt="image failed to load">
             <p id="license">Licenses  &amp; Certifications</p>
             <p class="cert_description">IBM - ML with Python</p>
-        <button class="show-more" id="view-cert1">View Certificate</button>
+        <button class="view-more" id="view-cert1">View Certificate</button>
         <div class="certificate" id="certificate1">
           <iframe src="static/pdf/IBM-certificate.pdf" frameborder="0" id="item-1"></iframe>
        </div>
        <p class="cert_description">PG program in Data Science, ML and Neural</p>
-       <button class="show-more" id="view-cert2">View Certificate</button>
+       <button class="view-more" id="view-cert2">View Certificate</button>
        <div class="certificate" id="certificate2">
         <iframe src="static/pdf/data trained_certification1.pdf" frameborder="0" id="item-2"></iframe>
         </div>
         <p class="cert_description">Deep Learning</p>
-        <button class="show-more" id="view-cert3">View Certificate</button>
+        <button class="view-more" id="view-cert3">View Certificate</button>
         <div class="certificate" id="certificate3">
           <iframe src="static/pdf/deep_learning_cretificate.pdf" frameborder="0" id="item-3"></iframe>
         </div>
         <p class="cert_description">Deep NLP</p>
-        <button class="show-more" id="view-cert4">View Certificate</button>
+        <button class="view-more" id="view-cert4">View Certificate</button>
         <div class="certificate" id="certificate4">
           <iframe src="static/pdf/deep_NLP_certificate.pdf" frameborder="0" id="item-4"></iframe>
         </div>
         <p class="cert_description">Tableau</p>
-        <button class="show-more" id="view-cert5">View Certificate</button>
+        <button class="view-more" id="view-cert5">View Certificate</button>
         <div class="certificate" id="certificate5">
           <iframe src="static/pdf/tableau_certificate.pdf" frameborder="0" id="item-5"></iframe>
         </div>
         <p class="cert_description">ML Projects</p>
-        <button class="show-more" id="view-cert6">View Certificate</button>
+        <button class="view-more" id="view-cert6">View Certificate</button>
         <div class="certificate" id="certificate6">
           <iframe src="static/pdf/ML_projects_certificate.pdf" frameborder="0" id="item-6"></iframe>
         </div>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Skillset &amp; Tools</h3>
+            <h3>Skillset &amp; Education</h3>
             
 
               <div class="skillset" id="skillset">
@@ -557,24 +583,39 @@ h2{
               
             </div>
             </div><br>
+            <h6 id="random-info">Other relevant information</h6>
             <div class="row" id="personal-information">
-              <p>Other relevant information</p>
-              <div class="col-lg-6">
-                <ul class="personal-info" >
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Date of birth :</strong> <br><span>27 March 1994</span></li>
-                  <!-- <li class="info" ><i class="bi bi-chevron-right"></i> <strong>linkedin :</strong><br> <span>https://www.linkedin.com/in/prakhar-p-499757144</span></li> -->
-                  <!-- <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Phone :</strong> <br><span>+4915560129022</span></li> -->
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>University :</strong> <br><span>Mewar University, Rajsthan</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="personal-info" >
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Age :</strong><br> <span>30</span></li>
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Degree :</strong><br> <span>B.A(General)</span></li>
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <br><span>mr.prakhar@gmail.com</span></li>
-                  <li class="info" ><i class="bi bi-chevron-right"></i> <strong>Freelance :</strong><br> <span>Available</span></li>
-                </ul>
-              </div>
+           
+            <div class="column1" id="info-left">
+            <p class="row1" style="font-family: 'FontAwesome';letter-spacing: 5px;text-decoration: underline;
+            margin-bottom: 7%; 
+            padding: 4%;
+            border: px solid;">>DOB </p>
+            <p class="row1">27/03/1994</p>
+            <p class="row2" style="font-family: 'FontAwesome';
+            letter-spacing: 5px;
+            text-decoration: underline;
+            /* margin-bottom: 7%; */
+            padding: 4%;
+            border: px solid;">>linkedin</p>
+            <span class="row2" href="https://www.linkedin.com/in/prakhar-p-499757144">https://www.linkedin.com/in/prakhar-p-499757144</span>
+            </div>
+            <div class="column2" id="info-right">
+                <p class="row1" style="font-family: 'FontAwesome';
+                letter-spacing: 5px;
+                text-decoration: underline;
+                /* margin-bottom: 7%; */
+                padding: 4%;
+                border: px solid;">>University </p>
+                <p class="row1">Mewar University, Chittorgarh, Rajsthan</p>
+                <p class="row2" style="font-family: 'FontAwesome';
+                letter-spacing: 5px;
+                text-decoration: underline;
+                /* margin-bottom: 7%; */
+                padding: 4%;
+                border: px solid;">>Degree </p>
+                <p class="row2">Bachelor of Art - General</p>
+            </div>  
             </div>
             <p class="availablity" id="open-to-work"> Availablity
             </p>
@@ -623,7 +664,7 @@ h2{
     <img src="static/images/image8.jpg"    alt="Failed to load image"  id="slide7"> 
   </div>
   <div class="mySlides fade"> 
-    <img src="static/images/image9.jpeg"    alt="Failed to load image"  id="slide7"> 
+    <img src="static/images/image9.jpeg"    alt="Failed to load image"  id="slide8"> 
   </div>
   </div>
      <br> 
@@ -664,13 +705,14 @@ h2{
         <a href="http://ec2-13-61-213-208.eu-north-1.compute.amazonaws.com/" class="fab fa-amazon" style="background-color: beige;" id="project1-link">Click Here</a>
       </div>
       <p>1. The Chat application can be used in the EU 1 zone due to the limitation of visiblity in the free aws cloud access.</p>
-      <p>2. Creted the homepage,registration and login page using HTML and JavaScript and added custom automations.</p>
+      <p>2. Creted the homepage,registration, login page and the messages page using HTML and JavaScript and added custom automations.</p>
       <p>3. Maintained user data security by using bycrypt to store sensitive information in an encrypted format in the MySQL database.</p>
       <p>4. Maintained positioning and styling using CSS. </p>
-      <p>5. Added custom automations for important notifications like registration success, using Python and smtp library.</p>
-      <p>6. Maintained active sessions management using MySQL and Python.</p>
-      <p>7. Maintained version control using github.</p>
-      <p>8. Deployed the application on AWS cloud post testing.</p>
+      <p>5. Maintained responsiveness of the application using "media queries" across Smartphones, Tablets and Desktops. </p>
+      <p>6. Added custom automations for important notifications like registration success, using Python and smtp library.</p>
+      <p>7. Maintained active sessions management using MySQL and Python.</p>
+      <p>8. Maintained version control using github.</p>
+      <p>9. Deployed the application on AWS cloud post testing.</p>
       </div><br>
        <div class="projects" id="project2"><h4>MyPortfolio</h4>
         <p class="subheader"></p>>Overview </p>
@@ -686,10 +728,11 @@ h2{
         <p>1. The website currently in view is the one being referred to.</p>
         <p>2. Designed a responsive layout using JavaScript(vanilla) and CSS styling.</p>
         <p>3. Maintained version control through github.</p>
-        <p>4. Added custom automations to send email notifications confirmaing the request generation, everytime the contact form is submitted.</p>
-        <p>5. Protected sensitive information like database credentials, allowed host urls etc. using environment variables.</p>
-        <p>6. Deployed the website after building it on www.render.com</p>
-        <p>7. Hosted the website on my custom domain.</p>
+        <p>4. Maintained responsiveness of the application using "media queries" across Smartphones, Tablets and Desktops. </p>
+        <p>5. Added custom automations to send email notifications confirmaing the request generation, everytime the contact form is submitted.</p>
+        <p>6. Protected sensitive information like database credentials, allowed host urls etc. using environment variables.</p>
+        <p>7. Deployed the website after building it on www.render.com</p>
+        <p>8. Hosted the website on my custom domain.</p>
         
 
     </div><br>
@@ -707,7 +750,7 @@ h2{
         <div class="section-title">
           <h2>Contact</h2>
           <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">
-            I love travelling. I believe travelling has the potential to help us grow as indivisuals, be more open, accepting and curious towards the unknown.   
+            I believe travelling has the potential to help us grow as indivisuals, be more open, accepting and curious towards the unknown.   
           </p>
           <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">However, it can sometimes make it difficult to be contacted due to unavailablity of network, changing contact numbers when travelling internationally etc.</p>
           <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Therefore, i have added the location section to my website to contain my latest location with the intent of keeping my network updated.</p>
@@ -865,7 +908,7 @@ h2{
     });
 });
 
-let slideIndex = 0;
+var slideIndex = 0;
 
 
 function showSlides() {
@@ -882,7 +925,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 6000); // Change image every 3 seconds
+    setTimeout(showSlides, 4000); // Change image every 3 seconds
 }
 
 
@@ -892,7 +935,7 @@ var form = document.getElementById("contact-me")
 form.addEventListener("submit", function (event){
 // Get the messages container 
 event.preventDefault(); // Prevent default form submission
-var messagesContainer = document.getElementById("django-messages"); 
+var messagesContainer = document.querySelector("django-messages"); 
 if (messagesContainer) { // Convert messages into an array 
 var messages = Array.from(messagesContainer.getElementsByTagName("li"));
  messages.forEach(function(message) { // Handle the message based on its class (e.g., error, success, etc.) 
@@ -904,41 +947,113 @@ form.reset()
 } 
 
  else if (message.classList.contains("success")) { // Display the success message (e.g., alert, modal, etc.) 
-//  alert("Success: " + message.textContent); } // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
- message.remove(); 
- form.reset()
+        alert("Your message was sent to Prakhar!");  // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
+        console.log("Inside here")
+        console.log(message)
+        message.style.backgroundColor= "none";
+        message.style.border= "0px";
+        message.remove(); 
+        form.reset()
  }
 }); 
 } 
 });
-// Clearing all the messages everytime a website is loaded
-// Function to clear messages 
-//  function clearMessages() { 
-// const messagesContainer = document.getElementById('django-messages'); 
-// if (messagesContainer) { messagesContainer.innerHTML = ''; } 
-// } // Clear messages when the page loads 
-// window.onload = clearMessages;
     </script>
-    <script>
-//For the certificate buttons
-function toggleResume(resumebtn,resumeAttr) { 
-  // const resumebtn = document.getElementById(id); 
-  // const resumeAttr = document.getElementById("resume"); 
-  if (resumeAttr.style.display === "none" || resumeAttr.style.display === "") { 
-    resumeAttr.style.display = "flex"; // Display the resume when clicked 
-    resumeAttr.style.width = "100%"; 
-    resumeAttr.style.height = "100%"; 
-    resumebtn.innerText = "Hide Resume"; }
-     else { resumeAttr.style.display = "none";
-      resumebtn.innerText = "View Resume"; // Hide again (toggle) 
-     } }
-     const certbtn = document.getElementById("view-cert1"); 
-     const certAttr= document.getElementById("certificate1");
-     certbtn.addEventListener("click", function() { 
-      toggleResume(certbtn,certAttr)
-     }
-     );
-    </script>
+   <script>
+  //cert 1
+document.getElementById("view-cert1").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert1"); 
+      const resumeAttr= document.getElementById("certificate1")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+//cert 2
+document.getElementById("view-cert2").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert2"); 
+      const resumeAttr= document.getElementById("certificate2")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+  //cert 3
+  document.getElementById("view-cert3").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert3"); 
+      const resumeAttr= document.getElementById("certificate3")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+
+  //cert 4
+  document.getElementById("view-cert4").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert4"); 
+      const resumeAttr= document.getElementById("certificate4")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+
+  //cert 5
+  document.getElementById("view-cert5").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert5"); 
+      const resumeAttr= document.getElementById("certificate5")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+
+  //cert6
+  document.getElementById("view-cert6").addEventListener("click", function() { 
+      const resumebtn = document.getElementById("view-cert6"); 
+      const resumeAttr= document.getElementById("certificate6")
+      if (resumeAttr.style.display === "none") {
+         resumeAttr.style.display = "flex"; // Display the resume when clicked 
+         resumeAttr.style.width = "100%" ;
+         resumeAttr.style.minWidth = "fit-content" ;
+         resumeAttr.style.height = "100%" ;
+         resumeAttr.style.border = "5px solid black";
+         resumeAttr.style.borderStyle = "dashed";
+         resumebtn.innerText = "Hide Ceritficate"; 
+         } else { resumeAttr.style.display = "none"; 
+         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
+         } });
+   </script>
 
 </body>
 </html>
