@@ -104,6 +104,7 @@ def contact(request):
         print("INSIDE POST METHOD OF VIEWS")
         name = request.POST.get("name")
         email = request.POST.get("email")
+        country_code = request.POST.get("countrycode")
         phone  = request.POST.get("phone")
         subject = request.POST.get("subject")
         message = request.POST.get("message")
@@ -114,18 +115,23 @@ def contact(request):
         else:
             messages.error(request,"Length of the name should be greater than 2 and less than 30 characters ")
             return render(request,'home.html') 
-        if "@" not in email or ".com" not in email:
+        if "@" not in email :  #or ".com" not in email
             messages.error(request,"Invalid email address!")
             return render(request,'home.html') 
-        if len(phone)!=13 or "+" not in phone:
-            messages.error(request,"Invalid Phone number.\n Please provide your country code followed by the mobile number. E.g. +49,+91")
+        if  not re.fullmatch(r"[+]\d{2}", country_code):
+            messages.error(request,"Invalid country code.\n Please provide your country code . E.g. +49,+91")
           
             return render(request,'home.html')
-        if len(subject.strip())<5:
+        if not re.fullmatch(r"\d{10}", phone):
+        # if len(phone)!=13 or "+" not in phone:
+            messages.error(request,"Invalid Phone number.\n Please provide your 10 digit mobile number. E.g. +49,+91")
+          
+            return render(request,'home.html')
+        if len(format_headers(subject, remove_punc= True))<5:
             messages.error(request, "Invalid subject matter.Please provide a short descriptive reason to request an appointment!")
             return render(request,'home.html')
 
-        ins = Contact(name=name, mobile = phone, email=email,subject= subject, content = message)
+        ins = Contact(name=name, mobile = country_code+phone, email=email,subject= subject, content = message)
         ins.save()
         messages.success(request, "Thanks for reaching out! \nYour message has been sent to Prakhar and he will be contacting you asap. \n Good Day! ")
         print("Data saved")
@@ -159,7 +165,7 @@ def contact(request):
         response['Access-Control-Allow-Origin'] = '*'
         response["content-type"]= "application/json"
         print("The response being sent",response)
-        # return response
+        return response
         # messages.success(request, "Your appointment has been successfully requested!")
         # return render(request,'home.html')
 

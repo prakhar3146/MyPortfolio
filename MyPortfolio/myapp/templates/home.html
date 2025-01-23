@@ -237,7 +237,7 @@ iframe { width: 100%;
     font-weight: 600;
     margin-bottom: 5%;
    }
-   #name,#email,#phone-no,#subject,#message{
+   #name,#email,#phone-no,#subject,#message,#country-code{
     display: flex;
     align-self: center;
     border: 5px solid #0f0f0f;
@@ -389,7 +389,7 @@ footer p {
 
 h2{
   color: #d1d1d1;
-    font-size: xx-large;
+  font-size: xxx-large;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
     margin-top: 2%;
     padding: 10px;
@@ -486,12 +486,12 @@ h2{
           <div class="col-lg-4" data-aos="fade-right">
             <img src="static/images/image1.jpeg" class="img-fluid" alt="image failed to load">
             <p id="license">Licenses  &amp; Certifications</p>
-            <p class="cert_description">IBM - ML with Python</p>
+            <p class="cert_description">ML with Python - IBM</p>
         <button class="view-more" id="view-cert1">View Certificate</button>
         <div class="certificate" id="certificate1">
           <iframe src="static/pdf/IBM-certificate.pdf" frameborder="0" id="item-1"></iframe>
        </div>
-       <p class="cert_description">PG program in Data Science, ML and Neural</p>
+       <p class="cert_description">PG program in Data Science, ML and Neural Networks</p>
        <button class="view-more" id="view-cert2">View Certificate</button>
        <div class="certificate" id="certificate2">
         <iframe src="static/pdf/data trained_certification1.pdf" frameborder="0" id="item-2"></iframe>
@@ -607,7 +607,7 @@ h2{
                 /* margin-bottom: 7%; */
                 padding: 4%;
                 border: px solid;">>University </p>
-                <p class="row1">Mewar University, Chittorgarh, Rajsthan</p>
+                <p class="row1">Mewar University, Chittorgarh, Rajsthan, India</p>
                 <p class="row2" style="font-family: 'FontAwesome';
                 letter-spacing: 5px;
                 text-decoration: underline;
@@ -615,6 +615,20 @@ h2{
                 padding: 4%;
                 border: px solid;">>Degree </p>
                 <p class="row2">Bachelor of Art - General</p>
+                <p class="row1" style="font-family: 'FontAwesome';
+                letter-spacing: 5px;
+                text-decoration: underline;
+                /* margin-bottom: 7%; */
+                padding: 4%;
+                border: px solid;">>Nationality</p>
+                <p class="row1">Indian</p>
+                <p class="row2" style="font-family: 'FontAwesome';
+                letter-spacing: 5px;
+                text-decoration: underline;
+                /* margin-bottom: 7%; */
+                padding: 4%;
+                border: px solid;">>Hobbies </p>
+                <p class="row2">Reading, Writing, Coding, Hiking, Running</p>
             </div>  
             </div>
             <p class="availablity" id="open-to-work"> Availablity
@@ -800,8 +814,12 @@ h2{
                   <input type="email" class="form-control" name="email"  placeholder="Enter your email here"  id="email" required>
                 </div>
                 <div class="form-group col-md-6">
+                  <label for="countrycode">Country code</label>
+                  <input type="text" name="countrycode" class="form-control" placeholder="Enter your country code. E.g. +49" id="country-code" required>
+                </div>
+                <div class="form-group col-md-6">
                   <label for="name">Your Phone</label>
-                  <input type="text" name="phone" class="form-control" placeholder="Enter your mobile no with country code" id="phone-no" >
+                  <input type="text" name="phone" class="form-control" placeholder="Enter your 10 digit mobile no " id="phone-no" required>
                 </div>
               </div>
               <div class="form-group">
@@ -889,8 +907,10 @@ h2{
                 let sentNotification = document.querySelector(".sent-message");
                 sentNotification.style.display = "flex";
                 form.reset();
-                alert(`Thanks for reaching out to Prakhar! Your message has been sent: ${data.message}`);
-            });
+                console.log("here1")
+                // alert(`Thanks for reaching out to Prakhar! Your message has been sent: ${data.message}`);
+                alert('Thanks for reaching out to Prakhar. \nYour message has been sent! \nYou will recieve a confirmation email.')
+              });
         } else if (contentType && contentType.includes("text/html")) {
             return response.text().then(html => {
                 // Handle HTML response
