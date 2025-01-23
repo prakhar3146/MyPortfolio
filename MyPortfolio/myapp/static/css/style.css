@@ -52,7 +52,10 @@ body {
         font-size: 28px;
         line-height: 36px;
     }
+
+
 }
+
 
 #header {
     position: fixed;
@@ -465,6 +468,8 @@ li {
         font-size: 28px;
         line-height: 36px;
     }
+
+
 }
 
 #hero {
@@ -562,6 +567,8 @@ li {
         font-size: 28px;
         line-height: 36px;
     }
+
+
 }
 
 @-webkit-keyframes animate-loading {
@@ -598,7 +605,7 @@ strong {
     justify-content: center;
     padding-left: 20px;
     margin-block-start: 30px;
-    margin-left: 24%;
+    /* margin-left: 24%; */
     background: darkseagreen;
     letter-spacing: 1px;
     font-family: sans-serif;
@@ -729,6 +736,8 @@ body {
         background-attachment: scroll; /* Prevents 'fixed' background from being janky on mobile */
         background-size: cover;
     }
+
+
 }
 
 
@@ -854,6 +863,7 @@ img {
     color: rgb(62, 28, 24)
 }
 @media (max-width: 600px) {
+
 main{
         background-color: #000000ab;
         margin-left: 0%;
@@ -930,9 +940,9 @@ main{
     flex-wrap: nowrap;
     align-items: center;
 }
-#myresume{
+/* #myresume{
     margin-left: 0%;
-}
+} */
 #project-header{
     margin-left: 0%;
 }
@@ -950,8 +960,10 @@ main{
 }
 }
 @media (min-width: 350px) and (max-width:667px){
-    
-
+    /* #download-resume{
+        align-items: flex-start;
+    } */
+ 
 main{
         background-color: #000000ab;
         margin-left: 0%;
@@ -971,9 +983,9 @@ main{
     /* font-family: sans-serif; */
     font-family: 'Merriweather', serif;
 }
-#myresume{
+/* #myresume{
     margin-left: 0%;
-}
+} */
 .slideshow-container{
     position: relative;
     max-width: 1000px;
@@ -1073,9 +1085,9 @@ main{
         /* font-family: sans-serif; */
         font-family: 'Merriweather', serif;
     }
-    #myresume{
+    /* #myresume{
         margin-left: 0%;
-    }
+    } */
     .slideshow-container{
         position: relative;
         max-width: 1000px;
@@ -1175,9 +1187,9 @@ main{
         flex-wrap: nowrap;
         align-items: center;
     }
-    #myresume{
+    /* #myresume{
         margin-left: 0%;
-    }
+    } */
     #project-header{
         margin-left: 0%;
     }
@@ -1283,7 +1295,12 @@ footer p {
      margin-right: 0px;
      display: flex;
      align-items: initial;
-} } 
+} 
+/* #download-resume{
+    align-items: flex-start;
+} */
+
+} 
 
 .subtype p{
     font-size: larger;
@@ -1337,6 +1354,7 @@ border: none;
 { 
  iframe { width: 100%; height: 90vh; 
  } 
+
  body {
     background-image: url("../images/landing.jpg") !important;
     background-size: 100%;
@@ -1387,9 +1405,9 @@ main{
     margin-right: 25%;
     font-size: xxx-large;
 }
-#myresume{
+/* #myresume{
     margin-left: 0%;
-}
+} */
 .slideshow-container{
     position: relative;
     max-width: 1000px;
@@ -1472,7 +1490,7 @@ footer p {
 }
 .view-more{
 
-    color: whitesmoke;
+    
     background-color: black;
     border-width: thick;
     border-color: azure;
@@ -1482,12 +1500,18 @@ footer p {
     box-shadow: aliceblue;
     text-shadow: 0 0 white;
     height: 50px;
+    border: 5px solid azure;
+    text-decoration: none;
     
 }
 .view-more:hover{
     background-color: aquamarine;
     color: black;
 }
+/* #download-resume:hover{
+    background-color: aquamarine;
+    color: black;
+} */
 .cert_description{
     font-family: emoji;
     font-weight: 600;
@@ -1545,6 +1569,9 @@ footer p {
         justify-content: center;
     
     }
+
+
+
     .profile{
         display: flex;
         flex-direction: column;
@@ -1566,6 +1593,9 @@ footer p {
         margin-bottom: 8%;
         padding: 9px;
     }
+    /* #download-resume{
+        align-items: flex-start;
+    } */
 }
 .subheader{
     text-decoration: none;
@@ -1574,6 +1604,8 @@ footer p {
     
  iframe { width: 100%; height: 90vh; 
  } 
+
+
  body {
     background-image: url("../images/landing.jpg") !important;
     background-size: 100%;
@@ -1631,9 +1663,9 @@ main{
     margin-right: 25%;
     font-size: xxx-large;
 }
-#myresume{
+/* #myresume{
     margin-left: 0%;
-}
+} */
 .slideshow-container{
     position: relative;
     max-width: 1000px;
@@ -1699,5 +1731,43 @@ footer p {
     font-family: emoji;
     font-style: oblique;
 }
+/* #download-resume{
+    align-items: flex-start;
+} */
+/* #download-resume{
 
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-around;
+    background-color: black;
+    border-width: thick;
+    border-color: azure;
+    color: darkgray;
+    font-stretch: expanded;
+    font-size: inherit;
+    box-shadow: aliceblue;
+    text-shadow: 0 0 white;
+    height: 50px;
+    border: 5px solid azure;
+    text-decoration: none;
+    
+} */
 }
+/* #download-resume{
+
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-around;
+    background-color: black;
+    border-width: thick;
+    border-color: azure;
+    color: darkgray;
+    font-stretch: expanded;
+    font-size: inherit;
+    box-shadow: aliceblue;
+    text-shadow: 0 0 white;
+    height: 50px;
+    border: 5px solid azure;
+    text-decoration: none;
+    
+} */

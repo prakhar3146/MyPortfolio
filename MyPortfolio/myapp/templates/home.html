@@ -218,6 +218,8 @@ iframe { width: 100%;
 
     } }
    #resume { display: none; /* Initially hide the resume */ }
+
+
 .certificate{
   display: none;
 }
@@ -646,7 +648,7 @@ h2{
       <section class="resume" id="myresume">
       <button id="show-resume" class="show-more">View Resume</button>
       <div class="resume" id="resume">
-        <iframe src="static/pdf/Prakhar Prakash's Resume.pdf" frameborder="0" id="my-resume"></iframe>
+        <iframe src="static/pdf/Prakhar Prakash's Resume.pdf" frameborder="0" id="my-resume" class="resume-hidden"></iframe>
         <!-- <a href="static/pdf/Prakhar Prakash's Resume.pdf"  id="download-resume"   download>Download Resume</a> -->
       </div>
     </section>
@@ -793,7 +795,7 @@ h2{
               </div>
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.6705920570125!2d6.66490117598786!3d51.427477471795214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8bc14c4b92693%3A0x224e7703406356d7!2sHeimbergstra%C3%9Fe%207%2C%2047228%20Duisburg!5e0!3m2!1sen!2sde!4v1737382435829!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.202149703861!2d6.66773358811914!3d51.41771313262444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171cae2faf6e6eb%3A0x108f06c7cbbac899!2sHolz%20%26%20Stein!5e0!3m2!1sde!2sde!4v1737621872093!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
@@ -878,9 +880,12 @@ h2{
       const resumebtn = document.getElementById("show-resume"); 
       const resumeAttr= document.getElementById("resume")
       if (resumeAttr.style.display === "none") {
+        
+        //  resumeAttr.classList.remove("resume-hidden");
          resumeAttr.style.display = "flex"; // Display the resume when clicked 
          resumeAttr.style.width = "100%" ;
          resumeAttr.style.height = "100%" ;
+         resumeAttr.style.overflow = "auto";
          resumebtn.innerText = "Hide Resume"; 
          } else { resumeAttr.style.display = "none"; 
          resumebtn.innerText= "View Resume";// Hide again (toggle) 
