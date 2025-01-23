@@ -82,7 +82,7 @@ body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #531414;
+    border: 8px solid #949494;
 }
 
 .rounded-circle {
@@ -1753,21 +1753,62 @@ footer p {
     
 } */
 }
-/* #download-resume{
+/* Basic styling for the chat popup */
+.chat-popup {
+    top: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    overflow: auto;
+}
 
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat-body {
+    /* padding: 10px; */
+    border: 8px solid #a2a2ff;
+    margin-top: 5%;
+    padding: 5%;
+    border-style: ridge;
+}
+
+.chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.chat-btn:hover {
+    background-color: #0056b3;
+}
+.chat-body p:first-child{
+    font-size: x-large;
+    font-weight: 600;
+    font-family: cursive;
+}
+.address,.email,.phone,.whatssap{
     display: flex;
-    align-items: first baseline;
-    justify-content: space-around;
-    background-color: black;
-    border-width: thick;
-    border-color: azure;
-    color: darkgray;
-    font-stretch: expanded;
-    font-size: inherit;
-    box-shadow: aliceblue;
-    text-shadow: 0 0 white;
-    height: 50px;
-    border: 5px solid azure;
-    text-decoration: none;
-    
-} */
+    align-content: baseline;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.col-lg-5 d-flex align-items-stretch{
+    padding-left: 5%;
+}

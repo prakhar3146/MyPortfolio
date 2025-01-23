@@ -253,6 +253,9 @@ iframe { width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
    }
+   [class^="col-lg-5"]{
+    padding-left: 5% !important;
+   }
 .github{
     background-color: beige;
 }
@@ -424,6 +427,9 @@ h2{
   display: flex;
   flex-direction: row;
 }
+.col-lg-5 d-flex align-items-stretch{
+    padding-left: 5%;
+}
   </style>
 </head>
 <body>
@@ -435,7 +441,8 @@ h2{
   
         <div class="profile">
           <img src="static/images/linkedin dp.jpg" alt="Profile picture unavailable" class="img-fluid rounded-circle">
-          <h1 class="text-light"><a href="index.html">Prakhar Prakash</a></h1>
+          <!-- <h1 class="text-light"><a href="myapp/templates/about.html">Prakhar Prakash</a></h1> -->
+          <h1 class="text-light">Prakhar Prakash</h1>
           <div class="social-links mt-3 text-center">
             <a href="https://github.com/prakhar3146" class="github" style="background-color: beige;"><i class="fab fa-github"></i></a>
             <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
@@ -466,6 +473,30 @@ h2{
     </section><!-- End Hero -->
     <main>
     <section id="about" class="about">
+      <div id="chat-popup" class="chat-popup">
+        <div class="chat-header" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i>  Hide Noticeboard!</div>
+        <div class="chat-body">
+            <p>Welcome to Prakhar's noticeboard!</p>
+            <p>Dear guest,</p>
+            <p>First of all, thank you for visiting my website.</p>
+            <p>You can find the latest announcements and notifications by me over here :)</p>
+            <p>Notice : </p>
+            <p>If you are a recruiter and were unable to contact me on my Indian number(+919625708656),</p>
+            <p>It is my humble request to kindly call on on whatssap using the same number.</p>
+            <p>Alternatively you can call me on my German contact but you might be subject to isd charges.</p>
+            <p>If not, then please drop me a message in the contact section of this website and i will revert on priority.</p>
+            <p>I appreciate you making the effort and assure you that I be worth it :)</p>
+            <p>Wish you a great day!</p>
+            <!-- Add your chat content here -->
+        </div>
+    </div>
+
+    <button id="chat-btn" class="chat-btn" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i> View Noticeboard</button>
+
+    
+
+
+
       <div class="container" data-aos="fade-in">
         <div class="section-title">
           <h2>About</h2>
@@ -777,23 +808,31 @@ h2{
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="contact-info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Location:</h4>
                 <p>Duisburg, Germany</p>
               </div>
-
+              
+              
+              
               <div class="email">
-                <i class="bi bi-envelope"></i>
+                <!-- <i class="bi bi-envelope"></i> -->
+                <i class="fas fa-envelope"></i>
                 <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;" >Email:</h4>
                 <p>mr.prakhar@gmail.com</p>
               </div>
 
               <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Call : </h4>
+                <!-- <i class="bi bi-phone"></i> -->
+                <i class="fas fa-phone-alt"></i>
+                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Mobile  </h4>
                 <p>+4915560129022, +919625708656</p>
               </div>
-
+              <div class="whatssap">
+                <i class="fab fa-whatsapp"></i>
+                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Whatssap : </h4>
+                <p>+919625708656</p>
+              </div>
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.202149703861!2d6.66773358811914!3d51.41771313262444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171cae2faf6e6eb%3A0x108f06c7cbbac899!2sHolz%20%26%20Stein!5e0!3m2!1sde!2sde!4v1737621872093!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -1078,6 +1117,21 @@ document.getElementById("view-cert2").addEventListener("click", function() {
          } else { resumeAttr.style.display = "none"; 
          resumebtn.innerText= "View Certificate";// Hide again (toggle) 
          } });
+   
+   //for Noticeboard
+   function toggleChatPopup() {
+    var chatPopup = document.getElementById("chat-popup");
+    var chatBtn = document.getElementById("chat-btn");
+    if (chatPopup.style.display === "none" || chatPopup.style.display === "") {
+        chatPopup.style.display = "block";
+        chatBtn.style.display = "none";
+    } else {
+        chatPopup.style.display = "none";
+        chatBtn.style.display = "block";
+    }
+}
+
+
    </script>
 
 </body>
