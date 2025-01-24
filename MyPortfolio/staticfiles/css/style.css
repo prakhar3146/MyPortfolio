@@ -1798,7 +1798,7 @@ footer p {
 .chat-btn:hover {
     background-color: #0056b3;
 }
-.chat-body p:first-child{
+.notice-header,.chat-body p:first-child{
     font-size: x-large;
     font-weight: 600;
     font-family: cursive;
@@ -1808,7 +1808,4 @@ footer p {
     align-content: baseline;
     align-items: baseline;
     justify-content: flex-start;
-}
-.col-lg-5 d-flex align-items-stretch{
-    padding-left: 5%;
 }
