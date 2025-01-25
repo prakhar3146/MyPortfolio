@@ -16,7 +16,9 @@ from django.http import JsonResponse
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
 # Get the environment variables
-# DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+
 # DB_USER = os.getenv('DB_USER')
 # DB_PASSWORD = #os.getenv('DB_PASSWORD')
 # DB_NAME =os.getenv('DB_NAME')
@@ -38,8 +40,8 @@ import psycopg2  # Example for PostgreSQL, adapt according to your database
 # MySQL DB Configuration
 
 # Establish a database connection 
-db = MySQLdb.connect( host="localhost",user='root', 
-                      passwd='root', db=  'flask_users' )
+# db = MySQLdb.connect( host="localhost",user='root', 
+#                       passwd='root', db=  'flask_users' )
 
 #For postgres
 
