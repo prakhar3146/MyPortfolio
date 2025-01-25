@@ -865,7 +865,7 @@ img {
 @media (max-width: 600px) {
 
 main{
-        background-color: #000000ab;
+        background-color:#89898900;
         margin-left: 0%;
       }
 .dot {
@@ -881,13 +881,14 @@ main{
 .active {
     background-color: #000000;
 }
-#slide1,#slide2,#slide3,#slide4,#slide5,#slide6,#slide7{
+#slide1,#slide2,#slide3,#slide4,#slide5,#slide6,#slide7,#slide8{
 
    
     margin-left: 0%;
     border: 15px solid #32403f;
     border-style: ridge;
-    width: 100%;
+    width: 95vw;
+    margin-right: 20px;
     height: 500px;
 
 
@@ -965,7 +966,7 @@ main{
     } */
  
 main{
-        background-color: #000000ab;
+        background-color: #89898900;
         margin-left: 0%;
       }
 #about,#portfolio {
@@ -1015,7 +1016,7 @@ main{
     font-size: medium;
 }
 main{
-    background-color: #000000ab;
+    background-color:#89898900;
 }
 }
 footer {
@@ -1067,7 +1068,7 @@ footer p {
     
     }    
 main{
-    background-color: #000000ab;
+    background-color:#89898900;
     margin-left: 0%;
   }
     #about,#portfolio {
@@ -1130,13 +1131,18 @@ main{
     .active {
         background-color: #000000;
     }
-    #slide1,#slide2,#slide3,#slide4,#slide5,#slide6,#slide7{
+    h2{
+        justify-content: center;
+    }
+
+    #slide1,#slide2,#slide3,#slide4,#slide5,#slide6,#slide7,#slide8{
     
        
         margin-left: 0%;
         border: 15px solid #32403f;
         border-style: ridge;
-        width: 100%;
+        width: 95vw;
+        margin-right: 20px;
         height: 500px;
     
     }
@@ -1153,6 +1159,9 @@ main{
       margin-top: 3%;
       font-weight: 600;
       letter-spacing: 3px;
+    }
+    h2{
+        justify-content: center;
     }
     #project1-link{
         background-color: beige;
@@ -1378,7 +1387,7 @@ border: none;
 
 }
 main{
-    background-color: #000000ab;
+    background-color: #89898900;
     margin-left: 0%;
   }
 #about,#portfolio {
@@ -1447,7 +1456,7 @@ main{
     font-size: medium;
 }
 main{
-    background-color: #000000ab;
+    background-color:#89898900;
 }
 
 footer {
@@ -1636,7 +1645,7 @@ footer p {
     margin-bottom: 3%;
 }
 main{
-    background-color: #000000ab;
+    background-color: #89898900;
     margin-left: 0%;
   }
 #about,#portfolio {
@@ -1705,7 +1714,7 @@ main{
     font-size: medium;
 }
 main{
-    background-color: #000000ab;
+    background-color:#89898900;
 }
 
 footer {
@@ -1808,4 +1817,7 @@ footer p {
     align-content: baseline;
     align-items: baseline;
     justify-content: flex-start;
+}
+.title{
+    margin-right: 20%;
 }

@@ -16,7 +16,7 @@ from django.http import JsonResponse
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
 # Get the environment variables
-DATABASE_URL = os.getenv('DATABASE_URL')
+# DATABASE_URL = os.getenv('DATABASE_URL')
 # DB_USER = os.getenv('DB_USER')
 # DB_PASSWORD = #os.getenv('DB_PASSWORD')
 # DB_NAME =os.getenv('DB_NAME')
@@ -30,7 +30,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 #     host= DB_HOST,  # Add other parameters as needed
 #     # port=os.getenv('DB_PORT')
 # )
-db= psycopg2.connect(DATABASE_URL)
+# db= psycopg2.connect(DATABASE_URL)
 
 
 
@@ -38,8 +38,8 @@ db= psycopg2.connect(DATABASE_URL)
 # MySQL DB Configuration
 
 # Establish a database connection 
-# db = MySQLdb.connect( host="localhost",user='root', 
-#                       passwd='root', db=  'flask_users' )
+db = MySQLdb.connect( host="localhost",user='root', 
+                      passwd='root', db=  'flask_users' )
 
 #For postgres
 
@@ -110,12 +110,13 @@ def contact(request):
         message = request.POST.get("message")
         print("Message Inputs : ",name,email,phone,subject,message)
         subject= format_headers(subject,remove_punc=True)
+        name= format_headers(name,remove_punc=True)
         if len(name)>1 and len(name)<=50 :
             pass
         else:
             messages.error(request,"Length of the name should be greater than 2 and less than 30 characters ")
             return render(request,'home.html') 
-        if "@" not in email :  #or ".com" not in email
+        if "@" not in email or "." not in email:  #or ".com" not in email
             messages.error(request,"Invalid email address!")
             return render(request,'home.html') 
         if  not re.fullmatch(r"[+]\d{2}", country_code):

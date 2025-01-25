@@ -109,7 +109,7 @@ DATABASES = {
         'PORT': '3306',                       # The MySQL port (default is 3306)
     }
 }
-DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
+# DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
 
 
 
