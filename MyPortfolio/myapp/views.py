@@ -32,7 +32,10 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 #     host= DB_HOST,  # Add other parameters as needed
 #     # port=os.getenv('DB_PORT')
 # )
-# db= psycopg2.connect(DATABASE_URL)
+
+
+
+db= psycopg2.connect(DATABASE_URL)
 
 
 
