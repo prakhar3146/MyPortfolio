@@ -1,28 +1,32 @@
-{%load static%}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body{
-            background-image: url("{%static 'images/landing.jpg'%}");
-            object-fit: cover;
-            min-height: 100%;
-            min-width: 100%;
-            background-size: cover; /* This will make sure the image covers the entire background */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-attachment: fixed; /* Ensures the background image stays fixed during scroll */
-            overflow: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Uh Oh! There is nothing in here.</h1>
-        <p>You can find all the required information on the homepage itself.</p>
-        <p>Good Day!</p>
+  <head>
+    <title>Botpress Webchat</title>
+  </head>
+  <body>
+    <div class="webchat" style="height: 600px; width: 400px;">
+      <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+      <script defer>
+        window.botpress.on("webchat:ready", (conversationId) => {
+          botpress.open();
+        });
+        window.botpress.init({
+          "botId": "1e7a7280-018b-45f4-b215-f090c512b4a5",
+          "configuration": {
+            "website": {},
+            "email": {},
+            "phone": {},
+            "termsOfService": {},
+            "privacyPolicy": {},
+            "color": "#3B82F6",
+            "variant": "solid",
+            "themeMode": "light",
+            "fontFamily": "inter",
+            "radius": 1
+          },
+          "clientId": "053e223a-5f40-445a-ac54-2707a1cd31c7"
+        });
+      </script>
     </div>
-</body>
+  </body>
 </html>
