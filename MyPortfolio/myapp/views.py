@@ -11,7 +11,7 @@ import os
 from myapp.utils import format_headers
 #To fetch and store the IP and location of the user
 import pandas as pd
-# import geoip2.database
+
 from django.http import JsonResponse
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
@@ -44,7 +44,7 @@ db= psycopg2.connect(DATABASE_URL)
 
 # Establish a database connection 
 # db = MySQLdb.connect( host="localhost",user='root', 
-                    #   passwd='root', db=  'flask_users' )
+#                       passwd='root', db=  'flask_users' )
 
 #For postgres
 
