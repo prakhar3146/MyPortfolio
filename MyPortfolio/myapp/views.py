@@ -16,7 +16,7 @@ from django.http import JsonResponse
 import psycopg2  # Example for PostgreSQL, adapt according to your database
 
 # Get the environment variables
-DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL = os.getenv('DATABASE_URL2')
 
 
 # DB_USER = os.getenv('DB_USER')
@@ -142,7 +142,7 @@ def contact(request):
         messages.success(request, "Thanks for reaching out! \nYour message has been sent to Prakhar and he will be contacting you asap. \n Good Day! ")
         print("Data saved")
         #Notifying both the parties on contact
-        query= """SELECT * FROM email_notification_creds ORDER BY id DESC LIMIT 1;"""
+        query= """SELECT * FROM email_notification_creds where notification_type='portfolio' ORDER BY id DESC LIMIT 1;"""
         cursor.execute(query)
         row= cursor.fetchone()
         column_names = [description[0] for description in cursor.description]
