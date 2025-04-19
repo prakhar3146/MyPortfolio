@@ -1022,14 +1022,15 @@
     async function fetch_data() {
       // Fetch images once the DOM is ready
       await fetchslides();
+      fetchLocations();
+      fetchSkills();
       // Fetch images once the DOM is ready
       // alert(`Finally:${slideStatus}`)
       if (slideStatus === 1) {
 
         showSlides();
       }
-      fetchLocations();
-      await fetchSkills();
+     
     }
     document.addEventListener('DOMContentLoaded', fetch_data);
 
