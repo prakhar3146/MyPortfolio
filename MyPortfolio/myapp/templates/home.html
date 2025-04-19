@@ -51,13 +51,13 @@
     }
 
     #readMoreBtn {
-       /* width: 100%; */
-       background-color: #1bf1f43d;
+      /* width: 100%; */
+      background-color: #1bf1f43d;
     border-collapse: collapse;
     border: 0px;
-    margin-left: 27%;
+    margin-left: -1%;
     text-decoration: underline;
-    width: 45%;
+    width: 105%;
     font-family: inherit;
     letter-spacing: 2px;
     font-weight: 600;
@@ -94,17 +94,17 @@
 
     @media (min-width: 350px) and (max-width:667px) {
       [id^="pic"] {
-        margin-left: 13%;
+        margin-left: 1%;
     border: 15px solid #32403f;
     margin-bottom: 10px;
-    margin-right: 12%;
+    margin-right: -6%;
     border-style: ridge;
     min-width: 100%;
     width: 100%;
     /* overflow: hidden; */
     object-fit: cover;
     overflow: hidden;
-    height: 624px;
+    height: 331px;
     align-self: center;
       }
 
@@ -450,7 +450,7 @@
             var headingElement = document.createElement("span");
             // headingElement.innerText = parts[i]
             headingElement.className = "dynamic-content"
-            headingElement.innerText = img.filename
+            headingElement.innerText = img.filename.trim()
             pElement.appendChild(headingElement); // Append the span
             //  pElement.appendChild(headingElement)
             // alert(parts[i])
@@ -459,7 +459,7 @@
           // alert(parts[i])
           var lineBreak = document.createElement("br")
           pElement.appendChild(lineBreak)
-          pElement.appendChild(document.createTextNode(parts[i])); // Add text node
+          pElement.appendChild(document.createTextNode(parts[i].trim())); // Add text node
 
           itemDiv.appendChild(pElement);
         }

@@ -83,7 +83,8 @@ body {
     flex-direction: row;
     margin-inline-start: 10%;
     position: fixed;
-    margin-left: 40%;
+    margin-left: 48%;
+    z-index: 1000;
 }
 
 
@@ -138,6 +139,32 @@ main {
     /* overflow: auto; */
 }
 
+main{
+    background-image: url("../images/landing.jpeg") !important;
+    /* background-image: url("staticfiles/images/landing.jpeg") !important; */
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    /* object-fit: cover; */
+    display: flex;
+    /* max-width: 100%; */
+    height: 100%;
+    /* Maintains aspect ratio */
+    width: 100%;
+    /* This will make sure the image covers the entire background */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-attachment: fixed;
+    /* Ensures the background image stays fixed during scroll */
+    overflow: auto;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+
+}
+
+
 #ul1 a {
     text-decoration: none;
 }
@@ -150,6 +177,15 @@ main {
     display: none;
 }
 
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    background-color: #2c2c2ceb;
+    width: 88%;
+    padding-right: 5%;
+}
 @media (min-width: 350px) and (max-width:780px) {
     #navbar {
         display: flex;
@@ -241,6 +277,8 @@ background:none
     /* border-style: double; */
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 10%;
+    
 }
 
 #portfolio {
@@ -294,7 +332,7 @@ background:none
 }
 
 p {
-    align-self: center;
+    align-self: baseline;
     font-size: 14px;
     margin-top: 5px;
     letter-spacing: 2px;
@@ -436,6 +474,7 @@ button {
 .navigation{
     margin-top: 0%;
     width: 87%;
+    margin-bottom: 4%;
 }
 
 /****** Now Applying the media queries *****************************************************************************/
@@ -632,7 +671,7 @@ h2 {
 .dynamic-content{
     font-size: xxx-large;
     letter-spacing: 4px;
-    margin-top: -5%;
+    margin-top: -13%;
     margin-bottom: 10px;
     font-family: emoji;
     line-height: normal;
@@ -641,12 +680,22 @@ h2 {
     min-height: 40vh;
     height: 40vh;
     margin-left: 76px;
-    width: 80%;
-    min-width: 80%;
+    width: 70%;
+    min-width: 70%;
 }
 #events{
     margin-top: 10%;
 }
+#products{
+    height: 126vh;
+    min-height: max-content;
+}
+.dots{
+        /* align-self: center; */
+        margin-left: 9%;
+        margin-bottom: 2%;
+}
+
 @media (min-width: 350px) and (max-width:667px) {
 
     #readMoreBtn{
@@ -667,10 +716,10 @@ h2 {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding-left: 10%;
+        padding-left: 5%;
         background-color: #2c2c2ceb;
         width: 150%;
-        padding-right: 5%;
+        padding-right:0%;
         margin-top: -6%;
         /* overflow: auto; */
     }
@@ -697,11 +746,12 @@ h2 {
     flex-direction: row;
     align-self: center;
     gap: 154px;
-    /* background-color: #80808045; */
+    /* background-color: #0f090945; */
     width: 96%;
     margin-right: 0%;
+    margin-top: 3vh;
     margin-left: -2px;
-    background:none;
+    background: none;
 }
 
 #certifications{
@@ -738,12 +788,12 @@ h2 {
     }
 
     .gallery img {
-        margin-left: 0%;
+        margin-left: 9%;
         border: 15px ridge rgb(50, 64, 63);
         margin-bottom: 10px;
         margin-right: 30px;
         margin-top: 1px;
-        width: 134vw;
+        width: 103vw;
         object-fit: cover;
         overflow: hidden;
         height: 300px;
@@ -908,8 +958,8 @@ h2 {
     font-size: xx-large;
     color: aliceblue;
     width: 114%;
-    min-width: 14%;
-    margin-left: 46%;
+    min-width: 114%;
+    margin-left: 58%;
     align-self: center;
 }
 .dot {
@@ -923,6 +973,7 @@ h2 {
 }
 .dots{
     margin-left: 35%;
+    padding-bottom: 5%;
 }
 }
 
@@ -1195,6 +1246,7 @@ h2 {
         margin-bottom: 0px;
         align-self: center;
     }
+
     
 }
 
@@ -1440,10 +1492,10 @@ h2 {
 
 }
 
-@media (min-width: 375px) and (max-width:667px) {
+@media (min-width: 360px) and (max-width:740px) {
     .navigation{
         margin-bottom: 58%;
-        /* margin-top: -58%; */
+        margin-top: 50%;
     }
     #events h2 {
         margin-top: -54%;
@@ -1460,6 +1512,45 @@ h2 {
         min-height: min-content;
         height: min-content;
         margin-top: 0px;
+    }
+    .section-heading{
+        display: flex;
+        align-items: 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000; */
+        margin-left: 24%;
+        letter-spacing: 3px;
+        justify-content: center;
+        /* background-color: black; */
+        color: #d1d1d1;
+        font-size: xxx-large;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+        margin-top: 3%;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-left: 0%;
+        /* border: 15px solid azure; */
+        /* border-style: double; */
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        align-items: 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000; */
+        margin-left: 24%;
+        letter-spacing: 3px;
+        justify-content: center;
+        /* background-color: black; */
+        color: #d1d1d1;
+        font-size: xxx-large;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
+        margin-top: 3%;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-left: 0%;
+        /* border: 15px solid azure; */
+        /* border-style: double; */
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 15%;
     }
 }
 @media (max-width: 390px) and (orientation: portrait) {
@@ -1480,6 +1571,27 @@ h2 {
     /* Styles for iPhone 14 and similar devices */
     .dots{
         margin: left 41%;
+    }
+  }
+  @media (max-width: 950px) {
+    body{
+        background-image: url("../images/landing.jpeg") !important;
+        /* background-image: url("staticfiles/images/landing.jpeg") !important; */
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+        /* object-fit: cover; */
+        display: flex;
+        /* max-width: 100%; */
+        height: 100%;
+        width: 115%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: auto;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        font-family: Arial, sans-serif;
     }
   }
   

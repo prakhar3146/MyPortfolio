@@ -30,7 +30,7 @@ import psycopg2  # Example for PostgreSQL, adapt according to your database
 
 
 base_dir=Path(__file__).resolve().parent
-print("current dir : ",base_dir)
+# print("current dir : ",base_dir)
 IMAGE_FOLDER = os.path.join(base_dir, 'static/images')
 TEXT_FOLDER = os.path.join(base_dir, 'static/text')
 PDF_FOLDER = os.path.join(base_dir, 'static/pdf')
