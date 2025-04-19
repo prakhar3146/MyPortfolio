@@ -1,13 +1,13 @@
-Portfolio website (12/2024 - Present) 
-Tech Stack : Python, JavaScript, HTML, CSS, PostgreSQL, Django, Git, Gunicorn, Google Analytics, Co-pilot 
-URL : www.appsbyprakhar.in 
-This is a portfolio website developed using HTML, CSS and JavaScript(vanilla) in the front-end and Python and PostgreSQL in the back-end
- leveraging Django rest framework for architecture and GIT for version control and deployment. 
-Goal : The goal of this website is to provide the information that might be too big to be accommodated in the resume and to provide a quick peek
- into my professional as well as personal life and to maintain all the links and descriptions for all the applications that I develop and deploy. 
-Added custom automations to generate notification emails using Python for both the user and myself upon raising an appointment request. 
-Deployed the website on www.render.com using Gunicorn as a proxy server and GIT for version control. 
-Maintained version control using GIT. 
-Maintained the responsiveness of the website while making it compatible with multiple user-interfaces with the help of media queries. 
-Created and configured a chatbot with the website, in order to assist visitors ask specific questions regarding myself using BOT Press configurable
- workflows. 
+*****Portfolio website (12/2024 - Present) *****
+*****Tech Stack : Python, JavaScript, HTML, CSS, PostgreSQL, Django, Git, Gunicorn, Google Analytics, Co-pilot *****
+*****URL : www.appsbyprakhar.in *****
+*****This is a portfolio website developed using HTML, CSS and JavaScript(vanilla) in the front-end and Python and PostgreSQL in the back-end
+ leveraging Django rest framework for architecture and GIT for version control and deployment. *****
+*****Goal : The goal of this website is to provide the information that might be too big to be accommodated in the resume and to provide a quick peek
+ into my professional as well as personal life and to maintain all the links and descriptions for all the applications that I develop and deploy. *****
+*****Added custom automations to generate notification emails using Python for both the user and myself upon raising an appointment request. *****
+*****Deployed the website on www.render.com using Gunicorn as a proxy server and GIT for version control. *****
+*****Maintained version control using GIT. *****
+*****Maintained the responsiveness of the website while making it compatible with multiple user-interfaces with the help of media queries. *****
+*****Created and configured a chatbot with the website, in order to assist visitors ask specific questions regarding myself using BOT Press configurable
+ workflows. *****

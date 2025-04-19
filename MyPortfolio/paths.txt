@@ -7390,3 +7390,29 @@ pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3
 images/slideshow2_5.jpeg
 images/slideshow2_6.jpeg
 images/slideshow2_7.jpeg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpeg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpeg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpeg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpeg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpeg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpeg
