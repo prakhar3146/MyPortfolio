@@ -1,5 +1,6 @@
 
-Hello there :)*****
+Who I am *****
+Hello there!
 Thank you visiting my website.
 As you may know, my name is Prakhar Prakash.
 I am creative, curious, and occasionally quirky and thrive on the little joys that make life extraordinary.
@@ -8,7 +9,7 @@ I like hiking, running and coding(and hence the profession).
 
 I created this space to share my work profile, projects, and skillset while providing a quick peek into my personal profile and services.
 
-Professionally,*****
+What I do for a living*****
 I am a dedicated and proficient software developer with around three years of experience specializing in automating end to end processes with a focus on backend development along with experience in full-stack development. 
 My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL.  
 With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.
