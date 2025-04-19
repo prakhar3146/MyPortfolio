@@ -1,0 +1,29 @@
+Python|5,...>>
+HTML|4,...>>
+JavaScript|2,...>>
+SQL|4,...>>
+Java|2,...>>
+MongoDB|3,...>>
+Selenium|4,...>>
+Flask|3,...>>
+Django|4,...>>
+PostGreSQL|3,...>>
+MSSQL|3,...>>
+ChatGPT|4,...>>
+Robot Framework|4,...>>
+Socket IO|3,...>>
+GIT |3,...>>
+Docker|1,...>>
+AWS |3,...>>
+Postman|4,...>>
+NLP|3,...>>
+Machine Learning|3,...>>
+Deep Learning  |3,...>>
+Gunicorn|3,...>>
+Apache2 |2,...>>
+NGIX  |2,...>>
+QA Testing |3,...>>
+Requests  |3,...>>
+Web Scraping |3,...>>
+Ubuntu |3,...>>
+

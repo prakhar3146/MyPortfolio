@@ -109,7 +109,7 @@ DATABASES = {
         'PORT': '3306',                       # The MySQL port (default is 3306)
     }
 }
-DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
+# DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
 
 
 
@@ -150,8 +150,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT= BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
+    os.path.join(BASE_DIR,'myapp/static')
 ]
+
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 

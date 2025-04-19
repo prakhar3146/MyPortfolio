@@ -1,1165 +1,936 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prakhar's Portfolio</title>
-  <link rel="icon" href="static/images/logo.png" type="image/x-icon">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <!-- For adding icons to the menu -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Prakhar Prakash</title>
+  <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
-  <!-- <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine"> -->
-  <!-- Vendor CSS Files -->
-    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
-  <link href="static/css/style.css" rel="stylesheet">
 
   <style>
+    .active {
+      background-color: #000000;
+      /* display: flex; */
+    }
 
-main{
-  background-color: #000000ab;
-  margin-left: 24%;
-}
-    #about-me {
-  display: flex;
-  flex-wrap: nowrap; /* Ensures it adjusts well on smaller screens */
-  align-items: center; /* Vertically centers the content */
-  border: 4px solid black;
-    border-style: none;
-    margin-top: 5px;
-    margin-left: 0%;
-    margin-right: 0%;
+    [id^="pic"] {
 
-}
+      margin-left: 0%;
+      border: 15px solid #32403f;
+      margin-bottom: 10px;
+      margin-right: 40px;
+      border-style: ridge;
+      min-width: 400px;
+      width: 400px;
+      /* overflow: hidden; */
+      object-fit: cover;
+      overflow: hidden;
+      height: 300px;
+    }
 
-#about-me .col-lg-4 {
-  flex: 0 0 30%; /* Allocate 30% width to the image container */
-  max-width: 30%;
-  margin-right: 2%; /* Add spacing between the image and content */
-}
+    [id^="pdf"] {
+      min-width: 400px;
+      width: 400px;
+      height: 300px;
+      border: 9px solid #3e8b95;
+      border-style: ridge;
+      object-fit: cover;
+      overflow: hidden;
+      align-self: center;
 
-#about-me ,.col-lg-4 img {
-  width: 100%; /* Make the image responsive */
-  border-radius: 8px; /* Optional: Adds rounded corners to the image */
-}
+    }
 
-#about-me,.col-lg-8 {
-  flex: 0 0 68%; /* Allocate remaining width to the content container */
-  max-width: 68%;
-}
+    .hide {
+      display: none;
+    }
 
-#about-me ul.personal-info {
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0;
-}
-
-#about-me ul.personal-info li {
-  margin-bottom: 10px; /* Add spacing between each list item */
-}
-@media (max-width: 768px) {
-
-  #about-me {
-    width:100%;
-    padding: 25%;
-    flex-direction: column; /* Stack elements vertically */
-  }
-
-  #about-me .col-lg-4,
-  #about-me .col-lg-8 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  .info{
-    padding-right: 30%;
-  }
-  p{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  }
-
-  #about-me .col-lg-4 {
-    margin-bottom: 20px; /* Add spacing between the image and content */
-  }
-#skillset{
-  display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    margin-left: 40%;
-    margin-right: 0%;
-    flex-wrap: nowrap;
-}
-}
-/* Styling the #about-me section */
-#about-me {
-  display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 30%;
-}
-
-#about-me .col-lg-4 {
-  flex: 1 1 40%; /* Image column takes up 40% of the width */
-  padding-right: 15px;
-}
-
-#about-me .col-lg-8.content {
-  flex: 1 1 60%; /* Content column takes up 60% of the width */
-  padding-left: 15px;
-}
-
-/* Reset styles specifically for #about-me ul and li */
-#about-me ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; /* Remove default bullet points */
-}
-
-#about-me li {
-  margin: 0;
-  padding: 5px 0; /* Add some spacing between items */
-}
-
-/* Ensure personal-info items are displayed as two equal-width columns */
-#about-me .personal-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-  gap: 10px; /* Space between items */
-}
-
-#about-me .personal-info .info {
-  display: flex;
-  align-items: center; /* Vertically align icons and text */
-  padding: 5px 0; /* Add vertical spacing between rows */
-  display: flex;
-    
-    padding: 5px 0;
-    justify-content: space-around;
-    white-space: break-spaces;
-    font-size: x-small;
-    background-color: #239eff59;
-    font-weight: 900;
-}
-
-#about-me.personal-info .info i {
-  margin-right: 8px; /* Space between the icon and text */
-  color: #007bff; /* Icon color */
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Adjust layout for smaller screens */
-@media (max-width: 991px) {
-  #about-me {
-    flex-direction: column;
-  }
-  
-  #about-me .col-lg-4, #about-me .col-lg-8.content {
-    flex: 1 1 100%; /* On smaller screens, stack vertically */
-    padding: 0;
-  }
-
-  #about-me .personal-info {
-    grid-template-columns: 1fr; /* Switch to a single column on small screens */
-  }
-}
-h3{
-  font-weight: 900;
-  font-family: system-ui;
-  text-shadow: 5px 5px 15px #000000;
-  border: 10px solid #ecf0f2;
-    border-style: double;
-    color: #d1d1d1;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 8%;
-    padding: 9px;
-}
-iframe { width: 100%;
-   height: 100vh;
-   border: none; /* Remove border for clean embedding */ }
-   /* Media query for screens smaller than 600px */
-  @media (max-width: 600px) 
-    { 
-  iframe { width: 100%; height: 60vh; 
-  } 
-#project-description{
-  display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: darkseagreen;
-    margin-left: 0%;
-    margin-right: 0%;
-    font-size: x-large;
-    color: black;
-    font-family: cursive;
+    #readMoreBtn {
+       /* width: 100%; */
+       background-color: #1bf1f43d;
+    border-collapse: collapse;
+    border: 0px;
+    margin-left: 27%;
+    text-decoration: underline;
+    width: 45%;
+    font-family: inherit;
+    letter-spacing: 2px;
     font-weight: 600;
-    flex-wrap: nowrap;
-}
-} /* Media query for screens larger than 1200px */ 
-   @media (min-width: 1200px) 
-   { 
-    iframe { width: 100%; height: 90vh; 
+    }
 
-    } }
-   #resume { display: none; /* Initially hide the resume */ }
+    @media (min-width: 760px) and (max-width:1024px) {
+      [id^="pdf"] {
+        min-width: 28%;
+        width: 38%;
+        height: 330px;
+        border: 9px solid #3e8b95;
+        border-style: ridge;
+        object-fit: cover;
+        overflow: hidden;
+        align-self: center;
 
+      }
 
-.certificate{
-  display: none;
-}
+      [id^="pic"] {
+        margin-left: 23%;
+        border: 15px solid #32403f;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        border-style: ridge;
+        min-width: 100%;
+        width: 100%;
+        /* overflow: hidden; */
+        object-fit: cover;
+        overflow: hidden;
+        height: 624px;
 
+      }
+    }
 
+    @media (min-width: 350px) and (max-width:667px) {
+      [id^="pic"] {
+        margin-left: 13%;
+        border: 15px solid #32403f;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        border-style: ridge;
+        min-width: 100%;
+        width: 100%;
+        /* overflow: hidden; */
+        object-fit: cover;
+        overflow: hidden;
+        height: 624px;
+        align-self: center;
+      }
 
-   #contact-me{
-    display: flex;
-    align-self: center;
-    border: 5px solid #341616;
-    flex-direction: column;
-    border-style: hidden;
-    border-color: #00000061;
-    width: 100%;
-    color: black;
-    font-family: auto;
-    font-weight: 600;
-    margin-bottom: 5%;
-   }
-   #name,#email,#phone-no,#subject,#message,#country-code{
-    display: flex;
-    align-self: center;
-    border: 5px solid #0f0f0f;
-    flex-direction: column;
-    margin-bottom: 3px;
-    margin-top: 2px;
-    width: 30%;
-   }
-   [class^="form-group"]{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   }
-   [class^="col-lg-5"]{
-    padding-left: 5% !important;
-   }
-.github{
-    background-color: beige;
-}
-/* #project-description>h6{ */
-#project-header{
-  color: #d1d1d1;
-    font-size: xx-large;
-    background-color: darkseagreen;
-    margin-left: 24%;
-    margin-right: 0%;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 2%;
-    padding: 5px;
-}
-#project-description{
+      #profile-pic {
+        display: flex;
+        margin-left: 33%;
+        border: 10px solid #000000;
+        border-style: solid;
+        width: 35%;
+        height: 26%;
+        border-radius: 180px;
+      }
 
-  display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: darkseagreen;
-    margin-left: 24%;
-    margin-right: 0%;
-    /* font-size: x-large; */
-    color: black;
-    font-family: cursive;
-    font-weight: 600;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 24%;
-    border: 15px solid #444444;
-    border-style: ridge;
-}
+      [id^="pdf"] {
+        min-width: 60%;
+        width: 60%;
+        height: 300px;
+        border: 9px solid #3e8b95;
+        border-style: ridge;
+        object-fit: cover;
+        overflow: hidden;
+        align-self: center;
 
-@media (min-width: 300px) and (max-width:667px){
-main{
-  background-color: #000000ab;
-  margin-left: 0%;
-}
-  h3{
-    margin-left: 0%;
-    border: 10px solid #ecf0f2;
-    border-style: double;
-    
-    font-size: xx-large;
-    background-color: darkseagreen;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: #d1d1d1;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 8%;
-    padding: 5px;
-  }
-  footer {
-    background-color: #36363685;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #ecf0f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-  margin: 0;
-    color: azure;
-    letter-spacing: 3px;
-    font-family: emoji;
-    font-style: oblique;
-}
-
-  h6{
-    display: flex;
-    align-self: center;
-    font-size: xx-large;
-    
-    margin-top: 20px;
-    word-spacing: 8px;
-    text-shadow: 5px 5px 15px #010101;
-    border: 10px solid #ecf0f2;
-    border-style: double;
-    color: #d1d1d1;
-    font-size: xx-large;
-    background-color: darkseagreen;
-    margin-left: 0%;
-    margin-right: 0%;
-    /* margin-bottom: 5px; */
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 8%;
-    padding: 5px;
-  }
-  #project-header{
-    margin-left: 0%;
-    border: 10px solid #ecf0f2;
-    border-style: double;
-}
-#project-description{
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    background-color: darkseagreen;
-    margin-left: 0%;
-    margin-right: 6% !important;
-    font-size: x-large;
-    color: black;
-    font-family: cursive;
-    font-weight: 600;
-    padding: 5px;
-}
-#contact{
-  margin-left: 0%;
-}
-#about-me,.col-lg-8,.content{
-  margin-left: 0%;
-    margin-right: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-}
-}
-
-
-h2{
-  color: #d1d1d1;
-  font-size: xxx-large;
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
-    margin-top: 2%;
-    padding: 10px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-  
-}
-.error {
-    color: #f4f4f4;
-    border-radius: revert;
-    background-color: #ff3030;
-    border-style: dotted;
-}
-.success {
-    color: #000000 !important;
-    border-radius: revert !important;
-    background-color: revert;
-    border-style: dotted !important;
-}
-.personal-info .info{
-  background-color: revert;
-    width: max-content;
-    font-weight: 600;
-    font-size: medium;
-    display: flex;
-    flex-direction: column;
-}
-.row1{
-  display: flex;
-  flex-direction: row;
-}
-.col-lg-5 d-flex align-items-stretch{
-    padding-left: 5%;
-}
+      }
+    }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKPE5CQYHR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VKPE5CQYHR');
-</script>
-
-
-    
 <body>
-  <!-- <img id="background-image" src="static/images/landing.jpeg" alt="Description of the image"> -->
-  <script defer src="static/js/typed.min.js"></script>
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="d-flex flex-column">
-  
-        <div class="profile">
-          <img src="static/images/linkedin dp.jpg" alt="Profile picture unavailable" class="img-fluid rounded-circle">
-          <!-- <h1 class="text-light"><a href="myapp/templates/about.html">Prakhar Prakash</a></h1> -->
-          <h1 class="text-light">Prakhar Prakash</h1>
-          <div class="social-links mt-3 text-center">
-            <a href="https://github.com/prakhar3146" class="github" style="background-color: beige;"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/prakhar3146/" class="instagram" style="background-color:#361d1a;" ><i class="fab fa-instagram"></i></a>
-            <!-- <a href="#" class="google-plus"><i class="material-icons"></i></a> -->
-            <a href="https://www.linkedin.com/in/prakhar-p-499757144" class="linkedin" style="background-color: navy; border-radius: 30%;"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-        <br>
-        <nav id="navbar" class="nav-menu navbar">
-          <ul id="ul1">
-            <li class="nav-btns" ><a href="#hero" class="nav-link scrollto active"><i class="material-icons"></i> <span class="nav-items" >Home</span></a></li><br>
-            <li class="nav-btns"><a href="#about" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >About</span></a></li><br>
-            <li class="nav-btns"><a href="#show-resume" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Resume</span></a></li><br>
-            <li class="nav-btns"><a href="#heading-portfolio" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Portfolio</span></a></li><br>
-            <li class="nav-btns"><a href="#open-to-work" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br>
-            <li class="nav-btns"><a href="#contact" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Contact</span></a></li><br>
-          </ul>
-        </nav><!-- .nav-menu -->
+  <header>
+    <nav id="mobile-navbar" class="mobile-nav-menu navbar">
+      <div class="hamburger" id="hamburgerIcon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="ul3">
+        <li class="mobile-nav"><a href="#about">About</a></li>
+        <li class="mobile-nav"><a href="#products">Projects</a></li>
+        <li class="mobile-nav"><a href="#events">Portfolio</a></li>
+        <li class="mobile-nav"><a href="#skillset">Skills</a></li>
+        <li class="mobile-nav"><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <h1>Prakhar Prakash</h1>
+
+      <ul id="ul1">
+        <li class="nav-btns"><a href="#about" class="nav-link scrollto active"><i class="material-icons"></i> <span
+              class="nav-items">About</span></a></li><br>
+        <li class="nav-btns"><a href="#products" class="nav-link scrollto"><i class="material-icons"></i> <span
+              class="nav-items">Projects</span></a></li><br>
+        <!-- <li class="nav-btns"><a href="#show-resume" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Resume</span></a></li><br> -->
+        <li class="nav-btns"><a href="#events" class="nav-link scrollto"><i class="material-icons"></i> <span
+              class="nav-items">Portfolio</span></a></li><br>
+        <li class="nav-btns"><a href="#skillset" class="nav-link scrollto"><i class="material-icons"></i> <span
+              class="nav-items">Skills</span></a></li><br>
+        <li class="nav-btns"><a href="#contact-section" class="nav-link scrollto"><i class="material-icons"></i> <span
+              class="nav-items">Contact</span></a></li><br>
+      </ul>
+      <div class="button-type" id="ul2">
+        <li class="nav-btns"><a href="#about" class="nav-link scrollto active"><i class="material-icons"></i> <span
+              class="nav-items">Back to top</span></a></li><br>
+        <!-- <li class="nav-btns"><a href="#open-to-work" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Services</span></a></li><br> -->
+        <!-- <li class="nav-btns"><a href="#contact" class="nav-link scrollto"><i class="material-icons"></i> <span class="nav-items" >Contact</span></a></li><br> -->
+      </div>
+    </nav><!-- .nav-menu -->
+  </header>
+  <main>
+    <section id="about" class="section-item">
+      <h2 class="section-heading">About</h2>
+      <img src="{% static 'images/old.jpg' %}" alt="Profile Pic" id="profile-pic">
+      <br>
+      <p class="about-section-content"></p>
+    </section>
+
+    <section id="products" class="product-item">
+      <h2 class="section-heading">Projects</h2>
+      <br>
+
+      <!-- <h2>Projects</h2> -->
+      <div class="gallery" id="gallery"></div>
+      <div class="navigation">
+        <button class="prev"><span>Previous</span></button>
+        <button class="next"><span>Next</span></button>
       </div>
 
-    </header><!-- End Header -->
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="hero-container" data-aos="fade-in">
-        <h1>Who I am</h1>
-        <p class="initial-text">I am a <span class="typed" data-typed-items="Designer, Developer, Writer, Freelancer, Marathoner"></span></p>
-      </div>
-    </section><!-- End Hero -->
-    <main>
-     
-      
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/01/28/12/20250128124517-3E3OR2Z4.js"></script>
-        
-    <section id="about" class="about">
-      <div id="chat-popup" class="chat-popup">
-        <div class="chat-header" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i>  Hide message!</div>
-        <div class="chat-body">
-            <p>Prakhar's noticeboard!</p>
-            <p>Dear guest,</p>
-            <p>First of all, thank you for visiting my website.</p>
-            <p>You can find the latest announcements and notifications by me over here.</p>
-            <p class="notice-header">Update : </p>
-            <p>Well, It seems there are no new Updates!</p>
-         
-            <p>Wish you a great day!</p>
-            <!-- Add your chat content here -->
-        </div>
-    </div>
+    </section>
 
-    <button id="chat-btn" class="chat-btn" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i> You have a message from Prakhar</button>
+    <section id="events" class="event-item">
+      <h2 class="section-heading">Portfolio</h2>
+      <br>
+      <div class="slideshow-container" id="slideshow-container"></div>
+      <p class="event-section-subheading"></p>
 
-    
-
-
-
-      <div class="container" data-aos="fade-in">
-        <div class="section-title">
-          <h2 class="title">About</h2>
-          <p class="quote">"As you start to walk on the way, the way appears" -  Rumi</p><br>
-          <p>Dear visitor,</p>
-          <p>Welcome to my website!</p>
-          <p>I created this website to provide an insight into my professional life along with my personality.</p>
-          <p>Therefore, some of the content has the potential to appear somewhat candid!</p>
-          <p>I would like you to know that this was the idea behind it.</p>
-          <p>If you have any queries, feedback or messages, please feel to reach out to me!</p>
-
-          <p class="quote">Introduction</p>
-           <p> I am a dedicated and proficient software developer with 3 years of experience specializing in automating end to end processes with a focus on backend development along with experience in full-stack development. 
-          <!-- <p>My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL. </p> -->
-          <p>With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.</p>
-
-         <p>In my previous role, I thrived in collaborative team environments and took on various responsibilities, from designing and implementing backend components to developing end-to-end full-stack applications.</p>
-         <p>My adaptability and eagerness for continuous learning have constantly driven me to seek innovative approaches and stay updated with the latest industry trends.</p> 
-          <p>I am a thorough teamplayer and value my relationships with every indivisual that i interact with, while maintaing professionalism and with an empathetic and friendly approach.</p>
-         
-           <p>I am currently exploring opportunities that align with my expertise.</p>
-          <p>If you're seeking a passionate developer who brings expertise, enthusiasm, and love for coding to the table, feel free to connect with me. I'm excited about the possibilities that lie ahead and am looking forward to contributing my skills to dynamic new projects.</p>
-            
-        </div>
-        <div class="row" id="about-me">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="static/images/image1.jpeg" class="img-fluid" alt="image failed to load">
-            <p id="license">Licenses  &amp; Certifications</p>
-            <p class="cert_description">ML with Python - IBM</p>
-        <button class="view-more" id="view-cert1">View Certificate</button>
-        <div class="certificate" id="certificate1">
-          <iframe src="static/pdf/IBM-certificate.pdf" frameborder="0" id="item-1"></iframe>
-       </div>
-       <p class="cert_description">PG program in Data Science, ML and Neural Networks</p>
-       <button class="view-more" id="view-cert2">View Certificate</button>
-       <div class="certificate" id="certificate2">
-        <iframe src="static/pdf/data trained_certification1.pdf" frameborder="0" id="item-2"></iframe>
-        </div>
-        <p class="cert_description">Deep Learning</p>
-        <button class="view-more" id="view-cert3">View Certificate</button>
-        <div class="certificate" id="certificate3">
-          <iframe src="static/pdf/deep_learning_cretificate.pdf" frameborder="0" id="item-3"></iframe>
-        </div>
-        <p class="cert_description">Deep NLP</p>
-        <button class="view-more" id="view-cert4">View Certificate</button>
-        <div class="certificate" id="certificate4">
-          <iframe src="static/pdf/deep_NLP_certificate.pdf" frameborder="0" id="item-4"></iframe>
-        </div>
-        <p class="cert_description">Tableau</p>
-        <button class="view-more" id="view-cert5">View Certificate</button>
-        <div class="certificate" id="certificate5">
-          <iframe src="static/pdf/tableau_certificate.pdf" frameborder="0" id="item-5"></iframe>
-        </div>
-        <p class="cert_description">ML Projects</p>
-        <button class="view-more" id="view-cert6">View Certificate</button>
-        <div class="certificate" id="certificate6">
-          <iframe src="static/pdf/ML_projects_certificate.pdf" frameborder="0" id="item-6"></iframe>
-        </div>
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Skillset &amp; Education</h3>
-            
-
-              <div class="skillset" id="skillset">
-                <div class="subtype" id="scripting-languages">
-                  <p>Scripting Languages</p>
-              <span class="skills">Python</span>
-              <span class="skills">Java</span>
-              <span class="skills">JavaScript</span>
-            </div>
-            <div class="subtype" id="database-languages">
-              <p>Database Languages</p>
-              <span class="skills">MySQL</span>
-              <span class="skills">PostGreSQL</span>
-              <span class="skills">MSSQL Sever</span>
-              <span class="skills">MongoDB</span>
-            </div>
-            <div class="subtype" id="front-end-languages">
-              <p>Front-end Languages</p>
-              <span class="skills">HTML</span>
-              <span class="skills">CSS</span>
-              <div class="subtype" id="frameworks">
-                <p>Frameworks</p>
-              <span class="skills">Flask</span>
-              <span class="skills">Django</span>
-              <span class="skills">FastAPI</span>
-            </div>
-            <div class="subtype" id="toolkit">
-              <p>Tools</p>
-              <span class="skills">GIT</span>
-              <span class="skills">Docker</span>
-              <span class="skills">AWS</span>
-            </div>
-            <div class="subtype" id="technologies">
-              <p>Technical Skills</p>
-              <span class="skills">Deep Learning</span>
-              <span class="skills">Machine Learning</span>
-              <span class="skills">NLP</span>
-              <span class="skills">Web sockets</span>
-              <span class="skills">Data Analysis</span>
-              <span class="skills">NLP</span>
-              <span class="skills">Web Scraping</span>
-              <span class="skills">Robotic Process Automation</span>
-              <span class="skills">Automation Testing</span>
-              <span class="skills">QA</span>
-            </div>
-          <div class="subtype" id="libraries">
-            <p>Libraries</p>
-              <span class="skills">Keras</span>
-              <span class="skills">Pandas</span>
-              <span class="skills">Selenium</span>
-              <span class="skills">Pandas</span>
-              <span class="skills">bycrypt</span>
-              <span class="skills">BeautifulSoup</span>
-              <span class="skills">Socket IO</span>
-              <span class="skills">Gunicorn</span>
-              <span class="skills">NGIX</span>
-              <span class="skills">Matplotlib</span>
-              <span class="skills">Scikit Learn</span>
-              <span class="skills">JSON</span>
-              <span class="skills">Python-ldap</span>
-              <span class="skills">LDAP3</span>
-              
-            </div>
-            </div><br>
-            <h6 id="random-info">Other relevant information</h6>
-            <div class="row" id="personal-information">
-           
-            <div class="column1" id="info-left">
-            <!-- <p class="row1" style="font-family: 'FontAwesome';letter-spacing: 5px;text-decoration: underline;
-            margin-bottom: 7%; 
-            padding: 4%;
-            border: px solid;">>DOB </p> -->
-            <!-- <p class="row1">27/03/1994</p> -->
-            <p class="row2" style="font-family: 'FontAwesome';
-            letter-spacing: 5px;
-            text-decoration: underline;
-            /* margin-bottom: 7%; */
-            padding: 4%;
-            border: px solid;">>linkedin</p>
-            <span class="row2" href="https://www.linkedin.com/in/prakhar-p-499757144">https://www.linkedin.com/in/prakhar-p-499757144</span>
-            </div>
-            <div class="column2" id="info-right">
-                <p class="row1" style="font-family: 'FontAwesome';
-                letter-spacing: 5px;
-                text-decoration: underline;
-                /* margin-bottom: 7%; */
-                padding: 4%;
-                border: px solid;">>University </p>
-                <p class="row1">Mewar University, Chittorgarh, Rajsthan, India</p>
-                <p class="row2" style="font-family: 'FontAwesome';
-                letter-spacing: 5px;
-                text-decoration: underline;
-                /* margin-bottom: 7%; */
-                padding: 4%;
-                border: px solid;">>Degree </p>
-                <p class="row2">Bachelor of Art - General</p>
-                <p class="row1" style="font-family: 'FontAwesome';
-                letter-spacing: 5px;
-                text-decoration: underline;
-                /* margin-bottom: 7%; */
-                padding: 4%;
-                border: px solid;">>Nationality</p>
-                <p class="row1">Indian</p>
-                <p class="row2" style="font-family: 'FontAwesome';
-                letter-spacing: 5px;
-                text-decoration: underline;
-                /* margin-bottom: 7%; */
-                padding: 4%;
-                border: px solid;">>Hobbies </p>
-                <p class="row2">Reading, Writing, Coding, Hiking, Running</p>
-            </div>  
-            </div>
-            <p class="availablity" id="open-to-work"> Open To : 
-            </p>
-            <p>
-              Looking for full time opportunities in Software development and Analytics role as well as to take up freelance projects involving software development applications to deep learning/data science projects. 
-            </p>
-          </div>
-        </div>
-        </div>
-        </section>
-    <!-- </section>End About -->
-     <!-- Start Resume -->
-      
-      <section class="resume" id="myresume">
-      <button id="show-resume" class="show-more">View Resume</button>
-      <div class="resume" id="resume">
-        <iframe src="static/pdf/Prakhar's Resume.pdf" frameborder="0" id="my-resume" class="resume-hidden"></iframe>
-        <!-- <a href="static/pdf/Prakhar Prakash's Resume.pdf"  id="download-resume"   download>Download Resume</a> -->
+      <br>
+      <div class="dots" id="dots">
       </div>
     </section>
-    <section id="portfolio"> 
-      <h2 id="heading-portfolio">Portfolio</h2><br>
-       <div class="slideshow-container">
-        <p id="personal-portfolio-sub-heading"></p>
-       <div class="mySlides fade"> 
-        
-        <img src="static/images/landing2.jpeg"   alt="Failed to load image"  id="slide1"> 
-      </div> 
-      <div class="mySlides fade"> 
-        <img src="static/images/image4.jpeg"    alt="Failed to load image"  id="slide2"> 
-      </div>
-      <div class="mySlides fade"> 
-        <img src="static/images/image3.jpeg"    alt="Failed to load image"  id="slide3"> 
-      
-     </div> 
-    <div class="mySlides fade"> 
-      <img src="static/images/image5.jpg"    alt="Failed to load image"  id="slide4"> 
-    </div>
-  <div class="mySlides fade"> 
-    <img src="static/images/image6.jpeg"  alt="Failed to load image"   id="slide5"> 
-  </div>
-  <div class="mySlides fade"> 
-    <img src="static/images/image7.jpg"   alt="Failed to load image"  id="slide6"> 
-  </div>
-  <div class="mySlides fade"> 
-    <img src="static/images/image8.jpg"    alt="Failed to load image"  id="slide7"> 
-  </div>
-  <div class="mySlides fade"> 
-    <img src="static/images/image9.jpeg"    alt="Failed to load image"  id="slide8"> 
-  </div>
-  </div>
-     <br> 
-     <div style="text-align:center"> 
-      <span class="dot">
-      </span> 
-      <span class="dot">
-      </span>
-       <span class="dot">
-       </span>
-       <span class="dot">
-      </span>
-      <span class="dot">
-      </span>
-      <span class="dot">
-      </span>
-      <span class="dot">
-      </span>
-      <span class="dot">
-      </span>
-       </div> <br>
-       <h6 id="project-header">Web applications and projects </h6>
-       <div class="description" id="project-description">
-       
-       <div class="projects" id="project1">
-        <h4>MyChatAPP</h4>
-        <p  class="subheader"></p>>Overview</p>
-        <p>This is a web based group chat application which maintains user anonymity.</p>
-        <p>It has been developed using JavaScript, HTML, CSS in the front-end and Python, MySQL in the back-end leveraging Flask framework</p>
-      <p   class="subheader"></p>>Tech Stack</p>
-        <p>JavaScript, HTML, CSS, Python, MySQL, Websockets, Flask </p> 
-      <p  class="subheader"></p>>Tools</p>
-        <p>Socket.io, Co-pilot, Google Chrome, VS Code, Putty, Amazon Web Services</p>
-      
-        <!-- <p  class="subheader" ></p>>Github Link: Private</p> -->
-        <p class="subheader"></p>>GitHub repository</p>
-        <div class="app-link">
-        <a href="https://github.com/prakhar3146/MyChatAPP.git" class="fab fa-github" style="background-color: beige;" id="project1-link">Click Here</a>
-      </div>
-      <p  class="subheader"></p>>AWS Url </p>
-      <div class="app-link">
-        <a href="http://ec2-13-53-91-97.eu-north-1.compute.amazonaws.com/" class="fab fa-amazon" style="background-color: beige;" id="project1-link">Click Here</a>
-      </div>
-      <p>1. The app has been hosted on aws free tier instance.</p>
-      <p>2. Created the homepage,registration, login page and the messages page using HTML and JavaScript and added custom automations.</p>
-      <p>3. Maintained user data security by using bycrypt to store sensitive information in an encrypted format in the MySQL database.</p>
-      <p>4. Maintained positioning and styling using CSS. </p>
-      <p>5. Maintained responsiveness of the application using "media queries" across Smartphones, Tablets and Desktops. </p>
-      <p>6. Added custom automations for important email notifications like registration success, using Python and smtp library.</p>
-      <p>7. Maintained active sessions management using MySQL and Python.</p>
-      <p>8. Maintained version control using github.</p>
-      <p>9. Deployed the application on AWS cloud post testing.</p>
-      <!-- <p>NOTE : The application is going through upgradation and hence. Kindly raise a request in order to view it.</p> -->
-      </div><br>
-       <div class="projects" id="project2"><h4>MyPortfolio</h4>
-        <p class="subheader"></p>>Overview </p>
-        <p>This is a portfolio website developed and owned by Prakhar with a purpose of providing a quick peek into his professional as well as personal life</p>
-        <p class="subheader"></p>>Tech Stack</p>
-        <p> JavaScript, HTML, CSS, Python3, PostGreSQL, Django </p>
-        <p class="subheader"></p>>Tools</p>
-        <p>Co-pilot, Google Chrome, VS Code </p>
-        <p class="subheader"></p>>GitHub repository</p>
-        <div class="app-link">
-        <a href="https://github.com/prakhar3146/MyPortfolio.git" class="fab fa-github" style="background-color: beige;" id="project1-link">Click Here</a>
-      </div>
-        <p>1. The website currently in view is the one being referred to.</p>
-        <p>2. Designed a responsive layout using JavaScript(vanilla) and CSS styling.</p>
-        <p>3. Maintained version control through github.</p>
-        <p>4. Maintained responsiveness of the application using "media queries" across Smartphones, Tablets and Desktops. </p>
-        <p>5. Added custom automations to send email notifications confirmaing the request generation, everytime the contact form is submitted.</p>
-        <p>6. Protected sensitive information like database credentials, allowed host urls etc. using environment variables.</p>
-        <p>7. Deployed the website after building it on www.render.com</p>
-        <p>8. Hosted the website on my custom domain.</p>
-        
+    <section class="skill-item" id="skillset">
+      <h2 class="section-heading">Languages & Skills</h2>
+      <br>
+      <div class="main-holder" id="main-holder">
+        <!-- <h2>Technical Skills</h2> -->
+        <div class="holder hide" id="holder1">
 
-    </div><br>
-       <!-- <div class="projects" id="project3"><h4>A Gen AI Project</h4>
-      <p>This will be an app that i will create but i am just filling up dummy text to help me with the styling</p></div><br>
+          <div class="skills" id="skills">
 
-      </div> -->
-
-      </section> 
-    <!-- <script src="script.js"></script> -->
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 class="title">Contact</h2>
-          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">Traveling is not just a hobby for me but also something that brings me joy and inner peace.</p>
-          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">
-            I believe travelling has the potential to help us grow as indivisuals, be more open, accepting and curious towards the unknown.   
-          </p>
-          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">One of the facts about me is that i am more creative when outside of my comfort zone and therefore more productive.</p>
-          <p style="font-size: medium;font-family: Arial, Helvetica, sans-serif;">I have added the location section to my website to reflect my base location with the intent of keeping my network/whosoever concerned updated.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="contact-info">
-              <div class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Location:</h4>
-                <p>Duisburg, Germany</p>
+            <div class="skill" id="skill">
+              <span>HTML</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
               </div>
-              
-              
-              
-              <div class="email">
-                <!-- <i class="bi bi-envelope"></i> -->
-                <i class="fas fa-envelope"></i>
-                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;" >Email:</h4>
-                <p>mr.prakhar@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <!-- <i class="bi bi-phone"></i> -->
-                <i class="fas fa-phone-alt"></i>
-                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Mobile  </h4>
-                <p>+4915560129022, +919625708656</p>
-              </div>
-              <div class="whatssap">
-                <i class="fab fa-whatsapp"></i>
-                <h4 style="font-style: normal;font-weight: 600;font-family: emoji;font-size: larger;text-decoration: underline;">Whatssap : </h4>
-                <p>+919625708656</p>
-              </div>
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.202149703861!2d6.66773358811914!3d51.41771313262444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171cae2faf6e6eb%3A0x108f06c7cbbac899!2sHolz%20%26%20Stein!5e0!3m2!1sde!2sde!4v1737621872093!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
+            <div class="skill" id="skill">
+              <span>CSS</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <!-- Add more skills as needed -->
           </div>
-        
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="contact-me" action="{% url 'homepage' %}"  method="post" role="form" class="php-email-form">
-              {% csrf_token %}
-              <h6>Schedule an appointment</h6>
-              
-
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" placeholder="Enter your name here" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email"  placeholder="Enter your email here"  id="email" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="countrycode">Country code</label>
-                  <input type="text" name="countrycode" class="form-control" placeholder="Enter your country code. E.g. +49" id="country-code" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Phone</label>
-                  <input type="text" name="phone" class="form-control" placeholder="Enter your 10 digit mobile no " id="phone-no" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" placeholder="Enter the subject matter here"  id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" id="message"  placeholder="Type your message to Prakhar" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <!-- <div class="loading">Loading</div> -->
-                <!-- <div class="error-message"></div> -->
-                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                  <!-- Include Django messages here --> 
-                  {% if messages %} 
-    <ul id="django-messages"> 
-      {% for message in messages %} 
-      <li class="{{ message.tags }}" >{{ message }}</li> 
-      {% endfor %} 
-    </ul> 
-     {% endif %}
-              </div>
-           
-    <div class="text-center"><button type="submit" id="send-message" >Send Message</button></div>
-
-                
-                
-            </form>
-          
-          </div>
-
         </div>
+        <h2 class="sub-heading">Soft Skills</h2>
+        <div class="holder" id="holder2">
+
+          <div class="skills" id="skills">
+
+            <div class="skill" id="skill">
+              <span>Effective Communication</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="skill" id="skill2">
+              <span>Project management</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="skill" id="skill3">
+              <span>Running</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <!-- Add more skills as needed -->
+          </div>
+        </div>
+        <h2 class="sub-heading">Languages</h2>
+        <div class="holder" id="holder3">
+
+          <div class="skills" id="skills">
+
+            <div class="skill" id="skill">
+              <span>English</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="skill" id="skill4">
+              <span>Hindi</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="skill" id="skill3">
+              <span>German(Deutsch)</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+
+              </div>
+            </div>
+            <!-- Add more skills as needed -->
+          </div>
+        </div>
+      </div>
+      <button id="readMoreBtn">View More Skills</button>
+
+    </section>
+    <section id="education" class="education-item">
+      <h2 class="section-heading">Education</h2>
+      <div class="education-section" id="education-section">
+        <h3>Bachelor's of Art(B.A)</h3>
+        <p><span>University : </span> Mewar University, Chittorgarh</p>
+        <p><span>Year : </span> 2014 -2017</p>
+        <p><span>C.G.P.A : </span>7.6</p>
+      </div>
+
+    </section>
+
+    <section id="certifications" class="product-item">
+      <h2 class="section-heading">Licenses & Certifications</h2>
+      <br>
+
+      <h2 class="sub-heading">Certificates</h2>
+      <div class="gallery" id="certificates"></div>
+      <div class="navigation">
+        <button class="prev" id="prev"><span>Previous</span></button>
+        <button class="next" id="next"><span>Next</span></button>
+      </div>
+
+    </section>
+
+
+    <section id="location" class="section-item">
+      <h2 class="section-heading">Location & Avaliablity</h2>
+      <br>
+      <h3>Avaliablity</h3>
+      <div class="locations" id="all-locations"></div>
+
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <section id="contact-section">
+      <h2 class="section-heading">Contact Us</h2>
+      <div class="contact-item">
+        <i class="fa fa-mobile" aria-hidden="true"></i> <!-- Mobile Icon -->
+        <span>Mobile: +91 9625708656</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-phone" aria-hidden="true"></i> <!-- Phone Icon -->
+        <span>Phone: +91 9625708656</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> <!-- WhatsApp Icon -->
+        <span>WhatsApp: +91 9625708656</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-envelope" aria-hidden="true"></i> <!-- Email Icon -->
+        <span>Email: mr.prakhar@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/prakhar-p-499757144" target="_blank" class="linkedin-link">
+          <i class="fa fa-linkedin" aria-hidden="true"></i> <!-- LinkedIn Icon -->
+          <span>LinkedIn: https://www.linkedin.com/in/prakhar-p-499757144</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://prakhar3146@github.com/" target="_blank" class="github-link">
+          <i class="fa fa-github" aria-hidden="true"></i> <!-- GitHub Icon -->
+          <span>GitHub: https://prakhar3146@github.com/</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-map-marker" aria-hidden="true"></i> <!-- Location Icon -->
+        <span>Current Location: India</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.202149703861!2d6.66773358811914!3d51.41771313262444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171cae2faf6e6eb%3A0x108f06c7cbbac899!2sHolz%20%26%20Stein!5e0!3m2!1sde!2sde!4v1737621872093!5m2!1sde!2sde"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </a>
+      </div>
 
       </div>
-    </section><!-- End Contact Section -->
- 
-  </main>
- 
-      <footer>
-        <p>&copy; Copywright 2025 Prakhar Prakash. All rights reserved.</p>
-    </footer>
-    
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
 
+    </section>
+    <p>&copy; Copywright 2025 Prakhar Prakash. All rights reserved.</p>
+  </footer>
+  <script>
 
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <!-- PureCounter JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script src="static/js/typed.min.js"></script>
-    <!-- GLightbox Script --> 
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="static/js/script.js"></script>
-    <script>
-    document.getElementById("show-resume").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("show-resume"); 
-      const resumeAttr= document.getElementById("resume")
-      if (resumeAttr.style.display === "none") {
-        
-        //  resumeAttr.classList.remove("resume-hidden");
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.overflow = "auto";
-         resumebtn.innerText = "Hide Resume"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Resume";// Hide again (toggle) 
-         } });
-    document.getElementById("contact-me").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
-    let form = document.getElementById("contact-me");
-    let formData = new FormData(form);
+    //Function to display images dynamically with description
+    async function fetchImages(images_route, container_id, item_id_prefix, item_class) {
+      const static_url = "{% static '' %}"; // Provide the static folder path dynamically from Django
 
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value,
-        },
-    })
-    .then(response => {
-        const contentType = response.headers.get("content-type");
+      const response = await fetch(images_route); // Fetch the image data from your API
+      const images = await response.json(); // Parse the response as JSON
 
-        if (contentType && contentType.includes("application/json")) {
-            return response.json().then(data => {
-                // Handle JSON response
-                form.classList.add('hidden');
-                let sentNotification = document.querySelector(".sent-message");
-                sentNotification.style.display = "flex";
-                form.reset();
-                console.log("here1")
-                // alert(`Thanks for reaching out to Prakhar! Your message has been sent: ${data.message}`);
-                alert('Thanks for reaching out to Prakhar. \nYour message has been sent! \nYou will recieve a confirmation email.')
-              });
-        } else if (contentType && contentType.includes("text/html")) {
-            return response.text().then(html => {
-                // Handle HTML response
-                document.open();
-                document.write(html);
-                document.close();
-            });
-        } else {
-            throw new Error("Unsupported content type");
+      const gallery = document.getElementById(container_id);
+
+      gallery.innerHTML = ''; // Clear the existing content
+      counter = 0;
+      // Populate the gallery with images
+      images.forEach(img => {
+        counter = counter + 1;
+        const itemDiv = document.createElement("div");
+        itemDiv.className = item_class;
+        itemDiv.id = `${item_id_prefix}_${counter}`;
+
+        const imgElement = document.createElement("img");
+        imgElement.src = `${static_url}${img.src}`; // Dynamically set the src path
+        // alert(imgElement.src)
+        imgElement.alt = "Image";
+
+        //Looping over each line after splitting it
+
+        let parts = img.desc.split('*****');
+        parts = parts.filter(item => item.trim() !== "");
+
+        // alert(parts[1])
+        itemDiv.appendChild(imgElement);
+        para_counter = 0
+        let pElement = document.createElement("p");
+        for (let i = 0; i < parts.length; i++) {
+          console.log(parts[i]);
+          para_counter = para_counter + 1
+          if (parts[i].trim().length === 0) {
+            continue
+          }
+
+          //           if (img.src.includes("slideshow1_2")) {
+          //     alert(parts[i]);
+          // }
+
+          // pElement.textContent = parts[i];
+          pElement.className = "project-des"
+          // pElement.id = `description_${counter}`;
+          // alert(img.filename)  
+          // Append text and span together
+          if (para_counter == 1) {
+            var headingElement = document.createElement("span");
+            // headingElement.innerText = parts[i]
+            headingElement.className = "dynamic-content"
+            headingElement.innerText = img.filename
+            pElement.appendChild(headingElement); // Append the span
+            //  pElement.appendChild(headingElement)
+            // alert(parts[i])
+
+          }
+          // alert(parts[i])
+          var lineBreak = document.createElement("br")
+          pElement.appendChild(lineBreak)
+          pElement.appendChild(document.createTextNode(parts[i])); // Add text node
+
+          itemDiv.appendChild(pElement);
         }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert("There was an error submitting the form. Please try again.");
+
+        //If not the first image
+        if (counter != 1) {
+          // imgElement.style.display = "none";
+          // pElement.style.display = "none";
+          itemDiv.style.display = "none";
+
+        }
+
+        gallery.appendChild(itemDiv);
+        para_counter += 1
+      });
+    }
+
+
+    //Function to fetch pdf's
+
+    //Function to display images dynamically with description
+    let subheading = document.querySelectorAll(".document h5")
+    async function fetchPdfs(images_route, container_id, item_id_prefix, item_class) {
+      const static_url = "{% static '' %}"; // Provide the static folder path dynamically from Django
+
+      const response = await fetch(images_route); // Fetch the image data from your API
+      const images = await response.json(); // Parse the response as JSON
+
+      const gallery = document.getElementById(container_id);
+
+      gallery.innerHTML = ''; // Clear the existing content
+
+      counter = 0;
+      // Populate the gallery with images
+      images.forEach(img => {
+        counter = counter + 1;
+        const itemDiv = document.createElement("div");
+        itemDiv.className = item_class;
+        itemDiv.id = `${item_id_prefix}_${counter}`;
+
+        const imgElement = document.createElement("embed");
+        imgElement.src = `${static_url}${img.src}`; // Dynamically set the src path
+        // alert(imgElement.src)
+        imgElement.alt = "Document";
+        imgElement.type = "application/pdf"
+        imgElement.id = `pdf${counter}`
+        // imgElement.style.width = "30%"
+        // imgElement.style.height = "60vh"
+
+        const headingElement = document.createElement("span");
+        headingElement.innerText = img.filename
+        const pElement = document.createElement("p");
+        // pElement.innerHTML= headingElement
+        // pElement.textContent = img.desc;
+        pElement.id = `description2_${counter}`;
+        headingElement.className = "dynamic-subheading"
+        // Append text and span together
+        pElement.appendChild(headingElement); // Append the span
+        pElement.appendChild(document.createTextNode(img.desc)); // Add text node
+        pElement.appendChild(headingElement)
+
+        //If not the first image
+        if (counter != 1) {
+
+          itemDiv.style.display = "none";
+
+        }
+
+        itemDiv.appendChild(imgElement);
+        // itemDiv.appendChild(headingElement);
+        itemDiv.appendChild(pElement);
+
+        gallery.appendChild(itemDiv);
+      });
+    }
+
+
+    document.addEventListener('DOMContentLoaded', fetchImages('/get_images', 'gallery', 'item', 'item'));
+    // For certificate slideshow
+    document.addEventListener('DOMContentLoaded', fetchPdfs('/get_certificates', 'certificates', 'document', 'document'));
+    //Slideshow func
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+    // Function to show the current image
+    function showImage(images, index, des) {
+
+      images.forEach((img, i) => {
+
+        // img.parentElement.classList.toggle('unhide', i === index);
+        img.parentElement.style.display = i === index ? "flex" : "none";
+        // alert(subheading.length)
+        // subheading.style.display = i === index ? "flex" : "none";
+        // subheading.textContent = "changed"
+
+        //     // Accessing and styling the grandparent element (if needed)
+        const grandparent = img.parentElement.parentElement;
+        //     // Check for a sibling of the grandparent with a specific class
+        if (grandparent && grandparent.nextElementSibling) {
+          const sibling = grandparent.nextElementSibling;
+
+          //   // Verify if the sibling has the desired class
+          if (sibling.classList.contains("sub-heading")) {
+            sibling.style.display = i === index ? "flex" : "none";
+            // sibling.textContent = 
+            //     // sibling.style.backgroundColor = i === index ? "yellow" : "transparent"; // Example styling
+            //     // sibling.style.border = i === index ? "2px solid red" : "none"; // Example styling
+          }
+        }
+
+
+
+
+      });
+      // des.forEach((descript, i) => {
+
+      //   // img.classList.toggle('active', i === index);
+      //   descript.style.display = i === index ? "block" : "none";
+
+      // });
+    }
+
+    // Event listener for the "Next" button
+
+    nextButton.addEventListener('click', () => {
+      let images = document.querySelectorAll('.item img');
+      let descriptions = document.querySelectorAll('.item p');
+
+      // alert(descriptions);
+      currentIndex = (currentIndex + 1) % images.length; // Loop to the next image
+      console.log("Triggered Next");
+      // alert("clicked next");
+      showImage(images, currentIndex, descriptions);
     });
-});
+    // Event listener for the "Previous" button
+    prevButton.addEventListener('click', () => {
+      let images = document.querySelectorAll('.item img');
+      let descriptions = document.querySelectorAll('.item p');
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop to the previous image
+      showImage(images, currentIndex, descriptions);
+    });
 
-var slideIndex = 0;
+
+    // Event listener for the "Next" button for certificates slide
+    let currentIndex2 = 0;
+    const prevButton2 = document.querySelector('#prev');
+    const nextButton2 = document.querySelector('#next');
+    nextButton2.addEventListener('click', () => {
+      let images = document.querySelectorAll('.document embed');
+      let descriptions = document.querySelectorAll('.document p');
 
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+      // alert(descriptions);
+      currentIndex2 = (currentIndex2 + 1) % images.length; // Loop to the next image
+      console.log("Triggered Next");
+      // alert("clicked next");
+      showImage(images, currentIndex2, descriptions);
+    });
+    // Event listener for the "Previous" button
+    prevButton2.addEventListener('click', () => {
+      let images = document.querySelectorAll('.document embed');
+      let descriptions = document.querySelectorAll('.document p');
+
+      currentIndex2 = (currentIndex2 - 1 + images.length) % images.length; // Loop to the previous image
+      showImage(images, currentIndex2, descriptions);
+    });
+
+    // When an element is not visible
+    document.addEventListener('DOMContentLoaded', () => {
+      const triggerElement = document.getElementById('navbar');
+      const hiddenElement = document.getElementById('ul2');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            // hiddenElement.classList.add('visible');
+            hiddenElement.style.display = "flex";
+          } else {
+            // hiddenElement.classList.remove('visible');
+            hiddenElement.style.display = "none";
+          }
+        });
+      });
+
+      observer.observe(triggerElement);
+    });
+
+    // To read text data
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('static/text/about_us.txt')
+        .then(response => response.text())
+        .then(data => {
+          const lines = data.split('\n');
+          const select = document.getElementById('about');
+
+          lines.forEach(line => {
+            if (line.includes("*****")) {
+              var headingElement = document.createElement('h3');
+              headingElement.innerText = line.replace("*****", "");
+              headingElement.className = "about-sub-heading";
+              select.appendChild(headingElement);
+              return
+            }
+            const option = document.createElement('p');
+            option.className = "about-section-content"
+            // option.value = line.trim();
+            // const linebr = document.createElement('br');
+            option.textContent = line.trim();
+            select.appendChild(option);
+            // select.appendChild(linebr)
+          });
+        })
+        .catch(error => console.error('Error:', error));
+    });
+
+    let slideStatus = 0
+    //Function to display images dynamically with description - portfolio
+    async function fetchslides() {
+      try {
+        const static_url = "{% static '' %}"; // Provide the static folder path dynamically from Django
+
+        const response = await fetch('/get_events'); // Fetch the image data from your API
+        const images = await response.json(); // Parse the response as JSON
+
+        const slideGallery = document.getElementById("slideshow-container");
+        const dotElement = document.getElementById("dots");
+        slideGallery.innerHTML = ''; // Clear the existing content
+        counter = 0;
+        // Populate the gallery with images
+
+        images.forEach(img => {
+          counter = counter + 1;
+          let itemdiv = document.createElement("div");
+          itemdiv.className = "mySlides fade";
+          itemdiv.id = `slide item_${counter}`;
+          //Adding image elements
+          let imgElement = document.createElement("img");
+          imgElement.src = `${static_url}${img.src}`; // Dynamically set the src path
+          imgElement.alt = "Image";
+          // imgElement.className="slide"
+          imgElement.id = `pic${counter}`
+
+          // Adding event description
+          let pElement = document.createElement("p");
+          pElement.textContent = img.desc;
+          pElement.className = "portfolio-description"
+          // alert(img.desc);
+          // pElement.id = `slideshow_description_${counter}`;
+          // pElement.className="slide"
+
+          // Adding dotss
+          let dot = document.createElement("span");
+          dot.className = "dot";
+          //Appending portfolio image
+          itemdiv.appendChild(imgElement);
+          //If not the first image
+
+          var headingElement = document.createElement('h3');
+          headingElement.innerText = img.heading
+          headingElement.className = "portfolio-sub-heading";
+          itemdiv.appendChild(headingElement);
+
+          itemdiv.appendChild(pElement);
+          slideGallery.appendChild(itemdiv);
+          dotElement.appendChild(dot)
+        });
+
+        slideStatus = 1
+      } catch {
+        slideStatus = 2
+        alert("Webpage error!")
+      }
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
+
+
+    let slideIndex = 0; // Declare slideIndex globally to maintain its state
+
+    function showSlides() {
+      let i;
+      let slides = document.querySelectorAll(".mySlides"); // Select all slide elements
+      let dots = document.querySelectorAll(".dot");       // Select all dot elements
+
+      // Hide all slides
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        slides[i].classList.remove("in-view")
+      }
+
+      // Remove "active" class from all dots
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      // Increment slideIndex
+      slideIndex++;
+      if (slideIndex > slides.length) {
+
+        slideIndex = 1; // Reset to the first slide
+      }
+
+      // Show the current slide and add "active" class to the corresponding dot
+      // alert(`Showing slide no${slideIndex-1}`)
+      slides[slideIndex - 1].style.display = "flex";
+      slides[slideIndex - 1].classList.add("in-view")
+      dots[slideIndex - 1].className += " active";
+
+      // Set a timeout to call the function again every 4 seconds
+      setTimeout(showSlides, 4000);
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 3 seconds
-}
 
 
-showSlides();
-// For displaying messages in the front end
-var form = document.getElementById("contact-me")
-form.addEventListener("submit", function (event){
-// Get the messages container 
-event.preventDefault(); // Prevent default form submission
-var messagesContainer = document.querySelector("django-messages"); 
-if (messagesContainer) { // Convert messages into an array 
-var messages = Array.from(messagesContainer.getElementsByTagName("li"));
- messages.forEach(function(message) { // Handle the message based on its class (e.g., error, success, etc.) 
- if (message.classList.contains("error")) { // Display the error message (e.g., alert, modal, etc.) 
- alert("Error: " + message.textContent); 
-form.reset()
- message.remove(); 
-// message.style.display= "None";
-} 
+    async function fetchLocations() {
+      const static_url = "{% static '' %}"; // Provide the static folder path dynamically from Django
 
- else if (message.classList.contains("success")) { // Display the success message (e.g., alert, modal, etc.) 
-        alert("Your message was sent to Prakhar!");  // Add more conditions based on your needs // Optionally, you can remove the message from the DOM after handling it 
-        console.log("Inside here")
-        console.log(message)
-        message.style.backgroundColor= "none";
-        message.style.border= "0px";
-        message.remove(); 
-        form.reset()
- }
-}); 
-} 
-});
-    </script>
-   <script>
-  //cert 1
-document.getElementById("view-cert1").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert1"); 
-      const resumeAttr= document.getElementById("certificate1")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
-//cert 2
-document.getElementById("view-cert2").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert2"); 
-      const resumeAttr= document.getElementById("certificate2")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
-  //cert 3
-  document.getElementById("view-cert3").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert3"); 
-      const resumeAttr= document.getElementById("certificate3")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
+      const response = await fetch('/get_locations'); // Fetch the image data from your API
+      const locations = await response.json(); // Parse the response as JSON
 
-  //cert 4
-  document.getElementById("view-cert4").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert4"); 
-      const resumeAttr= document.getElementById("certificate4")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
+      const element = document.getElementById('all-locations');
 
-  //cert 5
-  document.getElementById("view-cert5").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert5"); 
-      const resumeAttr= document.getElementById("certificate5")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
+      element.innerHTML = ''; // Clear the existing content
+      counter = 0;
+      // Populate the gallery with images
 
-  //cert6
-  document.getElementById("view-cert6").addEventListener("click", function() { 
-      const resumebtn = document.getElementById("view-cert6"); 
-      const resumeAttr= document.getElementById("certificate6")
-      if (resumeAttr.style.display === "none") {
-         resumeAttr.style.display = "flex"; // Display the resume when clicked 
-         resumeAttr.style.width = "100%" ;
-         resumeAttr.style.minWidth = "fit-content" ;
-         resumeAttr.style.height = "100%" ;
-         resumeAttr.style.border = "5px solid black";
-         resumeAttr.style.borderStyle = "dashed";
-         resumebtn.innerText = "Hide Ceritficate"; 
-         } else { resumeAttr.style.display = "none"; 
-         resumebtn.innerText= "View Certificate";// Hide again (toggle) 
-         } });
-   
-   //for Noticeboard
-   function toggleChatPopup() {
-    var chatPopup = document.getElementById("chat-popup");
-    var chatBtn = document.getElementById("chat-btn");
-    if (chatPopup.style.display === "none" || chatPopup.style.display === "") {
-        chatPopup.style.display = "block";
-        chatBtn.style.display = "none";
-    } else {
-        chatPopup.style.display = "none";
-        chatBtn.style.display = "block";
+      locations.forEach(img => {
+        counter = counter + 1;
+        // alert(img.desc)
+        let pElement = document.createElement("p");
+        pElement.textContent = img.desc;
+        pElement.id = `loc_${counter}`;
+
+        element.appendChild(pElement);
+        // element.appendChild(itemDiv);
+      });
     }
-}
+
+    // fetching Skillset
+    async function fetchSkills() {
+      const static_url = "{% static '' %}"; // Provide the static folder path dynamically from Django
+
+      const response = await fetch('/get_skillset'); // Fetch the image data from your API
+      const locations = await response.json(); // Parse the response as JSON
+
+      let element = document.getElementById('skills');
+      const skillSection = document.getElementById('skillset');
+      const holder = document.getElementById('holder1');
+      const mainHolder = document.getElementById('main-holder');
+      let sectionTitle = document.createElement("h2");
+      sectionTitle.innerText = "Technical Skills";
+      sectionTitle.id = "technical-skills";
+      sectionTitle.className = "sub-heading";
+      element.innerHTML = ''; // Clear the existing content
+      let counter = 0;
+      // Populate the gallery with images
+      let flag = false
+      locations.forEach(img => {
+        if (img.src.length == 0 || img.desc.length == 0) {
+          alert("here")
+          return;
+        }
+        counter = counter + 1;
+
+        let numberOfStars = parseInt(img.desc, 10);
+
+        let pElement = document.createElement("div");
+        let title = document.createElement("span");
+        title.textContent = img.src
+        let ratingContainer = document.createElement("div");
+        ratingContainer.className = "skill";
+        let starsContainer = document.createElement("div");
+        starsContainer.className = "stars";
+        for (i = 0; i <= numberOfStars; i++) {
+          let liTag = document.createElement("li");
+          liTag.className = "fas fa-star";
+          starsContainer.appendChild(liTag)
+        }
+
+        // pElement.textContent = img.desc;
+
+        pElement.id = `skill_${counter}`;
+        pElement.className = "skill"
 
 
-   </script>
+        // alert(pElement.innerHTML)
+        if (counter % 5 == 0 && flag == false) {
+          flag = true
+        }
+        if (flag == true) {
+          let element2 = document.createElement("div");
+          element2.className = "skills";
+          element2.id = `skills_${counter}`
+          // element2.appendChild(title)
 
+          ratingContainer.appendChild(title)
+          ratingContainer.appendChild(starsContainer)
+          element2.appendChild(ratingContainer);
+          // alert(`Appending : ${ratingContainer.innerText}`)
+          holder.appendChild(element2)
+          mainHolder.appendChild(sectionTitle)
+          mainHolder.appendChild(holder)
+          // skillSection.appendChild(mainHolder)
+
+
+          element = document.getElementById(`skills_${counter}`)
+          flag = false
+        }
+        else {
+          pElement.appendChild(title)
+          pElement.appendChild(starsContainer)
+          element.appendChild(pElement);
+
+        }
+        // element.appendChild(itemDiv);
+      });
+    };
+
+
+    readMoreBtn1 = document.getElementById("readMoreBtn");
+    var hiddenContent = document.getElementById("holder1");
+
+    readMoreBtn1.addEventListener("click", () => {
+      // Toggle the 'hidden' class
+      hiddenContent.classList.toggle("hide");
+
+      // Update button text based on visibility
+      if (hiddenContent.classList.contains("hide")) {
+        readMoreBtn1.innerText = "View More Skills";
+      } else {
+        readMoreBtn1.innerText = "Read Less";
+      }
+
+
+    });
+
+
+    // Triggers all the async functions 
+    async function fetch_data() {
+      // Fetch images once the DOM is ready
+      await fetchslides();
+      // Fetch images once the DOM is ready
+      // alert(`Finally:${slideStatus}`)
+      if (slideStatus === 1) {
+
+        showSlides();
+      }
+      fetchLocations();
+      await fetchSkills();
+    }
+    document.addEventListener('DOMContentLoaded', fetch_data);
+
+    // JavaScript for toggling the navbar visibility on mobile
+    const hamburgerIcon = document.getElementById("hamburgerIcon");
+    const navLinks = document.getElementById("ul3");
+
+    // hamburgerIcon.addEventListener("click", () => {
+    //   alert('clicked')
+
+    //         if (navLinks.classList.contains("hide")) {
+    //           navLinks.classList.toggle("hide");
+    //           navLinks.style.display= "flex";
+    //           navLinks.style.flexDirection = "column"
+    //         }
+    //     });
+
+
+    hamburgerIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+
+  </script>
 </body>
+
 </html>
