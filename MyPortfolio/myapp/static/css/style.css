@@ -883,14 +883,31 @@ h2 {
 .portfolio-description{
     min-height: max-content;
     height: max-content;
+    /* min-height: 40vh;
+    height: 40vh; */
+    margin-left: 16px;
+    width: 95%;
+    min-width: 95%;
 }
 .portfolio-sub-heading{
     font-size: xx-large;
     color: aliceblue;
-    width: 89%;
+    width: 114%;
     min-width: 14%;
-    margin-left: 22%;
+    margin-left: 46%;
     align-self: center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dots{
+    margin-left: 35%;
 }
 }
 
@@ -1411,6 +1428,7 @@ h2 {
 @media (min-width: 375px) and (max-width:667px) {
     .navigation{
         margin-bottom: 58%;
+        /* margin-top: -58%; */
     }
     #events h2 {
         margin-top: -54%;
@@ -1421,10 +1439,11 @@ h2 {
     .document p {
         padding-left: 10%;
         display: flex;
-        flex-direction: column-reverse;
+        align-self: center;
+        flex-direction: column;
         flex-wrap: inherit;
-        min-height: 55vh;
-        height: 55vh;
+        min-height: min-content;
+        height: min-content;
         margin-top: 0px;
     }
 }
