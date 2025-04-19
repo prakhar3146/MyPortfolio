@@ -517,7 +517,7 @@ button {
     margin-left: 43%;
     border: 10px solid #000000;
     border-style: solid;
-    width: 10%;
+    width: 15%;
     height: 20%;
     border-radius: 180px;
 }
@@ -616,28 +616,29 @@ h2 {
     text-decoration: underline;
     width: 12%;
     font-size: larger;
-
+    background-color: #00bcd44a;
 
 }
 
 .next {
-    /* background: url('static/images/right-arrow.png') no-repeat center left; */
-    background: url("../images/right-arrow.png") no-repeat right;
-    background-size: 54px 43px;
-    padding-left: 9px;
-    /* Add space to the left for the icon */
-    border: none;
-    cursor: pointer;
-    width: 12%;
-    text-decoration: underline;
-    font-size: larger;
+       /* background: url('static/images/right-arrow.png') no-repeat center left; */
+       background: url("../images/right-arrow.png") no-repeat right;
+       background-size: 54px 43px;
+       padding-left: 9px;
+       border: none;
+       cursor: pointer;
+       width: 12%;
+       text-decoration: underline;
+       font-size: larger;
+       background-color: #00bcd44a;
 
 }
 
 /* Add hover effect for both buttons */
 .prev:hover,
 .next:hover {
-    color: #007BFF;
+    color: #e5e8ec;
+    background-color: black;
     /* Change color on hover */
 }
 
@@ -1622,7 +1623,12 @@ h2 {
     #readMoreBtn {
         width: 123%;
     }
-
+    .navigation {
+        background-color: aliceblue;
+        color: black;
+        margin-top: 174px;
+        margin-bottom: 50vh;
+      }
     .navigation:hover {
         background-color: aliceblue;
         color: black;
@@ -1740,41 +1746,17 @@ h2 {
     }
 }
 
-@media (max-width: 950px) {
-    body {
-        background-image: url("../images/landing.jpeg") !important;
-        /* background-image: url("staticfiles/images/landing.jpeg") !important; */
-        background-size: cover;
-        background-position: center;
-        background-position: center;
-        /* object-fit: cover; */
-        display: flex;
-        /* max-width: 100%; */
-        height: 100%;
-        width: 148%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow: auto;
-        /* display: flex; */
-        flex-direction: column;
-        justify-content: center;
-        font-family: Arial, sans-serif;
-    }
-
-    .dynamic-content {
-        font-size: x-large;
-        color: #b1b1b1;
-        margin-bottom: 5%;
-        font-weight: 600;
-        margin-left: 7%;
-        width: 107vw;
-        min-height: 10vh;
-        height: 10vh;
-    }
-}
 
 @media (min-width: 482) and (max-width:1158) {
     #profile-pic {
-        width: 30%;
+        width: 50%;
     }
 }
+
+@media only screen and (width: 393px) and (height: 852px) and (-webkit-device-pixel-ratio: 3) {
+    /* Your CSS styles here */
+    #profile-pic {
+        width: 30%;
+    }
+  }
+  
