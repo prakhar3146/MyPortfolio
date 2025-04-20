@@ -689,8 +689,61 @@ h2 {
     background-color: #000;
     margin: 4px 0;
 }
+/* Basic styling for the chat popup */
+.chat-popup {
+    top: 10px;
+    position: fixed;
+    height: max-content;
+    bottom: 0;
+    right: 0px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    overflow: auto;
+}
 
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.chat-body {
+    /* padding: 10px; */
+    border: 8px solid #a2a2ff;
+    margin-top: 5%;
+    padding: 5%;
+    border-style: ridge;
+}
+.chat-btn {
+    letter-spacing: 2px;
+    position: fixed;
+    object-fit: fill;
+    top: 0;
+    bottom: 20px;
+    width: max-content;
+    font-family: inherit;
+    right: -174px;
+    font-weight: 600;
+    background-color: #254c76;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.chat-btn:hover {
+    background-color: #0056b3;
+}
+.notice-header,.chat-body p:first-child{
+    font-size: x-large;
+    font-weight: 600;
+    font-family: cursive;
+}
 /* Snake movement keyframes */
 @keyframes snake-move {
     0% {
@@ -1736,7 +1789,7 @@ h2 {
         margin-top: 3%;
         font-weight: 600;
         letter-spacing: 3px;
-        margin-left: 32%;
+        margin-left: 6%;
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 15%;

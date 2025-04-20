@@ -62,7 +62,73 @@
       letter-spacing: 2px;
       font-weight: 600;
     }
+    
+/* Basic styling for the chat popup */
+.chat-popup {
+    top: 10px;
+    position: fixed;
+    height: max-content;
+    bottom: 0;
+    right: 0px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    overflow: auto;
+}
 
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat-body {
+    /* padding: 10px; */
+    border: 8px solid #a2a2ff;
+    margin-top: 5%;
+    padding: 5%;
+    border-style: ridge;
+}
+.chat-btn {
+    letter-spacing: 2px;
+    position: fixed;
+    object-fit: fill;
+    top: 0;
+    bottom: 20px;
+    width: max-content;
+    font-family: inherit;
+    right: -174px;
+    font-weight: 600;
+    background-color: #254c76;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.chat-btn:hover {
+    background-color: #0056b3;
+}
+.notice-header,.chat-body p:first-child{
+    font-size: x-large;
+    font-weight: 600;
+    color: midnightblue;
+    width: fit-content;
+    font-weight: 600;
+    font-family: cursive;
+}
+.chat-body p{    align-self: baseline;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: black;
+    padding: 2px;}
     @media (min-width: 390px) and (max-width:900px) {
       [id^="pdf"] {
         min-width: 28%;
@@ -302,12 +368,29 @@
   </header>
   <main>
     <section id="about" class="section-item">
+      <div id="chat-popup" class="chat-popup">
+        <div class="chat-header" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i>  Hide message!</div>
+        <div class="chat-body">
+            <p>Prakhar's noticeboard!</p>
+            <p>Dear guest,</p>
+            <p>First of all, thank you for visiting my website.</p>
+            <p>You can find the latest announcements and notifications by me over here.</p>
+            <p class="notice-header">Update : </p>
+            <p>Well, It seems there are no new Updates!</p>
+         
+            <p>Wish you a great day!</p>
+            <!-- Add your chat content here -->
+        </div>
+    </div>
+      <button id="chat-btn" class="chat-btn" onclick="toggleChatPopup()"><i class="fas fa-thumbtack"></i> You have a message from Prakhar</button>
+
       <h2 class="section-heading">About</h2>
       <img src="{% static '/images/old.jpg' %}" alt="Profile Pic" id="profile-pic">
       <br>
       <div class="snake-line"></div>
 
       <p class="about-section-content"></p>
+
     </section>
 
     <section id="products" class="product-item">
@@ -1064,7 +1147,23 @@
 
     hamburgerIcon.addEventListener("click", () => {
       navLinks.classList.toggle("active");
+
+
+
     });
+       //for Noticeboard
+       function toggleChatPopup() {
+    var chatPopup = document.getElementById("chat-popup");
+    var chatBtn = document.getElementById("chat-btn");
+    if (chatPopup.style.display === "none" || chatPopup.style.display === "") {
+        chatPopup.style.display = "block";
+        chatPopup.style.color = "beige";
+        chatBtn.style.display = "none";
+    } else {
+        chatPopup.style.display = "none";
+        chatBtn.style.display = "block";
+    }
+}
 
 
   </script>
