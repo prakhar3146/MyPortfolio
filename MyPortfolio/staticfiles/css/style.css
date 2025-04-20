@@ -621,16 +621,16 @@ h2 {
 }
 
 .next {
-       /* background: url('static/images/right-arrow.png') no-repeat center left; */
-       background: url("../images/right-arrow.png") no-repeat right;
-       background-size: 54px 43px;
-       padding-left: 9px;
-       border: none;
-       cursor: pointer;
-       width: 12%;
-       text-decoration: underline;
-       font-size: larger;
-       background-color: #00bcd44a;
+    /* background: url('static/images/right-arrow.png') no-repeat center left; */
+    background: url("../images/right-arrow.png") no-repeat right;
+    background-size: 54px 43px;
+    padding-left: 9px;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+    text-decoration: underline;
+    font-size: larger;
+    background-color: #00bcd44a;
 
 }
 
@@ -690,6 +690,43 @@ h2 {
     margin: 4px 0;
 }
 
+
+/* Snake movement keyframes */
+@keyframes snake-move {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(20px) translateY(-20px);
+        /* Moves diagonally up */
+    }
+
+    50% {
+        transform: translateX(50px) translateY(0);
+        /* Moves horizontally */
+    }
+
+    75% {
+        transform: translateX(20px) translateY(20px);
+        /* Moves diagonally down */
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        /* Returns to the start position */
+    }
+}
+
+.snake-line {
+    width: 100%;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50px;
+    position: relative;
+    animation: snake-move 3s infinite;
+}
+
 .hide {
     display: none;
 }
@@ -705,6 +742,7 @@ h2 {
     margin-bottom: 10px;
     font-family: emoji;
     line-height: normal;
+    color: #4dc8e6;
 }
 
 .portfolio-description {
@@ -726,7 +764,7 @@ h2 {
 }
 
 .dots {
-    /* align-self: center; */
+    align-self: center;
     margin-left: 9%;
     margin-bottom: 2%;
 }
@@ -1047,7 +1085,7 @@ h2 {
     }
 
     .dots {
-        margin-left: 35%;
+        margin-left: 15%;
         padding-bottom: 5%;
     }
 }
@@ -1121,7 +1159,9 @@ h2 {
 
     #profile-pic {
         width: 19%;
-        margin-left: 40%;
+        margin-left: 39%;
+        width: 19%;
+        border-radius: 437px;
     }
 
     #certifications {
@@ -1623,12 +1663,14 @@ h2 {
     #readMoreBtn {
         width: 123%;
     }
+
     .navigation {
         background-color: aliceblue;
         color: black;
         margin-top: 174px;
         margin-bottom: 50vh;
-      }
+    }
+
     .navigation:hover {
         background-color: aliceblue;
         color: black;
@@ -1676,34 +1718,25 @@ h2 {
 
         letter-spacing: 3px;
         justify-content: center;
-        /* background-color: black; */
         color: #d1d1d1;
         font-size: xxx-large;
         text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
 
         font-weight: 600;
         letter-spacing: 3px;
-
-        /* border: 15px solid azure; */
-        /* border-style: double; */
         padding-left: 0px;
         padding-right: 0px;
         display: flex;
         align-items: 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000;
-        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29), 4px 4px 8px #000000; */
-
         letter-spacing: 3px;
         justify-content: center;
-        /* background-color: black; */
         color: #d1d1d1;
         font-size: xxx-large;
         text-shadow: 2px 2px 4px rgb(0 0 0 / 29%), 4px 4px 8px #000000;
         margin-top: 3%;
         font-weight: 600;
         letter-spacing: 3px;
-        margin-left: 6%;
-        /* border: 15px solid azure; */
-        /* border-style: double; */
+        margin-left: 32%;
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 15%;
@@ -1754,9 +1787,9 @@ h2 {
 }
 
 @media only screen and (width: 393px) and (height: 852px) and (-webkit-device-pixel-ratio: 3) {
+
     /* Your CSS styles here */
     #profile-pic {
-        width: 30%;
+        width: 50%;
     }
-  }
-  
+}

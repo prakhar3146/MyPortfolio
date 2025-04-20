@@ -120,7 +120,7 @@
 
       #profile-pic {
         display: flex;
-        margin-left: 33%;
+        margin-left: 43%;
         border: 10px solid #000000;
         border-style: solid;
         width: 35%;
@@ -213,7 +213,8 @@
       }
 
       #profile-pic {
-        width: 50%;
+        width: 330px;
+    border-radius: 437px;
       }
 
       body {
@@ -222,13 +223,16 @@
 
       .navigation {
         margin-top: 54vh;
-        padding-left: 15vw;
-        margin-left: 10px;
+    padding-left: 32vw;
+    margin-left: 198px;
       }
 
       #cert-nav {
         margin-top: 5%;
-        margin-left: 3%;
+    width: 50%;
+    margin-left: 9%;
+    padding-right: 43%;
+    padding-left: 21%;
       }
 
       .dynamic-content {
@@ -299,8 +303,10 @@
   <main>
     <section id="about" class="section-item">
       <h2 class="section-heading">About</h2>
-      <img src="{% static 'images/old.jpg' %}" alt="Profile Pic" id="profile-pic">
+      <img src="{% static '/images/old.jpg' %}" alt="Profile Pic" id="profile-pic">
       <br>
+      <div class="snake-line"></div>
+
       <p class="about-section-content"></p>
     </section>
 
@@ -466,9 +472,10 @@
       <br>
       <h3>Avaliablity</h3>
       <div class="locations" id="all-locations"></div>
-
-      </p>
+      <br>
+      <div class="snake-line"></div>
     </section>
+ 
 
   </main>
   <footer>
@@ -500,6 +507,12 @@
         <a href="https://prakhar3146@github.com/" target="_blank" class="github-link">
           <i class="fa fa-github" aria-hidden="true"></i> <!-- GitHub Icon -->
           <span>GitHub: https://prakhar3146@github.com/</span>
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://prakhar3146@instagram.com/" target="_blank" class="instagram-link">
+          <i class="fa fa-instagram" aria-hidden="true"></i> <!-- GitHub Icon -->
+          <span>Instagram: https://prakhar3146@instagram.com/</span>
         </a>
       </div>
       <div class="contact-item">
