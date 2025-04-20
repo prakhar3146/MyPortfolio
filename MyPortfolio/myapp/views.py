@@ -46,16 +46,16 @@ def get_images(request):
     
     if os.path.exists(IMAGE_FOLDER): 
 
-        print("Exists",os.listdir(IMAGE_FOLDER)) # Ensure folder exists
+        # print("Exists",os.listdir(IMAGE_FOLDER)) # Ensure folder exists
         for filename in os.listdir(IMAGE_FOLDER):
-            print("CHECKING : ",filename)
+            # print("CHECKING : ",filename)
             if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')) and "slideshow1" in filename.lower():
                 desc_file = os.path.splitext(filename)[0] + '.txt'
                 desc_path = os.path.join(TEXT_FOLDER, desc_file)
                 description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
                 # description =description.split("*****")
                 # description = "\n".join(description)
-                print("ADDING : ",f'images/{filename}')
+                # print("ADDING : ",f'images/{filename}')
                 # with open("paths.txt","a") as file:
                 #     file.write( f'\nimages/{filename}')
                 appname = filename.split("_")[0]
@@ -73,32 +73,35 @@ def get_images(request):
 
 
 def get_events(request):
+    try:
+        images = []
+        
+        if os.path.exists(IMAGE_FOLDER): 
 
-    images = []
-    
-    if os.path.exists(IMAGE_FOLDER): 
-
-        print("Exists",os.listdir(IMAGE_FOLDER)) # Ensure folder exists
-        for filename in os.listdir(IMAGE_FOLDER):
-            print("CHECKING : ",filename)
-            if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')) and "slideshow2" in filename.lower():
-                desc_file = os.path.splitext(filename)[0] + '.txt'
-                desc_path = os.path.join(TEXT_FOLDER, desc_file)
-                description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
-                print("ADDING : ",f'images/{filename}')
-                with open("paths.txt","a") as file:
-                    file.write( f'\nimages/{filename}')
+            # print("Exists",os.listdir(IMAGE_FOLDER)) # Ensure folder exists
+            for filename in os.listdir(IMAGE_FOLDER):
+                # print("CHECKING : ",filename)
+                if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')) and "slideshow2" in filename.lower():
+                    desc_file = os.path.splitext(filename)[0] + '.txt'
+                    desc_path = os.path.join(TEXT_FOLDER, desc_file)
+                    description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
+                    # print("ADDING : ",f'images/{filename}')
+                    # with open("paths.txt","a") as file:
+                        # file.write( f'\nimages/{filename}')
 
 
-                images.append({'src': f'images/{filename}','desc': description.split("*****")[1],"heading":description.split("*****")[0]})
-                
-    else:
-        print("Slide Folder Not Found!",IMAGE_FOLDER)
-    response_object = JsonResponse(images, safe=False)
-        #     print("\nResponse : ",
-        # json.loads(response_object.content)
-        # )
-    return response_object
+                    images.append({'src': f'images/{filename}','desc': description.split("*****")[1],"heading":description.split("*****")[0]})
+                    
+        else:
+            print("Slide Folder Not Found!",IMAGE_FOLDER)
+        response_object = JsonResponse(images, safe=False)
+            #     print("\nResponse : ",
+            # json.loads(response_object.content)
+            # )
+        return response_object
+    except Exception as e:
+        print("Exception occured in get events!!",e)
+        response_object = JsonResponse({'src': f'images/logo.png','desc': "Uh Oh! The description for this slide is unavilable at the moment :(","heading":"Failed to fetch slide"}, safe=False)
 
 
 def get_locations(request):
@@ -109,12 +112,12 @@ def get_locations(request):
 
         # print("Exists",os.listdir(TEXT_FOLDER)) # Ensure folder exists
         for filename in os.listdir(TEXT_FOLDER):
-            print("CHECKING text : ",filename)
+            # print("CHECKING text : ",filename)
             if filename.lower().endswith(('txt')) and "locations" in filename.lower():
                 desc_file = os.path.splitext(filename)[0] + '.txt'
                 desc_path = os.path.join(TEXT_FOLDER, desc_file)
                 description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
-                print("Now ADDING : ",f'{description.split("...>>")}')
+                # print("Now ADDING : ",f'{description.split("...>>")}')
                 # with open("paths.txt","a") as file:
                 #     file.write( f'\nimages/{filename}')
                 for loc in description.split("...>>"):
@@ -138,16 +141,16 @@ def get_certificates(request):
     
     if os.path.exists(IMAGE_FOLDER): 
 
-        print("Exists",os.listdir(PDF_FOLDER)) # Ensure folder exists
+        # print("Exists",os.listdir(PDF_FOLDER)) # Ensure folder exists
         for filename in os.listdir(PDF_FOLDER):
-            print("CHECKING : ",filename)
+            # print("CHECKING : ",filename)
             if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.pdf')) and "slideshow_3" in filename:
                 desc_file = os.path.splitext(filename)[0] + '.txt'
                 desc_path = os.path.join(TEXT_FOLDER, desc_file)
                 description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
-                print("ADDING : ",f'\npdf/{filename}')
-                with open("paths.txt","a") as file:
-                    file.write( f'\npdf/{filename}')
+                # print("ADDING : ",f'\npdf/{filename}')
+                # with open("paths.txt","a") as file:
+                #     file.write( f'\npdf/{filename}')
 
 
                 images.append({'src':f'pdf/{filename}','desc': description, 'filename':filename.split("_")[0]})
@@ -170,12 +173,12 @@ def get_skillset(request):
 
         # print("Exists",os.listdir(TEXT_FOLDER)) # Ensure folder exists
         for filename in os.listdir(TEXT_FOLDER):
-            print("CHECKING text : ",filename)
+            # print("CHECKING text : ",filename)
             if filename.lower().endswith(('txt')) and "skillset" in filename.lower():
                 desc_file = os.path.splitext(filename)[0] + '.txt'
                 desc_path = os.path.join(TEXT_FOLDER, desc_file)
                 description = open(desc_path).read().strip() if os.path.exists(desc_path) else "No description available"
-                print("Now ADDING : ",f'{description.split("...>>")}')
+                # print("Now ADDING : ",f'{description.split("...>>")}')
                 # with open("paths.txt","a") as file:
                 #     file.write( f'\nimages/{filename}')
                 for skill in description.split(",...>>"):
