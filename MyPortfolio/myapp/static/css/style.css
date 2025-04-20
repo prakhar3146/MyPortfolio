@@ -145,7 +145,7 @@ main {
 }
 
 body {
-    background-image: url("../images/landing.jpeg") !important;
+    background-image: url("../images/landing.jpg") !important;
     /* background-image: url("staticfiles/images/landing.jpeg") !important; */
     background-size: cover;
     background-position: center;
