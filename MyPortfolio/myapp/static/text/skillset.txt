@@ -1,4 +1,4 @@
-Python|5,...>>
+Python|4,...>>
 HTML|4,...>>
 JavaScript|3,...>>
 SQL|4,...>>

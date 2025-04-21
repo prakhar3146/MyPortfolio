@@ -787,15 +787,26 @@ h2 {
     #skillset {
         align-self: center;
     }
+    .zigzag-line{
+        width: 220vw;
+        height: 20px;
+        display: block;
+        /* margin: 0 auto; */
+        margin-left: -4%;
+        /* margin-left: -9%; */
+    }
+    
     #events-zigzag{
-        width: 100%;
+        width: 220vw;
         height: 20px;
         display: flex;
         /* margin: 0 auto; */
-        margin-bottom: 58%;
-        margin-top: -51%;
+        margin-bottom: 69%;
+        margin-top: -65%;
     }
-
+    #skills-zigzag{
+        margin-left: -15%;
+    }
     #education-section {
         margin-left: 30%;
         font-size: xx-large;
