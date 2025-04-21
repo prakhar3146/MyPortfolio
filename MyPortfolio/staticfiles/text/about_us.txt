@@ -5,16 +5,16 @@ As you may know, my name is Prakhar Prakash.
 I am a travel enthusiast who loves to code, read and watch fiction and go running .
 As of my professional life,
 I am a software developer with prior experience as an Automation Engineer.
-I am creative, curious, and occasionally quirky and thrive on the little joys that make life extraordinary.
+I am creative, curious and occasionally quirky and thrive on the little joys that make life extraordinary.
 I love science fiction movies and novels.
 I love Italian and Indian food.
-I like hiking, running and coding(and hence the profession).
+I like hiking, running and coding (and hence the profession).
 
 I created this space to share my work profile, projects, and skillset while providing a quick peek into my personal life and services.
 
 In my professional life,*****
 I am a dedicated and proficient software developer with around three years of experience specializing in automating end to end processes with a focus on backend development along with experience in full-stack development. 
-My technical toolkit includes Python, JavaScript, HTML, CSS, and SQL.  
+My technical toolkit includes Python, JavaScript, HTML, CSS and SQL.  
 With a passion for crafting efficient, scalable, and user-friendly applications, I have contributed to diverse projects, delivering high-quality solutions on time.
 
 In my previous role, I thrived in collaborative team environments and took on various responsibilities, from designing and implementing backend components to developing end-to-end workflows for applications.

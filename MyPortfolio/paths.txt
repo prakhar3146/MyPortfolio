@@ -9646,3 +9646,771 @@ images/slideshow2_4.jpg
 images/slideshow2_5.jpg
 images/slideshow2_6.jpeg
 images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpeg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpeg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_1.jpg
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_2.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_3.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_4.jpgScience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_2.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpgScience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_2.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpegcience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpge_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpgshow_3_2.pdf
+images/slideshow2_2.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_2.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpgchine Learning projects_slideshow_3_6.pdf
+images/slideshow2_2.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_3.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_4.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpgScience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_4.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpeg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_2.jpeg
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_3.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_4.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_5.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_3.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_4.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_5.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpeg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpegith Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_5.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_6.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_2.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_6.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+images/slideshow2_1.jpg
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+images/slideshow2_1.jpg
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_2.jpeg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_3.jpge_slideshow_3_3.pdf
+images/slideshow2_4.jpg
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_1.jpg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_1.jpgScience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_2.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpgScience,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_2.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_1.jpg
+images/slideshow2_2.jpeg
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+images/slideshow2_1.jpg
+pdf/Deep Learning_slideshow_3_2.pdf
+images/slideshow2_2.jpeg
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
+images/slideshow2_3.jpg
+images/slideshow2_4.jpg
+images/slideshow2_5.jpg
+images/slideshow2_6.jpeg
+images/slideshow2_7.jpg
+images/slideshow2_8.jpg
+pdf/Applied Machine Learning with Python - IBM_slideshow_3_4.pdf
+pdf/Buisness Analytics with Tableau_slideshow_3_7.pdf
+pdf/Data Science and Machine Learning projects_slideshow_3_6.pdf
+pdf/Deep Learning_slideshow_3_2.pdf
+pdf/Deep NLP_certificate_slideshow_3_3.pdf
+pdf/PG Program in Data Science,Machine Learning and Neural Networks _slideshow_3_1.pdf
