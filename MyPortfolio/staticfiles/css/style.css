@@ -1826,3 +1826,19 @@ h2 {
         width: 50%;
     }
 }
+
+@media screen and (min-width: 2000px) and (max-width: 1200px) and (orientation: landscape) {
+    /* Styles for landscape mode */
+    body{
+        width: max-content;
+    }
+    
+  }
+  
+  @media screen and (min-width: 2000px) and (max-width: 1200px) and (orientation: portrait) {
+    /* Styles for portrait mode */
+    body{
+        width: max-content;
+    }
+  }
+  
