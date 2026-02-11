@@ -641,6 +641,8 @@ h2 {
     background-color: #000000;
     color: ghostwhite;
     font-style: italic;
+
+    min-width: max-content;
 }
 
 .next {
@@ -737,7 +739,9 @@ h2 {
        letter-spacing: 12px;
     margin: 3%;
 }
-
+#prev,#next{
+    min-width: max-content;
+}
 
 /* Snake movement keyframes */
 @keyframes snake-move {
@@ -1148,6 +1152,7 @@ p{
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
+        margin-top: 10%;
     }
 
     .dots {
