@@ -1,6 +1,8 @@
 *****Portfolio website (12/2024 - Present) *****
 *****Tech Stack : Python, JavaScript, HTML, CSS, PostgreSQL, Django, Git, Gunicorn, Google Analytics, Co-pilot *****
-*****URL : www.appsbyprakhar.in *****
+*****>>@link|My Portfolio| @startlink|https://www.appsbyprakhar.in/|@endlink|*****
+*****>>@link|GitHub | @startlink|https://github.com/prakhar3146/MyPortfolio.git|@endlink|*****
+*****Domain :www.appsbyprakhar.in/*****
 *****This is a portfolio website developed using HTML, CSS and JavaScript(vanilla) in the front-end and Python and PostgreSQL in the back-end
  leveraging Django rest framework for architecture and GIT for version control and deployment. *****
 *****Goal : The goal of this website is to provide the information that might be too big to be accommodated in the resume and to provide a quick peek

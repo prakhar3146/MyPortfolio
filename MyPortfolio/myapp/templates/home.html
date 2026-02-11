@@ -9,9 +9,10 @@
   <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
   <!-- <link rel="preload" href="optimized-image.webp" as="image"> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno&display=swap">
 
   <style>
     .active {
@@ -50,17 +51,41 @@
       display: none;
     }
 
+    #readMoreBtn2 {
+      background-color: #214e4e;
+      border-collapse: collapse;
+      border: 0px;
+      margin-left: -1%;
+      margin-top: 5%;
+      /* text-decoration: underline; */
+      width: 105%;
+      font-family: initial;
+      font-size: larger;
+      word-spacing: 15px;
+      letter-spacing: 7px;
+      font-weight: 600;
+    }
+
     #readMoreBtn {
       /* width: 100%; */
-      background-color: #1bf1f43d;
+      background-color: #214e4e;
       border-collapse: collapse;
       border: 0px;
       margin-left: -1%;
       /* text-decoration: underline; */
       width: 105%;
-      font-family: inherit;
-      letter-spacing: 2px;
+      font-family: initial;
+      font-size: larger;
+      word-spacing: 15px;
+      letter-spacing: 7px;
       font-weight: 600;
+    }
+
+    #readMoreBtn:hover {
+      background-color: #1bf1f43d;
+    }
+    #readMoreBtn2:hover {
+      background-color: #1bf1f43d;
     }
 
     /* Basic styling for the chat popup */
@@ -136,7 +161,14 @@
       color: black;
       padding: 2px;
     }
+div .fa-whatsapp { color: green; }          /* Phone */
+div .fa-envelope { color:azure; }     /* Email (red/gmail-like) */
+div .fa-map-marker-alt { color: #007acc; }
 
+a .fa-github { color: #333; }          /* GitHub dark gray */
+a .fa-linkedin { color: #0077b5; }     /* LinkedIn blue */
+a .fa-instagram { color:  #d93025; }  
+a .fa-phone { color:  black; } 
     @media (min-width: 390px) and (max-width:900px) {
       [id^="pdf"] {
         min-width: 28%;
@@ -271,7 +303,7 @@
     /* For iphone */
     @media (max-width: 950px) {
       body {
-        background-image: url("../images/landing.jpg") !important;
+        background-image: url("../images/landing.png") !important;
         /* background-image: url("staticfiles/images/landing.jpeg") !important; */
         background-size: cover;
         background-position: center;
@@ -296,7 +328,7 @@
       }
 
       body {
-        background-image: url("../static/images/landing.jpg") !important;
+        background-image: url("../static/images/landing.png") !important;
       }
 
       .navigation {
@@ -306,22 +338,27 @@
       }
 
       #cert-nav {
-        margin-top: 5%;
-        width: 50%;
-        margin-left: 9%;
-        padding-right: 43%;
-        padding-left: 21%;
+          margin-top: 5%;
+    width: 0%;
+    margin-bottom: 24%;
+    /* margin-left: 9%; */
+    padding-right: 47%;
+    padding-left: 21%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* border: 2px solid; */
       }
 
       .dynamic-content {
         font-size: xxx-large;
-        color: #bad3df;
-        margin-bottom: 7%;
-        font-weight: 600;
-        margin-left: 7%;
-        width: 107vw;
-        min-height: 10vh;
-        height: 10vh;
+    letter-spacing: 4px;
+    margin-top: -13%;
+    margin-bottom: 16%;
+    font-family: emoji;
+    line-height: normal;
+    color: gainsboro;
+    text-shadow: 9px 9px 15px #000000;
       }
 
       .portfolio-sub-heading {
@@ -340,11 +377,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKPE5CQYHR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-VKPE5CQYHR');
 </script>
+
 <body>
   <header>
     <nav id="mobile-navbar" class="mobile-nav-menu navbar">
@@ -412,7 +450,7 @@
         message from Prakhar</button>
 
       <h2 class="section-heading">About</h2>
-      <img src="{% static '/images/old.jpg' %}" alt="Profile Pic" id="profile-pic">
+      <img src="{% static '/images/linkedin dp.png' %}" alt="Profile Pic" id="profile-pic">
       <br>
       <div class="snake-line"></div>
 
@@ -447,14 +485,16 @@
           stroke="gold" fill="none" stroke-width="2" />
       </svg>
 
-      <h2 class="section-heading">Portfolio</h2>
+      <h2 class="section-heading">Personal Portfolio</h2>
       <br>
-      <div class="slideshow-container" id="slideshow-container"></div>
-      <p class="event-section-subheading"></p>
+      <div class="holder hide" id="holder5">
+        <div class="slideshow-container" id="slideshow-container"></div>
+        <p class="event-section-subheading"></p>
 
-      <br>
-      <div class="dots" id="dots">
+        <br>
+        <div class="dots" id="dots"></div>
       </div>
+      <button id="readMoreBtn2">Checkout Portfolio</button>
     </section>
     <section class="section-item" id="skillset">
       <svg id="skills-zigzag" class="zigzag-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 10"
@@ -606,8 +646,8 @@
       <h2 class="sub-heading">Certificates</h2>
       <div class="gallery" id="certificates"></div>
       <div class="navigation" id="cert-nav">
-        <button class="prev" id="prev"><span>Previous</span></button>
-        <button class="next" id="next"><span>Next</span></button>
+        <button class="prev fas fa-arrow-left" id="prev"><span>Previous</span></button>
+        <button class="next fas fa-arrow-right" id="next"><span>Next</span></button>
       </div>
 
     </section>
@@ -632,55 +672,60 @@
   <footer>
     <section id="contact-section">
       <h2 class="section-heading">Contact Me</h2>
+
+      <div class="contact-item" style="display: contents;">
+        <i class="fas fa-map-marker" aria-hidden="true"></i> <!-- Location Icon -->
+        <span>Location</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230265.56973041908!2d84.97822522957598!3d25.60825469578397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1745187632252!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">India</iframe>
+
+
       <div class="contact-item">
-        <i class="fa fa-mobile" aria-hidden="true"></i> <!-- Mobile Icon -->
-        <span>Mobile: +91 9625708656</span>
+        <!-- <i class="fab fa-mobile" aria-hidden="true"></i>  Mobile Icon -->
+        <!-- <span>Mobile: +91 9625708656</span> -->
+      <!-- </div> --> 
+      <div class="contact-item link-li">
+        <i class="fas fa-phone" aria-hidden="true"></i> <!-- Phone Icon -->
+        <span>+91-9625708656</span>
       </div>
       <div class="contact-item">
-        <i class="fa fa-phone" aria-hidden="true"></i> <!-- Phone Icon -->
-        <span>Phone: +91 9625708656</span>
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> <!-- WhatsApp Icon -->
+        <span>+91-9625708656</span>
       </div>
       <div class="contact-item">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i> <!-- WhatsApp Icon -->
-        <span>WhatsApp: +91 9625708656</span>
+        <i class="fas fa-envelope" aria-hidden="true"></i> <!-- Email Icon -->
+        <span>mr.prakhar@gmail.com</span>
       </div>
       <div class="contact-item">
-        <i class="fa fa-envelope" aria-hidden="true"></i> <!-- Email Icon -->
-        <span>Email: mr.prakhar@gmail.com</span>
-      </div>
-      <div class="contact-item">
-        <a href="https://www.linkedin.com/in/prakhar-p-499757144" target="_blank" class="linkedin-link">
-          <i class="fa fa-linkedin" aria-hidden="true"></i> <!-- LinkedIn Icon -->
-          <span>LinkedIn: https://www.linkedin.com/in/prakhar-p-499757144</span>
+        <a href="https://www.linkedin.com/in/prakhar-p-499757144" target="_blank" class="fab fa-linkedin-link" style="display: contents;">
+          <i class="fab fa-linkedin" aria-hidden="true"></i> <!-- LinkedIn Icon -->
+          <span>LinkedIn</span>
         </a>
       </div>
       <div class="contact-item">
         <a href="https://prakhar3146@github.com/" target="_blank" class="github-link">
-          <i class="fa fa-github" aria-hidden="true"></i> <!-- GitHub Icon -->
-          <span>GitHub: https://prakhar3146@github.com/</span>
+          <i class="fab fa-github" aria-hidden="true"></i> <!-- GitHub Icon -->
+          <span>GitHub</span>
         </a>
       </div>
       <div class="contact-item">
         <a href="https://prakhar3146@instagram.com/" target="_blank" class="instagram-link">
-          <i class="fa fa-instagram" aria-hidden="true"></i> <!-- GitHub Icon -->
-          <span>Instagram: https://prakhar3146@instagram.com/</span>
+          <i class="fab fa-instagram" aria-hidden="true"></i> <!-- GitHub Icon -->
+          <span>Instagram</span>
         </a>
       </div>
-      <div class="contact-item">
-        <i class="fa fa-map-marker" aria-hidden="true"></i> <!-- Location Icon -->
-        <span>Current Location: India</span>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230265.56973041908!2d84.97822522957598!3d25.60825469578397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1745187632252!5m2!1sen!2sin"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </a>
+      
+        
       </div>
 
       </div>
       <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
 
     </section>
-    <p>&copy; Copywright 2025 Prakhar Prakash. All rights reserved.</p>
+    <p style="color: gainsboro;letter-spacing: 4px;font-family: fangsong;">Designed and Developed by Prakhar Prakash</p>
+ 
+    <p style="color: gainsboro;letter-spacing: 4px;font-family: fangsong;">&copy; Copywright 2025 Prakhar Prakash. All rights reserved.</p>
   </footer>
   <script>
 
@@ -692,76 +737,90 @@
       const images = await response.json(); // Parse the response as JSON
 
       const gallery = document.getElementById(container_id);
-
+      let linkElements = document.createElement("div");
+      linkElements.className = "link-elements"
+      linkElements.innerText="Checkout the project here : "
       gallery.innerHTML = ''; // Clear the existing content
-      counter = 0;
+      let counter = 0;
       // Populate the gallery with images
       images.forEach(img => {
         counter = counter + 1;
-        const itemDiv = document.createElement("div");
+        let itemDiv = document.createElement("div");
         itemDiv.className = item_class;
         itemDiv.id = `${item_id_prefix}_${counter}`;
-
-        const imgElement = document.createElement("img");
-        imgElement.src = `${static_url}${img.src}`; // Dynamically set the src path
-        // alert(imgElement.src)
-        imgElement.alt = "Image";
-
+        // For the links section
+        let li = document.createElement("li");
+        li.style.listStyleType = "none";
+        li.className = "link-li"
         //Looping over each line after splitting it
-
         let parts = img.desc.split('*****');
         parts = parts.filter(item => item.trim() !== "");
-
-        // alert(parts[1])
-        itemDiv.appendChild(imgElement);
         para_counter = 0
         let pElement = document.createElement("p");
+
         for (let i = 0; i < parts.length; i++) {
           console.log(parts[i]);
           para_counter = para_counter + 1
           if (parts[i].trim().length === 0) {
             continue
           }
-
-          //           if (img.src.includes("slideshow1_2")) {
-          //     alert(parts[i]);
-          // }
-
-          // pElement.textContent = parts[i];
           pElement.className = "project-des"
-          // pElement.id = `description_${counter}`;
-          // alert(img.filename)  
-          // Append text and span together
           if (para_counter == 1) {
             var headingElement = document.createElement("span");
+           
             // headingElement.innerText = parts[i]
             headingElement.className = "dynamic-content"
             headingElement.innerText = img.filename.trim()
-            pElement.appendChild(headingElement); // Append the span
-            //  pElement.appendChild(headingElement)
-            // alert(parts[i])
-
+            pElement.appendChild(headingElement);
+            pElement.appendChild(document.createTextNode(parts[i].trim())); // Add text node
+            let link_counter=0;
+            img.links.forEach(link => {
+              let linkElement = document.createElement("a");
+              linkElement.href = link.url;
+              linkElement.textContent = link.name;
+              if(link.name.toLowerCase() === 'globe'){
+                linkElement.className = "fas fa-globe"
+              }
+              else{
+                linkElement.className = `fab fa-${link.name.toLowerCase()}`;
+              }
+              let listOfColors = ['azure', 'black', 'yellow', 'white', 'green', '#f5ff33'];
+              linkElement.style.color = listOfColors[Math.floor(Math.random() * listOfColors.length)];
+              li.appendChild(linkElement);
+              // linkElements.appendChild(li);
+              link_counter = link_counter + 1;
+            });
           }
-          // alert(parts[i])
-          var lineBreak = document.createElement("br")
-          pElement.appendChild(lineBreak)
-          pElement.appendChild(document.createTextNode(parts[i].trim())); // Add text node
-
-          itemDiv.appendChild(pElement);
+        let pElement2 = document.createElement("p");
+        pElement2.className = "Description"
+        pElement2.innerText = parts[i].trim()
+        li.appendChild(pElement2)
         }
-
-        //If not the first image
+        
+        var lineBreak = document.createElement("br")
+        const imgElement = document.createElement("img");
+        imgElement.src = `${static_url}${img.src}`; // Dynamically set the src path
+        // alert(imgElement.src)
+        imgElement.alt = "Image";
+        
+        itemDiv.appendChild(imgElement);
+        itemDiv.appendChild(pElement);
+        itemDiv.appendChild(li);
+        // itemDiv.appendChild(linkElements);
+        
+       //If not the first image
         if (counter != 1) {
-          // imgElement.style.display = "none";
-          // pElement.style.display = "none";
+          
           itemDiv.style.display = "none";
 
         }
 
         gallery.appendChild(itemDiv);
+
         para_counter += 1
       });
-    }
+    
+  };
 
 
     //Function to fetch pdf's
@@ -835,11 +894,7 @@
 
       images.forEach((img, i) => {
 
-        // img.parentElement.classList.toggle('unhide', i === index);
         img.parentElement.style.display = i === index ? "flex" : "none";
-        // alert(subheading.length)
-        // subheading.style.display = i === index ? "flex" : "none";
-        // subheading.textContent = "changed"
 
         //     // Accessing and styling the grandparent element (if needed)
         const grandparent = img.parentElement.parentElement;
@@ -850,22 +905,10 @@
           //   // Verify if the sibling has the desired class
           if (sibling.classList.contains("sub-heading")) {
             sibling.style.display = i === index ? "flex" : "none";
-            // sibling.textContent = 
-            //     // sibling.style.backgroundColor = i === index ? "yellow" : "transparent"; // Example styling
-            //     // sibling.style.border = i === index ? "2px solid red" : "none"; // Example styling
-          }
+            }
         }
+});
 
-
-
-
-      });
-      // des.forEach((descript, i) => {
-
-      //   // img.classList.toggle('active', i === index);
-      //   descript.style.display = i === index ? "block" : "none";
-
-      // });
     }
 
     // Event listener for the "Next" button
@@ -915,25 +958,6 @@
       showImage(images, currentIndex2, descriptions);
     });
 
-    // When an element is not visible
-    // document.addEventListener('DOMContentLoaded', () => {
-    //   const triggerElement = document.getElementById('navbar');
-    //   const hiddenElement = document.getElementById('ul3');
-
-    //   const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach(entry => {
-    //       if (!entry.isIntersecting) {
-    //         // hiddenElement.classList.add('visible');
-    //         hiddenElement.style.display = "flex";
-    //       } else {
-    //         // hiddenElement.classList.remove('visible');
-    //         hiddenElement.style.display = "none";
-    //       }
-    //     });
-    //   });
-
-    //   observer.observe(triggerElement);
-    // });
 
     // To read text data
     document.addEventListener('DOMContentLoaded', () => {
@@ -975,7 +999,7 @@
         const slideGallery = document.getElementById("slideshow-container");
         const dotElement = document.getElementById("dots");
         slideGallery.innerHTML = ''; // Clear the existing content
-        counter = 0;
+        let counter = 0;
         // Populate the gallery with images
 
         images.forEach(img => {
@@ -1165,7 +1189,7 @@
       });
     };
 
-
+    // This is for the read more button to view the skillset section
     readMoreBtn1 = document.getElementById("readMoreBtn");
     var hiddenContent = document.getElementById("holder1");
 
@@ -1177,10 +1201,26 @@
       if (hiddenContent.classList.contains("hide")) {
         readMoreBtn1.innerText = "View More Skills";
       } else {
-        readMoreBtn1.innerText = "Read Less";
+        readMoreBtn1.innerText = "View Less";
       }
 
 
+    });
+
+    // This is for the read more button to view the portfolio section
+    readMoreBtn2 = document.getElementById("readMoreBtn2");
+    var hiddenContent2 = document.getElementById("holder5");
+
+    readMoreBtn2.addEventListener("click", () => {
+      // Toggle the 'hidden' class
+      hiddenContent2.classList.toggle("hide");
+
+      // Update button text based on visibility
+      if (hiddenContent2.classList.contains("hide")) {
+        readMoreBtn2.innerText = "Checkout Portfolio";
+      } else {
+        readMoreBtn2.innerText = "View Less";
+      }
     });
 
 
@@ -1204,7 +1244,7 @@
       const endTime = new Date();
 
       // Calculate execution time
-      const executionTime = (endTime - startTime)/1000; // Time in milliseconds
+      const executionTime = (endTime - startTime) / 1000; // Time in milliseconds
 
       // alert(`Execution time: ${executionTime} secs`);
 
